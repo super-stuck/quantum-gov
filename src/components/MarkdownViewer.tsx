@@ -14,7 +14,7 @@ export default function MarkdownViewer({ filePath, fileName, showRawLink = true 
   const [error, setError] = useState<string>('')
 
   useEffect(() => {
-    const fetchPath = process.env.NODE_ENV === 'production' ? `./${filePath}` : `/${filePath}`
+    const fetchPath = `/${filePath}`
     fetch(fetchPath)
       .then(response => {
         if (!response.ok) {
@@ -106,7 +106,7 @@ export default function MarkdownViewer({ filePath, fileName, showRawLink = true 
           <h3>Error Loading Document</h3>
           <p>{error}</p>
           {showRawLink && (
-            <a href={process.env.NODE_ENV === 'production' ? `./${filePath}` : `/${filePath}`} target="_blank" className="raw-link">
+            <a href={`/${filePath}`} target="_blank" className="raw-link">
               Try viewing raw file →
             </a>
           )}
@@ -121,7 +121,7 @@ export default function MarkdownViewer({ filePath, fileName, showRawLink = true 
         <h1>{displayName}</h1>
         {showRawLink && (
           <div className="header-actions">
-            <a href={process.env.NODE_ENV === 'production' ? `./${filePath}` : `/${filePath}`} target="_blank" className="raw-link">
+            <a href={`/${filePath}`} target="_blank" className="raw-link">
               View Raw File →
             </a>
           </div>
@@ -139,6 +139,37 @@ export default function MarkdownViewer({ filePath, fileName, showRawLink = true 
           margin: 0 auto;
           padding: 2rem;
           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        @media (max-width: 768px) {
+          .markdown-viewer {
+            padding: 1rem;
+          }
+
+          .markdown-header {
+            flex-direction: column;
+            gap: 1rem;
+            text-align: center;
+          }
+
+          .markdown-header h1 {
+            font-size: 1.5rem;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .markdown-viewer {
+            padding: 0.5rem;
+          }
+
+          .markdown-header h1 {
+            font-size: 1.3rem;
+          }
+
+          .raw-link {
+            padding: 0.4rem 0.8rem;
+            font-size: 0.85rem;
+          }
         }
 
         .loading {

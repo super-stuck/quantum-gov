@@ -73,7 +73,7 @@ export default function ServerMarkdownViewer({ filePath, fileName, showRawLink =
   }
 
   const displayName = fileName || filePath.split('/').pop() || 'Document'
-  const rawLinkPath = filePath.startsWith('public/') ? `./${filePath.replace('public/', '')}` : `./${filePath}`
+  const rawLinkPath = filePath.startsWith('public/') ? `/${filePath.replace('public/', '')}` : `/${filePath}`
 
   if (error) {
     return (
@@ -258,6 +258,33 @@ export default function ServerMarkdownViewer({ filePath, fileName, showRawLink =
           .markdown-content em {
             font-style: italic;
             color: #555;
+          }
+          
+          @media (max-width: 768px) {
+            .markdown-viewer {
+              padding: 1rem;
+            }
+            .markdown-header {
+              flex-direction: column;
+              gap: 1rem;
+              text-align: center;
+            }
+            .markdown-header h1 {
+              font-size: 1.5rem;
+            }
+          }
+          
+          @media (max-width: 480px) {
+            .markdown-viewer {
+              padding: 0.5rem;
+            }
+            .markdown-header h1 {
+              font-size: 1.3rem;
+            }
+            .raw-link {
+              padding: 0.4rem 0.8rem;
+              font-size: 0.85rem;
+            }
           }
         `
       }} />

@@ -75,7 +75,7 @@ export default function Research() {
             <p>Quantum algorithms for democratic decision-making processes.</p>
             <div className="file-links">
               <a href="/papers/QuantumGov_Quantum_Computing_Paper.tex" className="file-link">📋 LaTeX Source</a>
-              <a href="/compiled-pdfs/papers/QuantumGov_Quantum_Computing_Paper.pdf" className="file-link">📄 PDF</a>
+              <a href="/papers/QuantumGov_Quantum_Computing_Paper.pdf" className="file-link">📄 PDF</a>
             </div>
           </div>
           
@@ -84,7 +84,7 @@ export default function Research() {
             <p>Machine learning integration in quantum governance systems.</p>
             <div className="file-links">
               <a href="/papers/QuantumGov_AI_ML_Paper.tex" className="file-link">📋 LaTeX Source</a>
-              <a href="/compiled-pdfs/papers/QuantumGov_AI_ML_Paper.pdf" className="file-link">📄 PDF</a>
+              <a href="/papers/QuantumGov_AI_ML_Paper.pdf" className="file-link">📄 PDF</a>
             </div>
           </div>
           
@@ -93,7 +93,7 @@ export default function Research() {
             <p>Blockchain security applications for democratic transparency.</p>
             <div className="file-links">
               <a href="/papers/QuantumGov_Blockchain_Paper.tex" className="file-link">📋 LaTeX Source</a>
-              <a href="/compiled-pdfs/papers/QuantumGov_Blockchain_Paper.pdf" className="file-link">📄 PDF</a>
+              <a href="/papers/QuantumGov_Blockchain_Paper.pdf" className="file-link">📄 PDF</a>
             </div>
           </div>
           
@@ -102,7 +102,34 @@ export default function Research() {
             <p>Political theory and quantum governance analysis.</p>
             <div className="file-links">
               <a href="/papers/QuantumGov_Political_Science_Paper.tex" className="file-link">📋 LaTeX Source</a>
-              <a href="/compiled-pdfs/papers/QuantumGov_Political_Science_Paper.pdf" className="file-link">📄 PDF</a>
+              <a href="/papers/QuantumGov_Political_Science_Paper.pdf" className="file-link">📄 PDF</a>
+            </div>
+          </div>
+          
+          <div className="card">
+            <h4>Economics Paper</h4>
+            <p>Economic implications and modeling of quantum governance systems.</p>
+            <div className="file-links">
+              <a href="/papers/QuantumGov_Economics_Paper.tex" className="file-link">📋 LaTeX Source</a>
+              <a href="/papers/QuantumGov_Economics_Paper.pdf" className="file-link">📄 PDF</a>
+            </div>
+          </div>
+          
+          <div className="card">
+            <h4>Psychology Paper</h4>
+            <p>Psychological aspects of human-quantum interaction in governance.</p>
+            <div className="file-links">
+              <a href="/papers/QuantumGov_Psychology_Paper.tex" className="file-link">📋 LaTeX Source</a>
+              <a href="/papers/QuantumGov_Psychology_Paper.pdf" className="file-link">📄 PDF</a>
+            </div>
+          </div>
+          
+          <div className="card">
+            <h4>Game Theory Paper</h4>
+            <p>Game theoretical analysis of quantum democratic decision making.</p>
+            <div className="file-links">
+              <a href="/papers/QuantumGov_GameTheory_Paper.tex" className="file-link">📋 LaTeX Source</a>
+              <a href="/papers/QuantumGov_GameTheory_Paper.pdf" className="file-link">📄 PDF</a>
             </div>
           </div>
         </div>
