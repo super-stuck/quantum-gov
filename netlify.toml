@@ -4,12 +4,10 @@
   
   # Output directory (Next.js static export goes to 'out' folder)
   publish = "out"
-  
-  # Node.js version
-  environment = { NODE_VERSION = "18" }
 
 [build.environment]
-  # Ensure we're using the production environment
+  # Node.js version and production environment
+  NODE_VERSION = "18"
   NODE_ENV = "production"
   
 # Headers for PDF files
