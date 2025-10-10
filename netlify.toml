@@ -1,0 +1,19 @@
+[build]
+  # Build command
+  command = "npm run build"
+  
+  # Output directory (Next.js static export goes to 'out' folder)
+  publish = "out"
+  
+  # Node.js version
+  environment = { NODE_VERSION = "18" }
+
+[build.environment]
+  # Ensure we're using the production environment
+  NODE_ENV = "production"
+  
+# Headers for PDF files
+[[headers]]
+  for = "/*.pdf"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
