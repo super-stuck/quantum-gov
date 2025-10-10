@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" version="24.7.17" modified="2025-10-06T06:27:49.000Z" agent="Virtual Utopia Framework" etag="FrameworkGenerator" type="device">
+  <diagram name="Framework Overview" id="framework-overview">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- User Layer -->
+        <mxCell id="user-layer" value="User Experience Layer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="1080" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Desktop Client -->
+        <mxCell id="desktop-client" value="Desktop Client&#xa;(Electron + React)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="80" y="130" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Mobile Client -->
+        <mxCell id="mobile-client" value="Mobile Client&#xa;(React Native)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="260" y="130" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Web Client -->
+        <mxCell id="web-client" value="Web Client&#xa;(React + WebRTC)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="440" y="130" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- API Extensions -->
+        <mxCell id="api-extensions" value="API Extensions&#xa;(3rd Party Apps)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="620" y="130" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Browser Extensions -->
+        <mxCell id="browser-ext" value="Browser Extensions&#xa;(Chrome/Firefox)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="800" y="130" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Core Framework -->
+        <mxCell id="core-framework" value="Virtual Utopia Core Framework" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="230" width="1080" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Identity System -->
+        <mxCell id="identity-system" value="Identity System&#xa;Self-Sovereign ID&#xa;DID/Verifiable Credentials" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="80" y="320" width="120" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- Governance Engine -->
+        <mxCell id="governance-engine" value="Governance Engine&#xa;Voting Systems&#xa;Law Management&#xa;Court System" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="220" y="320" width="120" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- Economic System -->
+        <mxCell id="economic-system" value="Economic System&#xa;Virtual Currency&#xa;Labor Markets&#xa;Trade System" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="360" y="320" width="120" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- Social Engine -->
+        <mxCell id="social-engine" value="Social Engine&#xa;News System&#xa;Forums&#xa;Reputation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="500" y="320" width="120" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- Media System -->
+        <mxCell id="media-system" value="Media System&#xa;News Forking&#xa;Press Institutions&#xa;Information Control" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="640" y="320" width="120" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- Extension Framework -->
+        <mxCell id="extension-framework" value="Extension Framework&#xa;Plugin System&#xa;Custom Institutions&#xa;API Registry" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="780" y="320" width="120" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- Token Incentive System -->
+        <mxCell id="token-system" value="Token Incentive System&#xa;Reward Distribution&#xa;Hosting Rewards&#xa;Data Monetization" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cdeb8b;strokeColor=#36c200;fontSize=10;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="920" y="320" width="120" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- Infrastructure Layer -->
+        <mxCell id="infrastructure-layer" value="Decentralized Infrastructure Layer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="440" width="1080" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- P2P Network -->
+        <mxCell id="p2p-network" value="P2P Network&#xa;WebRTC&#xa;libp2p&#xa;NAT Traversal" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="80" y="530" width="120" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- Storage Systems -->
+        <mxCell id="storage-systems" value="Storage Systems&#xa;IPFS&#xa;OrbitDB&#xa;SQLite" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="220" y="530" width="120" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- Blockchain Integration -->
+        <mxCell id="blockchain-integration" value="Blockchain&#xa;Solana/Polkadot&#xa;Smart Contracts&#xa;SPL Tokens" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="360" y="530" width="120" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- Data Synchronization -->
+        <mxCell id="data-sync" value="Data Sync&#xa;CRDTs&#xa;Eventual Consistency&#xa;Conflict Resolution" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="500" y="530" width="120" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- Security Layer -->
+        <mxCell id="security-layer" value="Security Layer&#xa;Encryption&#xa;Key Management&#xa;Authentication" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="640" y="530" width="120" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- Analytics Engine -->
+        <mxCell id="analytics-engine" value="Analytics Engine&#xa;Metrics Collection&#xa;Performance Monitoring&#xa;User Insights" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="780" y="530" width="120" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- Self-Hosting Network -->
+        <mxCell id="hosting-network" value="Self-Hosting Network&#xa;Distributed Nodes&#xa;Token Rewards&#xa;Data Availability" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cdeb8b;strokeColor=#36c200;fontSize=10;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="920" y="530" width="120" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- Virtual Nations -->
+        <mxCell id="virtual-nations" value="Virtual Nations Ecosystem" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="650" width="1080" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Democracy Nation -->
+        <mxCell id="democracy-nation" value="Democratic Nation&#xa;Representative Gov&#xa;Market Economy" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="120" y="740" width="100" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Socialist Nation -->
+        <mxCell id="socialist-nation" value="Socialist Nation&#xa;Planned Economy&#xa;Collective Ownership" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="260" y="740" width="100" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Libertarian Nation -->
+        <mxCell id="libertarian-nation" value="Libertarian Nation&#xa;Minimal Government&#xa;Free Markets" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="400" y="740" width="100" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Technocracy Nation -->
+        <mxCell id="technocracy-nation" value="Technocracy&#xa;Expert-Led Gov&#xa;Data-Driven Policy" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="540" y="740" width="100" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Anarchist Nation -->
+        <mxCell id="anarchist-nation" value="Anarchist Territory&#xa;No Central Gov&#xa;Voluntary Association" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="680" y="740" width="100" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Custom Nation -->
+        <mxCell id="custom-nation" value="Custom Nation&#xa;Hybrid Models&#xa;Experimental Gov" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="820" y="740" width="100" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Connections from User Layer to Core Framework -->
+        <mxCell id="user-to-core1" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.2;entryY=0;entryDx=0;entryDy=0;strokeColor=#666666;" edge="1" parent="1" source="desktop-client" target="core-framework">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="150" y="210" as="sourcePoint" />
+            <mxPoint x="200" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="user-to-core2" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.4;entryY=0;entryDx=0;entryDy=0;strokeColor=#666666;" edge="1" parent="1" source="mobile-client" target="core-framework">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="330" y="210" as="sourcePoint" />
+            <mxPoint x="380" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="user-to-core3" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.6;entryY=0;entryDx=0;entryDy=0;strokeColor=#666666;" edge="1" parent="1" source="web-client" target="core-framework">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="510" y="210" as="sourcePoint" />
+            <mxPoint x="560" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Connections from Core to Infrastructure -->
+        <mxCell id="core-to-infra1" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.125;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#666666;" edge="1" parent="1" source="core-framework" target="p2p-network">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="175" y="310" as="sourcePoint" />
+            <mxPoint x="225" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="core-to-infra2" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#666666;" edge="1" parent="1" source="core-framework" target="storage-systems">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="310" y="310" as="sourcePoint" />
+            <mxPoint x="360" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="core-to-infra3" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.375;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#666666;" edge="1" parent="1" source="core-framework" target="blockchain-integration">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="445" y="310" as="sourcePoint" />
+            <mxPoint x="495" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Token System Highlight -->
+        <mxCell id="token-highlight1" value="Token&#xa;Rewards" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#36c200;strokeWidth=3;" edge="1" parent="1" source="token-system" target="hosting-network">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="980" y="420" as="sourcePoint" />
+            <mxPoint x="1030" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Nations to Framework -->
+        <mxCell id="nations-to-framework" value="Utilize Framework" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=#d79b00;strokeWidth=2;" edge="1" parent="1" source="virtual-nations" target="core-framework">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="580" y="620" as="sourcePoint" />
+            <mxPoint x="630" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Title -->
+        <mxCell id="title" value="Virtual Utopia - Complete Framework Architecture" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="400" y="10" width="400" height="20" as="geometry" />
+        </mxCell>
+        
+        <!-- Web3 Token Flow -->
+        <mxCell id="web3-flow" value="Web3 Self-Hosting Token Flow:&#xa;1. Users request data&#xa;2. Hosting nodes serve data&#xa;3. Smart contracts distribute token rewards&#xa;4. Reputation systems track reliability" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#cdeb8b;strokeColor=#36c200;fontSize=11;align=left;verticalAlign=top" vertex="1" parent="1">
+          <mxGeometry x="1060" y="400" width="200" height="120" as="geometry" />
+        </mxCell>
+        
+        <!-- Data Flow Arrow -->
+        <mxCell id="data-flow" value="Data Flow &amp; Token Rewards" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#36c200;strokeWidth=3;" edge="1" parent="1" source="hosting-network" target="web3-flow">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1040" y="570" as="sourcePoint" />
+            <mxPoint x="1090" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

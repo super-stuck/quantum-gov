@@ -1,0 +1,141 @@
+\documentclass[tikz,border=5pt]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric,arrows.meta,positioning,fit,backgrounds,shadows,decorations.pathreplacing}
+
+\begin{document}
+\begin{tikzpicture}[scale=1.5,
+    node distance=3cm,
+    every node/.style={font=\small},
+    % Core framework components
+    kernel/.style={rectangle,draw,minimum width=3cm,minimum height=2cm,fill=red!20,thick,drop shadow},
+    core_service/.style={rectangle,draw,minimum width=2.5cm,minimum height=1.2cm,fill=blue!20,thick},
+    extension/.style={rectangle,draw,minimum width=2.3cm,minimum height=1cm,fill=green!20},
+    plugin/.style={ellipse,draw,minimum width=2cm,minimum height=0.8cm,fill=orange!20},
+    interface/.style={diamond,draw,minimum size=1.5cm,fill=purple!20},
+    arrow/.style={->,>=stealth,thick},
+    extension_api/.style={->,>=stealth,dashed,green},
+    event_bus/.style={<->,>=stealth,dotted,blue}
+]
+
+% Core Kernel
+\node[kernel] (kernel) {
+    \textbf{Virtual Utopia Kernel}\\[0.2cm]
+    • Extension Registry\\
+    • Event Bus\\
+    • Security Manager\\
+    • Resource Monitor
+};
+
+% Core Services
+\node[core_service,above left=2cm and 3cm of kernel] (identity_core) {Identity Core\\Authentication\\Key Management};
+\node[core_service,above right=2cm and 3cm of kernel] (storage_core) {Storage Core\\SQLite\\Data Sync};
+\node[core_service,below left=2cm and 3cm of kernel] (network_core) {Network Core\\P2P Communication\\Protocol Handler};
+\node[core_service,below right=2cm and 3cm of kernel] (ui_core) {UI Core\\Component System\\Event Handling};
+
+% Extension Categories
+\node[extension,above=3.5cm of kernel] (governance_ext) {Governance Extensions\\Parliament System\\Direct Democracy\\Judicial Framework};
+\node[extension,right=4.5cm of governance_ext] (economic_ext) {Economic Extensions\\Market System\\Currency Engine\\Resource Allocation};
+\node[extension,below=3.5cm of kernel] (social_ext) {Social Extensions\\News System\\Community Tools\\Media Platform};
+\node[extension,left=4.5cm of social_ext] (interface_ext) {Interface Extensions\\Custom Widgets\\Visualizations\\Themes};
+
+% Specific Plugin Examples
+\node[plugin,above=1.5cm of governance_ext] (parliament_plugin) {Parliament\\Plugin};
+\node[plugin,right=1.5cm of governance_ext] (voting_plugin) {Voting\\System};
+\node[plugin,above=1.5cm of economic_ext] (market_plugin) {Free Market\\Engine};
+\node[plugin,right=1.5cm of economic_ext] (currency_plugin) {Multi-Currency\\Support};
+\node[plugin,below=1.5cm of social_ext] (news_plugin) {News Forking\\System};
+\node[plugin,left=1.5cm of social_ext] (debate_plugin) {Argument\\Platform};
+\node[plugin,below=1.5cm of interface_ext] (dashboard_plugin) {Custom\\Dashboard};
+\node[plugin,left=1.5cm of interface_ext] (theme_plugin) {Theme\\Engine};
+
+% Extension APIs and Interfaces
+\node[interface,right=2cm of kernel] (extension_api_diamond) {Extension\\API};
+\node[interface,left=2cm of kernel] (event_api_diamond) {Event\\API};
+\node[interface,above=2cm of kernel] (security_api_diamond) {Security\\API};
+\node[interface,below=2cm of kernel] (storage_api_diamond) {Storage\\API};
+
+% Template System
+\node[core_service,right=6cm of kernel] (template_system) {Template System\\Political Templates\\Institution Configs\\Process Definitions};
+
+% Background groupings
+\begin{scope}[on background layer]
+\node[fill=red!5,draw,dashed,fit=(kernel)(extension_api_diamond)(event_api_diamond)(security_api_diamond)(storage_api_diamond)] (kernel_group) {};
+\node[fill=blue!5,draw,dashed,fit=(identity_core)(storage_core)(network_core)(ui_core)] (core_services_group) {};
+\node[fill=green!5,draw,dashed,fit=(governance_ext)(economic_ext)(social_ext)(interface_ext)] (extensions_group) {};
+\node[fill=orange!5,draw,dashed,fit=(parliament_plugin)(voting_plugin)(market_plugin)(currency_plugin)(news_plugin)(debate_plugin)(dashboard_plugin)(theme_plugin)] (plugins_group) {};
+\node[fill=purple!5,draw,dashed,fit=(template_system)] (template_group) {};
+\end{scope}
+
+% Core Service Connections
+\draw[arrow] (kernel) -- (identity_core);
+\draw[arrow] (kernel) -- (storage_core);
+\draw[arrow] (kernel) -- (network_core);
+\draw[arrow] (kernel) -- (ui_core);
+
+% API Connections
+\draw[arrow] (kernel) -- (extension_api_diamond);
+\draw[arrow] (kernel) -- (event_api_diamond);
+\draw[arrow] (kernel) -- (security_api_diamond);
+\draw[arrow] (kernel) -- (storage_api_diamond);
+
+% Extension to Kernel
+\draw[extension_api] (governance_ext) -- (extension_api_diamond);
+\draw[extension_api] (economic_ext) -- (extension_api_diamond);
+\draw[extension_api] (social_ext) -- (extension_api_diamond);
+\draw[extension_api] (interface_ext) -- (extension_api_diamond);
+
+% Plugin Connections
+\draw[arrow] (parliament_plugin) -- (governance_ext);
+\draw[arrow] (voting_plugin) -- (governance_ext);
+\draw[arrow] (market_plugin) -- (economic_ext);
+\draw[arrow] (currency_plugin) -- (economic_ext);
+\draw[arrow] (news_plugin) -- (social_ext);
+\draw[arrow] (debate_plugin) -- (social_ext);
+\draw[arrow] (dashboard_plugin) -- (interface_ext);
+\draw[arrow] (theme_plugin) -- (interface_ext);
+
+% Event Bus Connections
+\draw[event_bus] (governance_ext) to[bend left=20] (event_api_diamond);
+\draw[event_bus] (economic_ext) to[bend right=20] (event_api_diamond);
+\draw[event_bus] (social_ext) to[bend right=20] (event_api_diamond);
+\draw[event_bus] (interface_ext) to[bend left=20] (event_api_diamond);
+
+% Template System Connections
+\draw[extension_api] (template_system) to[bend right=30] (governance_ext);
+\draw[extension_api] (template_system) to[bend right=15] (economic_ext);
+
+% Inter-Extension Communication
+\draw[event_bus] (governance_ext) to[bend left=15] (social_ext);
+\draw[event_bus] (economic_ext) to[bend right=15] (governance_ext);
+\draw[event_bus] (social_ext) to[bend left=15] (interface_ext);
+
+% Security and Storage Access
+\draw[extension_api] (governance_ext) to[bend left=30] (security_api_diamond);
+\draw[extension_api] (economic_ext) to[bend right=30] (storage_api_diamond);
+\draw[extension_api] (social_ext) to[bend right=30] (storage_api_diamond);
+
+% Labels and Annotations
+\node[above=0.5cm of kernel_group,font=\footnotesize,text=gray] {Core Framework \& APIs};
+\node[left=0.3cm of core_services_group,font=\footnotesize,text=gray,rotate=90] {Core Services};
+\node[above=0.3cm of extensions_group,font=\footnotesize,text=gray] {Extension Categories};
+\node[above=0.3cm of plugins_group,font=\footnotesize,text=gray] {Specific Plugins};
+\node[right=0.3cm of template_group,font=\footnotesize,text=gray,rotate=-90] {Templates};
+
+% Extension Lifecycle Indicators
+\node[right=7cm of governance_ext,font=\tiny] (lifecycle_title) {\textbf{Extension Lifecycle:}};
+\node[below=0.3cm of lifecycle_title,font=\tiny,align=left] {
+    1. Discovery \& Installation\\
+    2. Verification \& Security Check\\
+    3. Registration \& API Access\\
+    4. Operation \& Event Handling\\
+    5. Updates \& Migration
+};
+
+% Communication Patterns Legend
+\node[below=4cm of lifecycle_title,font=\tiny] (comm_title) {\textbf{Communication:}};
+\draw[arrow,below=0.3cm of comm_title] ($(comm_title.south) + (-1,0)$) -- ($(comm_title.south) + (0,0)$) node[right,font=\tiny] {Direct Call};
+\draw[extension_api,below=0.1cm of comm_title] ($(comm_title.south) + (-1,-0.3)$) -- ($(comm_title.south) + (0,-0.3)$) node[right,font=\tiny] {Extension API};
+\draw[event_bus,below=0.1cm of comm_title] ($(comm_title.south) + (-1,-0.6)$) -- ($(comm_title.south) + (0,-0.6)$) node[right,font=\tiny] {Event Bus};
+
+\end{tikzpicture}
+\end{document}

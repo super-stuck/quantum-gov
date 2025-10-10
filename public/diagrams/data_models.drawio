@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" version="24.7.17" modified="2025-10-06T06:27:49.000Z" agent="Virtual Utopia Framework" etag="DataModelGenerator" type="device">
+  <diagram name="Data Models" id="data-models">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- User Entity -->
+        <mxCell id="user-entity" value="User&#xa;────────────────&#xa;+ id: UUID&#xa;+ public_key: PublicKey&#xa;+ profile: Profile&#xa;+ reputation: ReputationScore&#xa;+ skills: Vec&lt;Skill&gt;&#xa;+ nation_memberships: Vec&lt;UUID&gt;&#xa;+ wallet_address: String&#xa;+ created_at: DateTime&#xa;+ last_active: DateTime" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;align=left;verticalAlign=top;fontFamily=monospace" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="200" height="140" as="geometry" />
+        </mxCell>
+        
+        <!-- VirtualNation Entity -->
+        <mxCell id="nation-entity" value="VirtualNation&#xa;────────────────&#xa;+ id: UUID&#xa;+ name: String&#xa;+ constitution: Document&#xa;+ governance_model: GovernanceType&#xa;+ currency: Currency&#xa;+ population: u64&#xa;+ territory: VirtualTerritory&#xa;+ institutions: Vec&lt;Institution&gt;&#xa;+ created_at: DateTime&#xa;+ status: NationStatus" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;align=left;verticalAlign=top;fontFamily=monospace" vertex="1" parent="1">
+          <mxGeometry x="300" y="80" width="200" height="140" as="geometry" />
+        </mxCell>
+        
+        <!-- Institution Entity -->
+        <mxCell id="institution-entity" value="Institution&#xa;────────────────&#xa;+ id: UUID&#xa;+ name: String&#xa;+ type: InstitutionType&#xa;+ nation_id: UUID&#xa;+ powers: Vec&lt;Power&gt;&#xa;+ members: Vec&lt;UUID&gt;&#xa;+ budget: f64&#xa;+ rules: Vec&lt;Rule&gt;&#xa;+ created_at: DateTime" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;align=left;verticalAlign=top;fontFamily=monospace" vertex="1" parent="1">
+          <mxGeometry x="560" y="80" width="200" height="140" as="geometry" />
+        </mxCell>
+        
+        <!-- Law Entity -->
+        <mxCell id="law-entity" value="Law&#xa;────────────────&#xa;+ id: UUID&#xa;+ title: String&#xa;+ content: Document&#xa;+ status: LawStatus&#xa;+ nation_id: UUID&#xa;+ sponsor_id: UUID&#xa;+ votes: Vec&lt;Vote&gt;&#xa;+ amendments: Vec&lt;Amendment&gt;&#xa;+ enacted_at: Option&lt;DateTime&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;align=left;verticalAlign=top;fontFamily=monospace" vertex="1" parent="1">
+          <mxGeometry x="820" y="80" width="200" height="140" as="geometry" />
+        </mxCell>
+        
+        <!-- Economic Transaction -->
+        <mxCell id="transaction-entity" value="Transaction&#xa;────────────────&#xa;+ id: UUID&#xa;+ from_user: UUID&#xa;+ to_user: UUID&#xa;+ amount: f64&#xa;+ currency: Currency&#xa;+ transaction_type: TxType&#xa;+ description: String&#xa;+ timestamp: DateTime&#xa;+ block_hash: Option&lt;String&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#cdeb8b;strokeColor=#36c200;fontSize=10;align=left;verticalAlign=top;fontFamily=monospace" vertex="1" parent="1">
+          <mxGeometry x="40" y="280" width="200" height="140" as="geometry" />
+        </mxCell>
+        
+        <!-- News Article -->
+        <mxCell id="news-entity" value="NewsArticle&#xa;────────────────&#xa;+ id: UUID&#xa;+ title: String&#xa;+ content: String&#xa;+ author_id: UUID&#xa;+ nation_id: UUID&#xa;+ arguments_for: Vec&lt;Argument&gt;&#xa;+ arguments_against: Vec&lt;Argument&gt;&#xa;+ vote_power: f64&#xa;+ forks: Vec&lt;UUID&gt;&#xa;+ created_at: DateTime" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;align=left;verticalAlign=top;fontFamily=monospace" vertex="1" parent="1">
+          <mxGeometry x="300" y="280" width="200" height="140" as="geometry" />
+        </mxCell>
+        
+        <!-- Hosting Node -->
+        <mxCell id="hosting-entity" value="HostingNode&#xa;────────────────&#xa;+ id: UUID&#xa;+ owner_id: UUID&#xa;+ ip_address: String&#xa;+ port: u16&#xa;+ storage_capacity: u64&#xa;+ bandwidth: f64&#xa;+ uptime: f64&#xa;+ earnings: f64&#xa;+ data_hosted: Vec&lt;DataHash&gt;&#xa;+ last_ping: DateTime" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;align=left;verticalAlign=top;fontFamily=monospace" vertex="1" parent="1">
+          <mxGeometry x="560" y="280" width="200" height="140" as="geometry" />
+        </mxCell>
+        
+        <!-- Token Reward -->
+        <mxCell id="reward-entity" value="TokenReward&#xa;────────────────&#xa;+ id: UUID&#xa;+ recipient_id: UUID&#xa;+ reward_type: RewardType&#xa;+ amount: f64&#xa;+ reason: String&#xa;+ data_request_id: UUID&#xa;+ timestamp: DateTime&#xa;+ tx_hash: String" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#cdeb8b;strokeColor=#36c200;fontSize=10;align=left;verticalAlign=top;fontFamily=monospace" vertex="1" parent="1">
+          <mxGeometry x="820" y="280" width="200" height="140" as="geometry" />
+        </mxCell>
+        
+        <!-- Smart Contract -->
+        <mxCell id="contract-entity" value="SmartContract&#xa;────────────────&#xa;+ id: UUID&#xa;+ contract_address: String&#xa;+ contract_type: ContractType&#xa;+ nation_id: UUID&#xa;+ code_hash: String&#xa;+ state: ContractState&#xa;+ deployed_at: DateTime&#xa;+ gas_used: u64" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0f0f0;strokeColor=#000000;fontSize=10;align=left;verticalAlign=top;fontFamily=monospace" vertex="1" parent="1">
+          <mxGeometry x="40" y="480" width="200" height="120" as="geometry" />
+        </mxCell>
+        
+        <!-- Data Request -->
+        <mxCell id="data-request-entity" value="DataRequest&#xa;────────────────&#xa;+ id: UUID&#xa;+ requester_id: UUID&#xa;+ data_hash: String&#xa;+ request_type: RequestType&#xa;+ priority: u8&#xa;+ max_fee: f64&#xa;+ status: RequestStatus&#xa;+ fulfilled_by: Option&lt;UUID&gt;&#xa;+ created_at: DateTime" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;align=left;verticalAlign=top;fontFamily=monospace" vertex="1" parent="1">
+          <mxGeometry x="300" y="480" width="200" height="120" as="geometry" />
+        </mxCell>
+        
+        <!-- Reputation Score -->
+        <mxCell id="reputation-entity" value="ReputationScore&#xa;────────────────&#xa;+ user_id: UUID&#xa;+ governance_score: f64&#xa;+ economic_score: f64&#xa;+ social_score: f64&#xa;+ hosting_score: f64&#xa;+ total_score: f64&#xa;+ last_updated: DateTime" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;align=left;verticalAlign=top;fontFamily=monospace" vertex="1" parent="1">
+          <mxGeometry x="560" y="480" width="200" height="120" as="geometry" />
+        </mxCell>
+        
+        <!-- P2P Network Node -->
+        <mxCell id="network-node-entity" value="NetworkNode&#xa;────────────────&#xa;+ peer_id: String&#xa;+ multiaddr: Vec&lt;String&gt;&#xa;+ protocol_version: String&#xa;+ connected_peers: Vec&lt;String&gt;&#xa;+ node_type: NodeType&#xa;+ last_seen: DateTime" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;align=left;verticalAlign=top;fontFamily=monospace" vertex="1" parent="1">
+          <mxGeometry x="820" y="480" width="200" height="120" as="geometry" />
+        </mxCell>
+        
+        <!-- Relationships -->
+        <!-- User to Nation (many-to-many) -->
+        <mxCell id="user-nation" value="citizenship" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#666666;" edge="1" parent="1" source="user-entity" target="nation-entity">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="260" y="150" as="sourcePoint" />
+            <mxPoint x="310" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Nation to Institution (one-to-many) -->
+        <mxCell id="nation-institution" value="contains" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#666666;" edge="1" parent="1" source="nation-entity" target="institution-entity">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="520" y="150" as="sourcePoint" />
+            <mxPoint x="570" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Nation to Law (one-to-many) -->
+        <mxCell id="nation-law" value="governs" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#666666;" edge="1" parent="1" source="institution-entity" target="law-entity">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="780" y="150" as="sourcePoint" />
+            <mxPoint x="830" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- User to Transaction -->
+        <mxCell id="user-transaction" value="participates" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#666666;" edge="1" parent="1" source="user-entity" target="transaction-entity">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="140" y="240" as="sourcePoint" />
+            <mxPoint x="190" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- User to News -->
+        <mxCell id="user-news" value="authors" style="endArrow=classic;html=1;rounded=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeColor=#666666;" edge="1" parent="1" source="nation-entity" target="news-entity">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="240" as="sourcePoint" />
+            <mxPoint x="500" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- User to Hosting -->
+        <mxCell id="user-hosting" value="owns" style="endArrow=classic;html=1;rounded=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeColor=#666666;" edge="1" parent="1" source="institution-entity" target="hosting-entity">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="710" y="240" as="sourcePoint" />
+            <mxPoint x="760" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Hosting to Reward -->
+        <mxCell id="hosting-reward" value="earns" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#36c200;" edge="1" parent="1" source="hosting-entity" target="reward-entity">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="780" y="350" as="sourcePoint" />
+            <mxPoint x="830" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Data Request to Hosting -->
+        <mxCell id="request-hosting" value="fulfills" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;strokeColor=#666666;" edge="1" parent="1" source="data-request-entity" target="hosting-entity">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="520" y="540" as="sourcePoint" />
+            <mxPoint x="570" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- User to Reputation -->
+        <mxCell id="user-reputation" value="has" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeColor=#666666;" edge="1" parent="1" source="transaction-entity" target="reputation-entity">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="440" as="sourcePoint" />
+            <mxPoint x="140" y="390" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="90" y="450" />
+              <mxPoint x="610" y="450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Title -->
+        <mxCell id="title" value="Virtual Utopia - Core Data Models and Relationships" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="350" y="20" width="400" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Legend -->
+        <mxCell id="legend" value="Legend:&#xa;────────────────────────────────&#xa;Yellow: Identity/User Related&#xa;Red: Governance Related&#xa;Green: Economic/Token Related&#xa;Purple: Social/Media Related&#xa;Gray: Infrastructure Related&#xa;Blue: P2P/Network Related" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f9f9f9;strokeColor=#000000;fontSize=10;align=left;verticalAlign=top" vertex="1" parent="1">
+          <mxGeometry x="40" y="650" width="260" height="120" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

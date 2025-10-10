@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" version="24.7.17" modified="2025-10-06T06:27:49.000Z" agent="Virtual Utopia Framework" etag="DiagramGenerator" type="device">
+  <diagram name="Microservices Architecture" id="microservices-arch">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- API Gateway -->
+        <mxCell id="api-gateway" value="API Gateway&#xa;(Load Balancer + Auth)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="480" y="40" width="160" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Identity Service -->
+        <mxCell id="identity-service" value="Identity Service&#xa;(Self-Sovereign ID, DID)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="40" y="150" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Governance Service -->
+        <mxCell id="governance-service" value="Governance Service&#xa;(Voting, Laws, Courts)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="220" y="150" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Economic Service -->
+        <mxCell id="economic-service" value="Economic Service&#xa;(Currency, Markets, Labor)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="400" y="150" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Social Service -->
+        <mxCell id="social-service" value="Social Service&#xa;(News, Arguments, Forums)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="580" y="150" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Media Service -->
+        <mxCell id="media-service" value="Media Service&#xa;(News Forking, Press)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="760" y="150" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Storage Service -->
+        <mxCell id="storage-service" value="Storage Service&#xa;(IPFS, OrbitDB, SQLite)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="40" y="250" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- P2P Communication -->
+        <mxCell id="p2p-service" value="P2P Service&#xa;(WebRTC, libp2p)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="220" y="250" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Blockchain Service -->
+        <mxCell id="blockchain-service" value="Blockchain Service&#xa;(Solana/Polkadot)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="400" y="250" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Analytics Service -->
+        <mxCell id="analytics-service" value="Analytics Service&#xa;(Metrics, Insights)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="580" y="250" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Token Incentive Engine -->
+        <mxCell id="token-service" value="Token Incentive Engine&#xa;(Rewards, Hosting Fees)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cdeb8b;strokeColor=#36c200;fontSize=11;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="760" y="250" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Data Layer -->
+        <mxCell id="data-layer" value="Distributed Data Layer" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="360" width="860" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- User Nodes -->
+        <mxCell id="user-node1" value="User Node 1&#xa;(Desktop/Mobile)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="100" y="450" width="100" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="user-node2" value="User Node 2&#xa;(Desktop/Mobile)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="250" y="450" width="100" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="user-node3" value="User Node N&#xa;(Desktop/Mobile)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="400" y="450" width="100" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- Self-Hosting Nodes -->
+        <mxCell id="hosting-node1" value="Hosting Node 1&#xa;(Earns Tokens)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cdeb8b;strokeColor=#36c200;fontSize=10;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="600" y="450" width="100" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="hosting-node2" value="Hosting Node 2&#xa;(Earns Tokens)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cdeb8b;strokeColor=#36c200;fontSize=10;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="750" y="450" width="100" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- Connections from API Gateway to Services -->
+        <mxCell id="conn1" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="api-gateway" target="identity-service">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="520" y="120" as="sourcePoint" />
+            <mxPoint x="570" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="conn2" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.375;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="api-gateway" target="governance-service">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="120" as="sourcePoint" />
+            <mxPoint x="590" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="conn3" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="api-gateway" target="economic-service">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="120" as="sourcePoint" />
+            <mxPoint x="610" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="conn4" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.625;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="api-gateway" target="social-service">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="580" y="120" as="sourcePoint" />
+            <mxPoint x="630" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="conn5" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="api-gateway" target="media-service">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="120" as="sourcePoint" />
+            <mxPoint x="650" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Service to Infrastructure Connections -->
+        <mxCell id="infra1" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeColor=#666666;" edge="1" parent="1" source="identity-service" target="storage-service">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="110" y="230" as="sourcePoint" />
+            <mxPoint x="160" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="infra2" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeColor=#666666;" edge="1" parent="1" source="governance-service" target="p2p-service">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="290" y="230" as="sourcePoint" />
+            <mxPoint x="340" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="infra3" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeColor=#666666;" edge="1" parent="1" source="economic-service" target="blockchain-service">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="470" y="230" as="sourcePoint" />
+            <mxPoint x="520" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="infra4" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeColor=#666666;" edge="1" parent="1" source="social-service" target="analytics-service">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="650" y="230" as="sourcePoint" />
+            <mxPoint x="700" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="infra5" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeColor=#666666;" edge="1" parent="1" source="media-service" target="token-service">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="830" y="230" as="sourcePoint" />
+            <mxPoint x="880" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Data Layer Connections -->
+        <mxCell id="data-conn" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeColor=#9673a6;" edge="1" parent="1" source="token-service" target="data-layer">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="830" y="330" as="sourcePoint" />
+            <mxPoint x="880" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- User Connections -->
+        <mxCell id="user-conn1" value="P2P Connection" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.125;entryY=1;entryDx=0;entryDy=0;strokeColor=#6c8ebf;" edge="1" parent="1" source="user-node1" target="data-layer">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="150" y="420" as="sourcePoint" />
+            <mxPoint x="200" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="user-conn2" value="P2P Connection" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;strokeColor=#6c8ebf;" edge="1" parent="1" source="user-node2" target="data-layer">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="420" as="sourcePoint" />
+            <mxPoint x="350" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="user-conn3" value="P2P Connection" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.375;entryY=1;entryDx=0;entryDy=0;strokeColor=#6c8ebf;" edge="1" parent="1" source="user-node3" target="data-layer">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="420" as="sourcePoint" />
+            <mxPoint x="500" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Hosting Node Connections -->
+        <mxCell id="host-conn1" value="Earn Tokens for&#xa;Data Hosting" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;strokeColor=#36c200;" edge="1" parent="1" source="hosting-node1" target="data-layer">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="650" y="420" as="sourcePoint" />
+            <mxPoint x="700" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="host-conn2" value="Earn Tokens for&#xa;Data Hosting" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.875;entryY=1;entryDx=0;entryDy=0;strokeColor=#36c200;" edge="1" parent="1" source="hosting-node2" target="data-layer">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="800" y="420" as="sourcePoint" />
+            <mxPoint x="850" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Title -->
+        <mxCell id="title" value="Virtual Utopia - Microservices Architecture with Web3 Token Incentives" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="340" y="10" width="440" height="20" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

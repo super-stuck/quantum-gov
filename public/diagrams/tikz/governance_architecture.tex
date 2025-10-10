@@ -1,0 +1,138 @@
+\documentclass[tikz,border=5pt]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric,arrows.meta,positioning,fit,backgrounds,shadows,decorations.pathreplacing}
+
+\begin{document}
+\begin{tikzpicture}[scale=1.5,
+    node distance=3cm,
+    every node/.style={font=\small},
+    % Governance pillars
+    pillar/.style={rectangle,draw,minimum width=3.5cm,minimum height=2.5cm,fill=blue!20,thick,drop shadow},
+    safeguard/.style={rectangle,draw,minimum width=2.8cm,minimum height=1.5cm,fill=red!20,thick},
+    process/.style={rectangle,draw,minimum width=2.5cm,minimum height=1cm,fill=green!20},
+    oversight/.style={ellipse,draw,minimum width=2.5cm,minimum height=1.2cm,fill=orange!20},
+    arrow/.style={->,>=stealth,thick},
+    check/.style={<->,>=stealth,thick,red},
+    oversight_arrow/.style={->,>=stealth,dashed,orange}
+]
+
+% Three Governance Pillars
+\node[pillar] (legislative) {
+    \textbf{Legislative Pillar}\\[0.2cm]
+    • Proposal System\\
+    • Law Creation\\
+    • Constitutional Amendment\\
+    • Community Input\\
+    • Multi-layer Approval
+};
+
+\node[pillar,right=4cm of legislative] (executive) {
+    \textbf{Executive Pillar}\\[0.2cm]
+    • Implementation\\
+    • Administration\\
+    • Resource Management\\
+    • Operational Decisions\\
+    • Emergency Response
+};
+
+\node[pillar,below=3cm of $(legislative)!0.5!(executive)$] (judicial) {
+    \textbf{Judicial Pillar}\\[0.2cm]
+    • Dispute Resolution\\
+    • Law Interpretation\\
+    • Constitutional Review\\
+    • Appeals Process\\
+    • Precedent Setting
+};
+
+% Safeguard Systems
+\node[safeguard,above=2.5cm of legislative] (tech_oversight) {
+    \textbf{Technical Oversight}\\[0.1cm]
+    • Automated Monitoring\\
+    • Anomaly Detection\\
+    • Algorithm Auditing
+};
+
+\node[safeguard,above=2.5cm of executive] (community_watchdog) {
+    \textbf{Community Watchdog}\\[0.1cm]
+    • External Oversight\\
+    • Transparency Monitoring\\
+    • Public Accountability
+};
+
+\node[safeguard,right=2.5cm of executive] (continuous_audit) {
+    \textbf{Continuous Auditing}\\[0.1cm]
+    • Regular Reviews\\
+    • Process Evaluation\\
+    • Performance Metrics
+};
+
+\node[safeguard,left=2.5cm of legislative] (rotation_system) {
+    \textbf{Rotation System}\\[0.1cm]
+    • Term Limits\\
+    • Power Distribution\\
+    • Prevent Consolidation
+};
+
+% Decision-Making Processes
+\node[process,below=2cm of judicial] (initial_proposal) {Initial Proposal\\Community Input};
+\node[process,right=of initial_proposal] (expert_eval) {Expert Evaluation\\Impact Assessment};
+\node[process,right=of expert_eval] (stakeholder_review) {Stakeholder Review\\Consensus Building};
+\node[process,right=of stakeholder_review] (final_approval) {Final Approval\\Multiple Pathways};
+
+% Oversight Bodies
+\node[oversight,below=3cm of initial_proposal] (ethics_commission) {Ethics Commission\\Investigations\\Rule-making};
+\node[oversight,right=3cm of ethics_commission] (tech_committee) {Technical Committee\\System Reviews\\Security Assessment};
+
+% Background groupings
+\begin{scope}[on background layer]
+\node[fill=blue!5,draw,dashed,fit=(legislative)(executive)(judicial)] (pillar_group) {};
+\node[fill=red!5,draw,dashed,fit=(tech_oversight)(community_watchdog)(continuous_audit)(rotation_system)] (safeguard_group) {};
+\node[fill=green!5,draw,dashed,fit=(initial_proposal)(expert_eval)(stakeholder_review)(final_approval)] (process_group) {};
+\node[fill=orange!5,draw,dashed,fit=(ethics_commission)(tech_committee)] (oversight_group) {};
+\end{scope}
+
+% Checks and Balances between Pillars
+\draw[check] (legislative) -- (executive);
+\draw[check] (executive) -- (judicial);
+\draw[check] (judicial) -- (legislative);
+
+% Safeguard Oversight Connections
+\draw[oversight_arrow] (tech_oversight) -- (legislative);
+\draw[oversight_arrow] (tech_oversight) -- (executive);
+\draw[oversight_arrow] (community_watchdog) -- (executive);
+\draw[oversight_arrow] (community_watchdog) -- (judicial);
+\draw[oversight_arrow] (continuous_audit) -- (executive);
+\draw[oversight_arrow] (continuous_audit) -- (judicial);
+\draw[oversight_arrow] (rotation_system) -- (legislative);
+\draw[oversight_arrow] (rotation_system) -- (executive);
+
+% Decision Process Flow
+\draw[arrow] (initial_proposal) -- (expert_eval);
+\draw[arrow] (expert_eval) -- (stakeholder_review);
+\draw[arrow] (stakeholder_review) -- (final_approval);
+\draw[arrow] (final_approval) -- (executive);
+
+% Process to Pillars
+\draw[arrow] (initial_proposal) -- (legislative);
+\draw[arrow] (stakeholder_review) -- (legislative);
+
+% Oversight Body Connections
+\draw[oversight_arrow] (ethics_commission) -- (legislative);
+\draw[oversight_arrow] (ethics_commission) -- (executive);
+\draw[oversight_arrow] (ethics_commission) -- (judicial);
+\draw[oversight_arrow] (tech_committee) -- (tech_oversight);
+\draw[oversight_arrow] (tech_committee) -- (continuous_audit);
+
+% Labels
+\node[above=0.5cm of pillar_group,font=\footnotesize,text=gray] {Three-Pillar Governance Model};
+\node[above=0.5cm of safeguard_group,font=\footnotesize,text=gray] {Additional Safeguards};
+\node[below=0.3cm of process_group,font=\footnotesize,text=gray] {Multi-Layered Decision Process};
+\node[below=0.3cm of oversight_group,font=\footnotesize,text=gray] {Specialized Oversight Bodies};
+
+% Power Flow Indicators
+\draw[arrow,very thick,blue] (legislative) to[bend left=30] node[midway,above,font=\tiny] {Laws \& Policies} (executive);
+\draw[arrow,very thick,green] (executive) to[bend left=30] node[midway,right,font=\tiny] {Disputes \& Appeals} (judicial);
+\draw[arrow,very thick,red] (judicial) to[bend left=30] node[midway,below,font=\tiny] {Constitutional Review} (legislative);
+
+\end{tikzpicture}
+\end{document}
