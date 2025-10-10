@@ -6,9 +6,9 @@
   publish = "out"
 
 [build.environment]
-  # Node.js version and production environment
+  # Ensure devDependencies (TypeScript, @types) are installed on Netlify
   NODE_VERSION = "18"
-  NODE_ENV = "production"
+  NPM_FLAGS = "--include=dev"
   
 # Headers for PDF files
 [[headers]]
