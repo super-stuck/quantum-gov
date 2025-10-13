@@ -1,0 +1,764 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/nixos.org) (preloaded format=pdflatex 1980.1.1)  11 OCT 2025 08:18
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**quantum_ai_integration_flow.tex
+(./quantum_ai_integration_flow.tex
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/standalone/standalone.cls
+Document Class: standalone 2025/02/22 v1.5a Class to compile TeX sub-files stan
+dalone
+
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/tools/shellesc.sty
+Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 77.
+)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+))
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/xkeyval/xkeyval.tex
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks17
+\XKV@tempa@toks=\toks18
+
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/xkeyval/keyval.tex))
+\XKV@depth=\count196
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+\sa@internal=\count197
+\c@sapage=\count198
+
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/standalone/standalone.cfg
+File: standalone.cfg 2025/02/22 v1.5a Default configuration file for 'standalon
+e' class
+)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/base/article.cls
+Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
+
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/base/size10.clo
+File: size10.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count199
+\c@section=\count266
+\c@subsection=\count267
+\c@subsubsection=\count268
+\c@paragraph=\count269
+\c@subparagraph=\count270
+\c@figure=\count271
+\c@table=\count272
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen141
+)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/pgf/frontendlayer/tikz.sty
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/pgf/basiclayer/pgf.sty
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/pgf/utilities/pgfrcs.sty
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks19
+\pgfutil@tempdima=\dimen142
+\pgfutil@tempdimb=\dimen143
+)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box52
+)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen144
+\Gin@req@width=\dimen145
+)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks20
+\pgfkeys@temptoks=\toks21
+
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks22
+))
+\pgf@x=\dimen146
+\pgf@y=\dimen147
+\pgf@xa=\dimen148
+\pgf@ya=\dimen149
+\pgf@xb=\dimen150
+\pgf@yb=\dimen151
+\pgf@xc=\dimen152
+\pgf@yc=\dimen153
+\pgf@xd=\dimen154
+\pgf@yd=\dimen155
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count273
+\c@pgf@countb=\count274
+\c@pgf@countc=\count275
+\c@pgf@countd=\count276
+\t@pgf@toka=\toks23
+\t@pgf@tokb=\toks24
+\t@pgf@tokc=\toks25
+\pgf@sys@id@count=\count277
+
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+)))
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count278
+\pgfsyssoftpath@bigbuffer@items=\count279
+)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/math/pgfmath.code.tex
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen156
+\pgfmath@count=\count280
+\pgfmath@box=\box53
+\pgfmath@toks=\toks26
+\pgfmath@stack@operand=\toks27
+\pgfmath@stack@operation=\toks28
+)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/math/pgfmathfunctions.code.tex)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/math/pgfmathcalc.code.tex)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count281
+))
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/math/pgfint.code.tex)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen157
+\pgf@picmaxx=\dimen158
+\pgf@picminy=\dimen159
+\pgf@picmaxy=\dimen160
+\pgf@pathminx=\dimen161
+\pgf@pathmaxx=\dimen162
+\pgf@pathminy=\dimen163
+\pgf@pathmaxy=\dimen164
+\pgf@xx=\dimen165
+\pgf@xy=\dimen166
+\pgf@yx=\dimen167
+\pgf@yy=\dimen168
+\pgf@zx=\dimen169
+\pgf@zy=\dimen170
+)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen171
+\pgf@path@lasty=\dimen172
+)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen173
+\pgf@shorten@start@additional=\dimen174
+)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box54
+\pgf@hbox=\box55
+\pgf@layerbox@main=\box56
+\pgf@picture@serial@count=\count282
+)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen175
+)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen176
+\pgf@pt@y=\dimen177
+\pgf@pt@temp=\dimen178
+)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen179
+)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen180
+\pgf@sys@shading@range@num=\count283
+\pgf@shadingcount=\count284
+)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box57
+)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box58
+)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen181
+\pgf@nodesepend=\dimen182
+)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+))
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/pgf/utilities/pgffor.sty
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/pgf/utilities/pgfkeys.sty
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/pgf/math/pgfmath.sty
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/math/pgfmath.code.tex))
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen183
+\pgffor@skip=\dimen184
+\pgffor@stack=\toks29
+\pgffor@toks=\toks30
+))
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count285
+\pgfplotmarksize=\dimen185
+)
+\tikz@lastx=\dimen186
+\tikz@lasty=\dimen187
+\tikz@lastxsaved=\dimen188
+\tikz@lastysaved=\dimen189
+\tikz@lastmovetox=\dimen190
+\tikz@lastmovetoy=\dimen191
+\tikzleveldistance=\dimen192
+\tikzsiblingdistance=\dimen193
+\tikz@figbox=\box59
+\tikz@figbox@bg=\box60
+\tikz@tempbox=\box61
+\tikz@tempbox@bg=\box62
+\tikztreelevel=\count286
+\tikznumberofchildren=\count287
+\tikznumberofcurrentchild=\count288
+\tikz@fig@count=\count289
+
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count290
+\pgfmatrixcurrentcolumn=\count291
+\pgf@matrix@numberofcolumns=\count292
+)
+\tikz@expandcount=\count293
+
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.t
+ex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+\sa@box=\box63
+)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2024/11/05 v2.17t AMS math features
+\@mathmargin=\skip51
+
+For additional information on amsmath, use the `?' option.
+
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks31
+\ex@=\dimen194
+))
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen195
+)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count294
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count295
+\leftroot@=\count296
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count297
+\DOTSCASE@=\count298
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box64
+\strutbox@=\box65
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen196
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count299
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count300
+\dotsspace@=\muskip17
+\c@parentequation=\count301
+\dspbrk@lvl=\count302
+\tag@help=\toks32
+\row@=\count303
+\column@=\count304
+\maxfields@=\count305
+\andhelp@=\toks33
+\eqnshift@=\dimen197
+\alignsep@=\dimen198
+\tagshift@=\dimen199
+\tagwidth@=\dimen256
+\totwidth@=\dimen257
+\lineht@=\dimen258
+\@envbody=\toks34
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks35
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.code.te
+x
+File: tikzlibraryshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.geometr
+ic.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.misc.co
+de.tex
+File: tikzlibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.symbols
+.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.arrows.
+code.tex
+File: tikzlibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.callout
+s.code.tex
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.callouts.code.tex))
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.multipa
+rt.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodepartlowerbox=\box66
+\pgfnodeparttwobox=\box67
+\pgfnodepartthreebox=\box68
+\pgfnodepartfourbox=\box69
+\pgfnodeparttwentybox=\box70
+\pgfnodepartnineteenbox=\box71
+\pgfnodeparteighteenbox=\box72
+\pgfnodepartseventeenbox=\box73
+\pgfnodepartsixteenbox=\box74
+\pgfnodepartfifteenbox=\box75
+\pgfnodepartfourteenbox=\box76
+\pgfnodepartthirteenbox=\box77
+\pgfnodeparttwelvebox=\box78
+\pgfnodepartelevenbox=\box79
+\pgfnodeparttenbox=\box80
+\pgfnodepartninebox=\box81
+\pgfnodeparteightbox=\box82
+\pgfnodepartsevenbox=\box83
+\pgfnodepartsixbox=\box84
+\pgfnodepartfivebox=\box85
+)))
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrows.code.te
+x
+File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\arrowsize=\dimen259
+))
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.co
+de.tex
+File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pa
+threplacing.code.tex
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.co
+de.tex
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen260
+\pgfdecoratedremainingdistance=\dimen261
+\pgfdecoratedinputsegmentcompleteddistance=\dimen262
+\pgfdecoratedinputsegmentremainingdistance=\dimen263
+\pgf@decorate@distancetomove=\dimen264
+\pgf@decorate@repeatstate=\count306
+\pgfdecorationsegmentamplitude=\dimen265
+\pgfdecorationsegmentlength=\dimen266
+)
+\tikz@lib@dec@box=\box86
+)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplac
+ing.code.tex))
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfit.code.tex
+File: tikzlibraryfit.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count307
+\l__pdf_internal_box=\box87
+)
+No file quantum_ai_integration_flow.aux.
+\openout1 = `quantum_ai_integration_flow.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count308
+\scratchdimen=\dimen267
+\scratchbox=\box88
+\nofMPsegments=\count309
+\nofMParguments=\count310
+\everyMPshowfont=\toks36
+\MPscratchCnt=\count311
+\MPscratchDim=\dimen268
+\MPnumerator=\count312
+\makeMPintoPDFobject=\count313
+\everyMPtoPDFconversion=\toks37
+)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/grfext/grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+))
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+
+(/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+
+[1
+
+
+Non-PDF special ignored!
+<special> papersize=662.18848pt,498.72081pt
+{/nix/store/cfw8ix8jpby5y85jf1bypk82vrwfnpk1-texlive-combined-full-2024-final/s
+hare/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/nix/store/8mcr3f08yjjh45c15
+3xzqbm3pzny45mg-texlive-combined-full-2024-final-texmfdist/fonts/enc/dvips/cm-s
+uper/cm-super-ts1.enc}] (./quantum_ai_integration_flow.aux)
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 16743 strings out of 473201
+ 384972 string characters out of 5689025
+ 788256 words of memory out of 5000000
+ 39679 multiletter control sequences out of 15000+600000
+ 563536 words of font info for 52 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 117i,9n,121p,429b,760s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final
+-texmfdist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></nix/store/8mcr3f08yjjh45
+c153xzqbm3pzny45mg-texlive-combined-full-2024-final-texmfdist/fonts/type1/publi
+c/amsfonts/cm/cmbx7.pfb></nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-co
+mbined-full-2024-final-texmfdist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></nix
+/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-texmfd
+ist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></nix/store/8mcr3f08yjjh45c15
+3xzqbm3pzny45mg-texlive-combined-full-2024-final-texmfdist/fonts/type1/public/a
+msfonts/cmextra/cmex9.pfb></nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-
+combined-full-2024-final-texmfdist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></n
+ix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-texm
+fdist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></nix/store/8mcr3f08yjjh45c153xz
+qbm3pzny45mg-texlive-combined-full-2024-final-texmfdist/fonts/type1/public/amsf
+onts/cm/cmmi9.pfb></nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined
+-full-2024-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr12.pfb></nix/store
+/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-texmfdist/fo
+nts/type1/public/amsfonts/cm/cmr5.pfb></nix/store/8mcr3f08yjjh45c153xzqbm3pzny4
+5mg-texlive-combined-full-2024-final-texmfdist/fonts/type1/public/amsfonts/cm/c
+mr6.pfb></nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024
+-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr9.pfb></nix/store/8mcr3f08yj
+jh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-texmfdist/fonts/type1/p
+ublic/amsfonts/cm/cmsy5.pfb></nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texliv
+e-combined-full-2024-final-texmfdist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><
+/nix/store/8mcr3f08yjjh45c153xzqbm3pzny45mg-texlive-combined-full-2024-final-te
+xmfdist/fonts/type1/public/cm-super/sfrm0500.pfb></nix/store/8mcr3f08yjjh45c153
+xzqbm3pzny45mg-texlive-combined-full-2024-final-texmfdist/fonts/type1/public/cm
+-super/sfrm0900.pfb>
+Output written on quantum_ai_integration_flow.pdf (1 page, 191240 bytes).
+PDF statistics:
+ 92 PDF objects out of 1000 (max. 8388607)
+ 56 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,4 +1,4 @@
-import ImageViewer from '../../../components/ImageViewer'
+import ImageViewer from '@/components/ImageViewer'
 
 export default function UIPostViewer() {
   return (

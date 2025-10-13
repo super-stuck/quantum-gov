@@ -1,12 +1,12 @@
-import ImageViewer from '../../../components/ImageViewer'
+import PDFViewer from '@/components/PDFViewer'
 
 export default function MicroservicesArchitectureViewer() {
   return (
-    <ImageViewer
-      src="/images/png/microservices_architecture.png"
+    <PDFViewer
+      src="/diagrams/tikz/microservices_architecture.pdf"
       alt="QuantumGov Microservices Architecture"
       title="Microservices Architecture"
-      description="Distributed microservices architecture for scalable and modular governance platform implementation."
+      description="Distributed microservices architecture for scalable and modular governance platform implementation with detailed service interactions and data flows."
       backLink="/images"
       backText="← Back to Image Gallery"
     />

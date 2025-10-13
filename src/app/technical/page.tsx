@@ -35,6 +35,26 @@ export default function Technical() {
               <p>Detailed microservices design for scalable and maintainable system implementation.</p>
             </div>
           </div>
+          
+          <div className="visual-card">
+            <div style={{
+              height: '200px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              background: '#f0f4f8',
+              fontSize: '2rem'
+            }}>
+              ⚛️
+            </div>
+            <div className="visual-card-content">
+              <h4>Quantum Microservices Architecture</h4>
+              <p>Advanced quantum-enhanced microservices with quantum communication layers and entanglement protocols.</p>
+              <div className="file-links">
+                <a href="/diagrams/tikz/quantum_microservices_architecture.pdf" className="file-link" target="_blank">📄 View PDF</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -46,6 +66,7 @@ export default function Technical() {
             <p>Complete technical specifications for the QuantumGov platform website and user interfaces.</p>
             <div className="file-links">
               <a href="/materials/PROJECT_WEBSITE_SPECIFICATIONS.md" className="file-link">🔧 Specifications</a>
+              <a href="/materials/PROJECT_WEBSITE_SPECIFICATIONS.pdf" className="file-link" target="_blank">📄 View PDF</a>
             </div>
           </div>
           
@@ -55,6 +76,7 @@ export default function Technical() {
             <div className="file-links">
               <a href="/docs/roadmap" className="file-link">🗺️ View Formatted</a>
               <a href="/materials/QuantumGov_Implementation_Roadmap.md" className="file-link">📜 Raw File</a>
+              <a href="/materials/QuantumGov_Implementation_Roadmap.pdf" className="file-link" target="_blank">📄 View PDF</a>
             </div>
           </div>
           
@@ -63,6 +85,7 @@ export default function Technical() {
             <p>Comprehensive development and implementation plan with technical requirements.</p>
             <div className="file-links">
               <a href="/materials/PLAN.md" className="file-link">📋 Plan Document</a>
+              <a href="/materials/PLAN.pdf" className="file-link" target="_blank">📄 View PDF</a>
             </div>
           </div>
           
@@ -80,6 +103,7 @@ export default function Technical() {
             <p>Complete overview and documentation of all visual assets and technical diagrams.</p>
             <div className="file-links">
               <a href="/materials/VISUAL_MATERIALS_SUMMARY.md" className="file-link">🎨 Visual Summary</a>
+              <a href="/materials/VISUAL_MATERIALS_SUMMARY.pdf" className="file-link" target="_blank">📄 View PDF</a>
             </div>
           </div>
         </div>
@@ -126,10 +150,22 @@ export default function Technical() {
           </div>
           
           <div className="visual-card">
-            <img src="/images/png/microservices_architecture_hq.png" alt="High Quality Microservices" />
+            <div style={{
+              height: '200px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              background: '#f0f4f8',
+              fontSize: '2rem'
+            }}>
+              🔧
+            </div>
             <div className="visual-card-content">
-              <h4>Microservices (High Quality)</h4>
-              <p>High-resolution microservices architecture diagram for detailed analysis.</p>
+              <h4>Quantum Microservices (High Quality)</h4>
+              <p>Advanced quantum-enhanced microservices architecture with quantum communication layers.</p>
+              <div className="file-links">
+                <a href="/images/microservices-architecture-hq" className="file-link">📄 View Diagram</a>
+              </div>
             </div>
           </div>
           

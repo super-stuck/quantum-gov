@@ -1,0 +1,193 @@
+\documentclass[tikz,border=10pt]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric,arrows.meta,positioning,fit,backgrounds,shadows,decorations.pathmorphing}
+
+\begin{document}
+\begin{tikzpicture}[scale=1.3,
+    node distance=2cm,
+    every node/.style={font=\footnotesize},
+    % Service styles
+    quantum/.style={rectangle,draw,minimum width=2.8cm,minimum height=1.2cm,fill=purple!30,thick,drop shadow,rounded corners=3pt},
+    aiml/.style={rectangle,draw,minimum width=2.8cm,minimum height=1.2cm,fill=cyan!30,thick,drop shadow,rounded corners=3pt},
+    core/.style={rectangle,draw,minimum width=2.8cm,minimum height=1.2cm,fill=blue!30,thick,drop shadow,rounded corners=3pt},
+    gateway/.style={rectangle,draw,minimum width=3.5cm,minimum height=1.8cm,fill=red!30,thick,rounded corners=5pt},
+    infra/.style={rectangle,draw,minimum width=2.5cm,minimum height=1cm,fill=orange!25,rounded corners=2pt},
+    client/.style={ellipse,draw,minimum width=2.2cm,minimum height=0.9cm,fill=green!25,thick},
+    external/.style={rectangle,draw,minimum width=2.5cm,minimum height=1cm,fill=gray!25,dashed},
+    % Arrow styles
+    quantum_arrow/.style={->,>=stealth,thick,purple,decorate,decoration={snake,amplitude=0.5mm,segment length=2mm}},
+    ai_arrow/.style={->,>=stealth,thick,cyan},
+    core_arrow/.style={->,>=stealth,thick,blue},
+    data_arrow/.style={->,>=stealth,dashed,orange},
+    secure_arrow/.style={->,>=stealth,thick,red}
+]
+
+% Title
+\node[above,font=\Large\bfseries] at (0,10) {QuantumGov Microservices Architecture 2.0};
+
+% Client Layer
+\node[client] (web) at (-6,8) {Web Portal\\React/Next.js};
+\node[client] (mobile) at (-2,8) {Mobile App\\React Native};
+\node[client] (desktop) at (2,8) {Desktop Client\\Electron};
+\node[client] (api_clients) at (6,8) {API Clients\\Third-party};
+
+% API Gateway & Security Layer
+\node[gateway] (gateway) at (0,5.5) {Quantum API Gateway\\Load Balancer\\Rate Limiting\\JWT Auth\\Quantum Encryption};
+
+% Quantum Computing Layer
+\node[quantum] (quantum_core) at (-6,3) {Quantum\\Computing\\Core};
+\node[quantum] (quantum_consensus) at (-2,3) {Quantum\\Consensus\\Engine};
+\node[quantum] (quantum_crypto) at (2,3) {Quantum\\Cryptography\\Service};
+\node[quantum] (quantum_ai) at (6,3) {Quantum-AI\\Hybrid\\Processor};
+
+% AI/ML Services Layer
+\node[aiml] (ml_recommendation) at (-6,0.5) {ML\\Recommendation\\Engine};
+\node[aiml] (nlp_service) at (-2,0.5) {NLP\\Processing\\Service};
+\node[aiml] (sentiment) at (2,0.5) {Sentiment\\Analysis\\Service};
+\node[aiml] (prediction) at (6,0.5) {Predictive\\Analytics\\Service};
+
+% Core Business Services
+\node[core] (identity) at (-8,-2) {Identity\\Management\\Service};
+\node[core] (governance) at (-4,-2) {Governance\\Orchestration\\Service};
+\node[core] (voting) at (0,-2) {Quantum\\Voting\\Service};
+\node[core] (proposal) at (4,-2) {Proposal\\Management\\Service};
+\node[core] (citizen) at (8,-2) {Citizen\\Engagement\\Service};
+
+% Economic & Token Layer
+\node[core] (economy) at (-6,-4.5) {Economic\\Modeling\\Service};
+\node[core] (token) at (-2,-4.5) {Token\\Management\\Service};
+\node[core] (reward) at (2,-4.5) {Reward\\Distribution\\Service};
+\node[core] (marketplace) at (6,-4.5) {Digital\\Marketplace\\Service};
+
+% Social & Communication Layer
+\node[core] (social) at (-8,-7) {Social\\Graph\\Service};
+\node[core] (messaging) at (-4,-7) {Messaging\\Communication\\Service};
+\node[core] (content) at (0,-7) {Content\\Management\\Service};
+\node[core] (notification) at (4,-7) {Notification\\Delivery\\Service};
+\node[core] (media) at (8,-7) {Media\\Streaming\\Service};
+
+% Infrastructure Layer
+\node[infra] (database) at (-6,-9.5) {Distributed\\Database\\PostgreSQL};
+\node[infra] (cache) at (-2,-9.5) {Redis\\Cache\\Cluster};
+\node[infra] (storage) at (2,-9.5) {Object Storage\\IPFS/S3};
+\node[infra] (search) at (6,-9.5) {Elasticsearch\\Search Engine};
+
+% External Integrations
+\node[external] (blockchain) at (-8,-12) {Blockchain\\Networks\\Ethereum/Polygon};
+\node[external] (cloud_ai) at (-4,-12) {Cloud AI\\Services\\AWS/GCP};
+\node[external] (monitoring) at (0,-12) {Monitoring\\Grafana/Prometheus};
+\node[external] (logging) at (4,-12) {Logging\\ELK Stack};
+\node[external] (cdn) at (8,-12) {CDN\\CloudFlare};
+
+% Message Bus
+\node[infra] (message_bus) at (10,-6) {Message Bus\\Apache Kafka\\Event Streaming};
+
+% Background groupings
+\begin{scope}[on background layer]
+\node[fill=green!8,draw,dashed,thick,fit=(web)(mobile)(desktop)(api_clients),inner sep=15pt] (client_layer) {};
+\node[fill=purple!8,draw,dashed,thick,fit=(quantum_core)(quantum_consensus)(quantum_crypto)(quantum_ai),inner sep=15pt] (quantum_layer) {};
+\node[fill=cyan!8,draw,dashed,thick,fit=(ml_recommendation)(nlp_service)(sentiment)(prediction),inner sep=15pt] (ai_layer) {};
+\node[fill=blue!8,draw,dashed,thick,fit=(identity)(governance)(voting)(proposal)(citizen),inner sep=15pt] (core_layer) {};
+\node[fill=yellow!8,draw,dashed,thick,fit=(economy)(token)(reward)(marketplace),inner sep=15pt] (econ_layer) {};
+\node[fill=pink!8,draw,dashed,thick,fit=(social)(messaging)(content)(notification)(media),inner sep=15pt] (social_layer) {};
+\node[fill=orange!8,draw,dashed,thick,fit=(database)(cache)(storage)(search),inner sep=15pt] (infra_layer) {};
+\node[fill=gray!8,draw,dashed,thick,fit=(blockchain)(cloud_ai)(monitoring)(logging)(cdn),inner sep=15pt] (external_layer) {};
+\end{scope}
+
+% Client to Gateway connections
+\draw[secure_arrow] (web) -- (gateway);
+\draw[secure_arrow] (mobile) -- (gateway);
+\draw[secure_arrow] (desktop) -- (gateway);
+\draw[secure_arrow] (api_clients) -- (gateway);
+
+% Gateway to Quantum Layer
+\draw[quantum_arrow] (gateway) -- (quantum_core);
+\draw[quantum_arrow] (gateway) -- (quantum_consensus);
+\draw[quantum_arrow] (gateway) -- (quantum_crypto);
+
+% Quantum Layer interconnections
+\draw[quantum_arrow] (quantum_core) -- (quantum_consensus);
+\draw[quantum_arrow] (quantum_core) -- (quantum_ai);
+\draw[quantum_arrow] (quantum_consensus) -- (voting);
+\draw[quantum_arrow] (quantum_crypto) -- (identity);
+
+% AI/ML Layer connections
+\draw[ai_arrow] (quantum_ai) -- (ml_recommendation);
+\draw[ai_arrow] (quantum_ai) -- (nlp_service);
+\draw[ai_arrow] (nlp_service) -- (sentiment);
+\draw[ai_arrow] (ml_recommendation) -- (prediction);
+
+% Core Services interconnections
+\draw[core_arrow] (identity) -- (governance);
+\draw[core_arrow] (governance) -- (voting);
+\draw[core_arrow] (governance) -- (proposal);
+\draw[core_arrow] (governance) -- (citizen);
+\draw[core_arrow] (voting) -- (proposal);
+
+% AI to Core Services
+\draw[ai_arrow] (ml_recommendation) -- (citizen);
+\draw[ai_arrow] (sentiment) -- (governance);
+\draw[ai_arrow] (prediction) -- (economy);
+
+% Economic Layer connections
+\draw[core_arrow] (governance) -- (economy);
+\draw[core_arrow] (economy) -- (token);
+\draw[core_arrow] (economy) -- (reward);
+\draw[core_arrow] (token) -- (marketplace);
+\draw[core_arrow] (citizen) -- (reward);
+
+% Social Layer connections
+\draw[core_arrow] (citizen) -- (social);
+\draw[core_arrow] (social) -- (messaging);
+\draw[core_arrow] (content) -- (media);
+\draw[core_arrow] (notification) -- (messaging);
+
+% AI to Social
+\draw[ai_arrow] (nlp_service) -- (content);
+\draw[ai_arrow] (sentiment) -- (social);
+
+% Infrastructure connections
+\draw[data_arrow] (identity) -- (database);
+\draw[data_arrow] (governance) -- (database);
+\draw[data_arrow] (voting) -- (database);
+\draw[data_arrow] (social) -- (cache);
+\draw[data_arrow] (content) -- (storage);
+\draw[data_arrow] (media) -- (storage);
+\draw[data_arrow] (search) -- (content);
+
+% Message Bus connections
+\draw[data_arrow] (message_bus) -- (governance);
+\draw[data_arrow] (message_bus) -- (economy);
+\draw[data_arrow] (message_bus) -- (social);
+\draw[data_arrow] (message_bus) -- (notification);
+
+% External integrations
+\draw[data_arrow] (token) -- (blockchain);
+\draw[data_arrow] (ml_recommendation) -- (cloud_ai);
+\draw[data_arrow] (gateway) -- (monitoring);
+\draw[data_arrow] (database) -- (logging);
+\draw[data_arrow] (media) -- (cdn);
+
+% Layer labels
+\node[above=5pt of client_layer.north,font=\small\bfseries,color=green!70!black] {Client Applications Layer};
+\node[left=5pt of quantum_layer.west,font=\small\bfseries,color=purple!70!black,rotate=90] {Quantum Computing Layer};
+\node[left=5pt of ai_layer.west,font=\small\bfseries,color=cyan!70!black,rotate=90] {AI/ML Services Layer};
+\node[left=5pt of core_layer.west,font=\small\bfseries,color=blue!70!black,rotate=90] {Core Business Services};
+\node[left=5pt of econ_layer.west,font=\small\bfseries,color=orange!70!black,rotate=90] {Economic Services Layer};
+\node[left=5pt of social_layer.west,font=\small\bfseries,color=pink!70!black,rotate=90] {Social \& Communication};
+\node[below=5pt of infra_layer.south,font=\small\bfseries,color=orange!70!black] {Infrastructure Layer};
+\node[below=5pt of external_layer.south,font=\small\bfseries,color=gray!70!black] {External Integrations};
+
+% Legend
+\node[right=2cm of message_bus,font=\footnotesize] (legend) {
+\begin{tabular}{ll}
+\textcolor{purple}{\rule{1em}{1pt}} & Quantum Data Flow \\
+\textcolor{cyan}{\rule{1em}{1pt}} & AI/ML Processing \\
+\textcolor{blue}{\rule{1em}{1pt}} & Core Service Calls \\
+\textcolor{orange}{\rule{1em}{2pt}} & Data Storage \\
+\textcolor{red}{\rule{1em}{1pt}} & Secure Connections \\
+\end{tabular}
+};
+
+\end{tikzpicture}
+\end{document}

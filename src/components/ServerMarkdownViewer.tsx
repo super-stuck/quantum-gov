@@ -1,75 +1,46 @@
 import { readFileSync } from 'fs'
 import { join } from 'path'
+import { unified } from 'unified'
+import remarkParse from 'remark-parse'
+import remarkGfm from 'remark-gfm'
+import remarkMath from 'remark-math'
+import remarkRehype from 'remark-rehype'
+import rehypeKatex from 'rehype-katex'
+import rehypeHighlight from 'rehype-highlight'
+import rehypeStringify from 'rehype-stringify'
 
 interface ServerMarkdownViewerProps {
   filePath: string
   fileName?: string
   showRawLink?: boolean
+  pdfPath?: string
 }
 
-export default function ServerMarkdownViewer({ filePath, fileName, showRawLink = true }: ServerMarkdownViewerProps) {
+export default function ServerMarkdownViewer({ filePath, fileName, showRawLink = true, pdfPath }: ServerMarkdownViewerProps) {
   let content = ''
   let error = ''
+  let htmlContent = ''
 
   try {
     const fullPath = join(process.cwd(), filePath)
     content = readFileSync(fullPath, 'utf8')
+    
+    // Process markdown with unified pipeline
+    const result = unified()
+      .use(remarkParse)
+      .use(remarkGfm)
+      .use(remarkMath)
+      .use(remarkRehype, {
+        allowDangerousHtml: false,
+      })
+      .use(rehypeKatex)
+      .use(rehypeHighlight)
+      .use(rehypeStringify)
+      .processSync(content)
+    
+    htmlContent = String(result)
   } catch (err) {
-    error = `Failed to load file: ${err instanceof Error ? err.message : 'Unknown error'}`
-  }
-
-  const parseMarkdown = (markdown: string): string => {
-    let html = markdown
-      // Escape HTML first
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      
-      // Headers (must be at start of line)
-      .replace(/^### (.+)$/gm, '<h3>$1</h3>')
-      .replace(/^## (.+)$/gm, '<h2>$1</h2>')
-      .replace(/^# (.+)$/gm, '<h1>$1</h1>')
-      
-      // Bold and italic
-      .replace(/\*\*([^\*]+)\*\*/g, '<strong>$1</strong>')
-      .replace(/\*([^\*]+)\*/g, '<em>$1</em>')
-      
-      // Code blocks (three backticks)
-      .replace(/```([\s\S]*?)```/g, '<pre><code>$1</code></pre>')
-      
-      // Inline code
-      .replace(/`([^`]+)`/g, '<code>$1</code>')
-      
-      // Links
-      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>')
-      
-      // Unordered lists (- or *)
-      .replace(/^[\-\*] (.+)$/gm, '<li>$1</li>')
-      
-      // Ordered lists
-      .replace(/^\d+\. (.+)$/gm, '<li>$1</li>')
-      
-      // Blockquotes
-      .replace(/^> (.+)$/gm, '<blockquote>$1</blockquote>')
-      
-      // Horizontal rules
-      .replace(/^---$/gm, '<hr>')
-      
-      // Line breaks (double newline becomes paragraph break)
-      .replace(/\n\n/g, '</p><p>')
-      .replace(/\n/g, '<br>')
-
-    // Wrap consecutive <li> elements in <ul> or <ol>
-    html = html.replace(/(<li>.*?<\/li>)(\s*<li>.*?<\/li>)*/g, (match) => {
-      return '<ul>' + match + '</ul>'
-    })
-
-    // Wrap content in paragraphs
-    if (html && !html.startsWith('<h1>') && !html.startsWith('<h2>') && !html.startsWith('<h3>')) {
-      html = '<p>' + html + '</p>'
-    }
-
-    return html
+    error = `Failed to load or process file: ${err instanceof Error ? err.message : 'Unknown error'}`
   }
 
   const displayName = fileName || filePath.split('/').pop() || 'Document'
@@ -128,18 +99,23 @@ export default function ServerMarkdownViewer({ filePath, fileName, showRawLink =
     <div className="markdown-viewer">
       <div className="markdown-header">
         <h1>{displayName}</h1>
-        {showRawLink && (
-          <div className="header-actions">
-            <a href={rawLinkPath} target="_blank" className="raw-link">
-              View Raw File →
+        <div className="header-actions">
+          {pdfPath && (
+            <a href={pdfPath} target="_blank" className="pdf-link">
+              📄 View PDF
             </a>
-          </div>
-        )}
+          )}
+          {showRawLink && (
+            <a href={rawLinkPath} target="_blank" className="raw-link">
+              📜 View Raw File
+            </a>
+          )}
+        </div>
       </div>
       
       <div 
         className="markdown-content"
-        dangerouslySetInnerHTML={{ __html: parseMarkdown(content) }}
+        dangerouslySetInnerHTML={{ __html: htmlContent }}
       />
       
 <style dangerouslySetInnerHTML={{
@@ -165,14 +141,28 @@ export default function ServerMarkdownViewer({ filePath, fileName, showRawLink =
           }
           .header-actions {
             font-size: 0.9rem;
+            display: flex;
+            gap: 0.5rem;
           }
-          .raw-link {
+          .pdf-link, .raw-link {
             color: #667eea;
             text-decoration: none;
             padding: 0.5rem 1rem;
             border: 1px solid #667eea;
             border-radius: 4px;
             transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+          }
+          .pdf-link {
+            background: #28a745;
+            border-color: #28a745;
+            color: white;
+          }
+          .pdf-link:hover {
+            background: #218838;
+            border-color: #218838;
           }
           .raw-link:hover {
             background: #667eea;
@@ -218,19 +208,59 @@ export default function ServerMarkdownViewer({ filePath, fileName, showRawLink =
             padding: 1rem;
             overflow-x: auto;
             margin: 1rem 0;
+            font-family: 'Fira Code', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
           }
           .markdown-content code {
-            background: #f8f9fa;
+            background: #f1f3f4;
             padding: 0.2rem 0.4rem;
             border-radius: 3px;
-            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-family: 'Fira Code', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
             font-size: 0.9em;
-            color: #e83e8c;
+            color: #d73a49;
+            font-weight: 500;
           }
           .markdown-content pre code {
             background: none;
             padding: 0;
-            color: #333;
+            color: inherit;
+            font-weight: normal;
+          }
+          /* GitHub-style table styling */
+          .markdown-content table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+            max-width: 100%;
+            border: 1px solid #d0d7de;
+            border-radius: 6px;
+            overflow: hidden;
+            margin: 1rem 0;
+          }
+          .markdown-content th,
+          .markdown-content td {
+            padding: 6px 13px;
+            border: 1px solid #d0d7de;
+            text-align: left;
+          }
+          .markdown-content th {
+            font-weight: 600;
+            background-color: #f6f8fa;
+          }
+          .markdown-content tr:nth-child(even) {
+            background-color: #f6f8fa;
+          }
+          /* Task list styling */
+          .markdown-content .task-list-item {
+            list-style-type: none;
+          }
+          .markdown-content .task-list-item input {
+            margin: 0 0.2em 0.25em -1.6em;
+            vertical-align: middle;
+          }
+          /* Strikethrough for completed tasks */
+          .markdown-content .task-list-item input:checked + * {
+            text-decoration: line-through;
+            color: #656d76;
           }
           .markdown-content blockquote {
             border-left: 4px solid #667eea;

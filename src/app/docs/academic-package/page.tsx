@@ -6,6 +6,7 @@ export default function AcademicPackagePage() {
       <ServerMarkdownViewer 
         filePath="public/materials/ACADEMIC_SUBMISSION_PACKAGE.md" 
         fileName="Academic Submission Package"
+        pdfPath="/materials/Virtual_Utopia_Research_Final.pdf"
       />
     </div>
   )

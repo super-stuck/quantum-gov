@@ -1,20 +1,29 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
+import remarkMath from 'remark-math'
+import rehypeKatex from 'rehype-katex'
+import rehypeHighlight from 'rehype-highlight'
+import 'highlight.js/styles/github.css'
+import 'katex/dist/katex.min.css'
 
 interface MarkdownViewerProps {
   filePath: string
   fileName?: string
+  title?: string
   showRawLink?: boolean
+  pdfPath?: string
 }
 
-export default function MarkdownViewer({ filePath, fileName, showRawLink = true }: MarkdownViewerProps) {
+export default function MarkdownViewer({ filePath, fileName, title, showRawLink = true, pdfPath }: MarkdownViewerProps) {
   const [content, setContent] = useState<string>('')
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string>('')
 
   useEffect(() => {
-    const fetchPath = `/${filePath}`
+    const fetchPath = filePath.startsWith('/') ? filePath : `/${filePath}`
     fetch(fetchPath)
       .then(response => {
         if (!response.ok) {
@@ -32,61 +41,7 @@ export default function MarkdownViewer({ filePath, fileName, showRawLink = true 
       })
   }, [filePath])
 
-  const parseMarkdown = (markdown: string): string => {
-    let html = markdown
-      // Escape HTML first
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      
-      // Headers (must be at start of line)
-      .replace(/^### (.+)$/gm, '<h3>$1</h3>')
-      .replace(/^## (.+)$/gm, '<h2>$1</h2>')
-      .replace(/^# (.+)$/gm, '<h1>$1</h1>')
-      
-      // Bold and italic
-      .replace(/\*\*([^\*]+)\*\*/g, '<strong>$1</strong>')
-      .replace(/\*([^\*]+)\*/g, '<em>$1</em>')
-      
-      // Code blocks (three backticks)
-      .replace(/```([\s\S]*?)```/g, '<pre><code>$1</code></pre>')
-      
-      // Inline code
-      .replace(/`([^`]+)`/g, '<code>$1</code>')
-      
-      // Links
-      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>')
-      
-      // Unordered lists (- or *)
-      .replace(/^[\-\*] (.+)$/gm, '<li>$1</li>')
-      
-      // Ordered lists
-      .replace(/^\d+\. (.+)$/gm, '<li>$1</li>')
-      
-      // Blockquotes
-      .replace(/^> (.+)$/gm, '<blockquote>$1</blockquote>')
-      
-      // Horizontal rules
-      .replace(/^---$/gm, '<hr>')
-      
-      // Line breaks (double newline becomes paragraph break)
-      .replace(/\n\n/g, '</p><p>')
-      .replace(/\n/g, '<br>')
-
-    // Wrap consecutive <li> elements in <ul> or <ol>
-    html = html.replace(/(<li>.*?<\/li>)(\s*<li>.*?<\/li>)*/g, (match) => {
-      return '<ul>' + match + '</ul>'
-    })
-
-    // Wrap content in paragraphs
-    if (html && !html.startsWith('<h1>') && !html.startsWith('<h2>') && !html.startsWith('<h3>')) {
-      html = '<p>' + html + '</p>'
-    }
-
-    return html
-  }
-
-  const displayName = fileName || filePath.split('/').pop() || 'Document'
+  const displayName = title || fileName || filePath.split('/').pop() || 'Document'
 
   if (loading) {
     return (
@@ -119,19 +74,56 @@ export default function MarkdownViewer({ filePath, fileName, showRawLink = true 
     <div className="markdown-viewer">
       <div className="markdown-header">
         <h1>{displayName}</h1>
-        {showRawLink && (
-          <div className="header-actions">
-            <a href={`/${filePath}`} target="_blank" className="raw-link">
-              View Raw File →
+        <div className="header-actions">
+          {pdfPath && (
+            <a href={pdfPath} target="_blank" className="pdf-link">
+              📄 View PDF
             </a>
-          </div>
-        )}
+          )}
+          {showRawLink && (
+            <a href={`/${filePath}`} target="_blank" className="raw-link">
+              📜 View Raw File
+            </a>
+          )}
+        </div>
       </div>
       
-      <div 
-        className="markdown-content"
-        dangerouslySetInnerHTML={{ __html: parseMarkdown(content) }}
-      />
+      <div className="markdown-content">
+        <ReactMarkdown
+          remarkPlugins={[remarkGfm, remarkMath]}
+          rehypePlugins={[rehypeKatex, rehypeHighlight]}
+          components={{
+            // Open external links in new tab
+            a: ({ node, href, children, ...props }) => {
+              const isExternal = href?.startsWith('http')
+              return (
+                <a
+                  {...props}
+                  href={href}
+                  target={isExternal ? '_blank' : undefined}
+                  rel={isExternal ? 'noopener noreferrer' : undefined}
+                >
+                  {children}
+                </a>
+              )
+            },
+            // Custom code block styling
+            pre: ({ children, ...props }) => (
+              <pre {...props} className="code-block">
+                {children}
+              </pre>
+            ),
+            // Custom table styling
+            table: ({ children, ...props }) => (
+              <div className="table-wrapper">
+                <table {...props}>{children}</table>
+              </div>
+            ),
+          }}
+        >
+          {content}
+        </ReactMarkdown>
+      </div>
       
       <style jsx>{`
         .markdown-viewer {
@@ -228,15 +220,34 @@ export default function MarkdownViewer({ filePath, fileName, showRawLink = true 
 
         .header-actions {
           font-size: 0.9rem;
+          display: flex;
+          gap: 0.5rem;
+        }
+
+        .pdf-link, .raw-link {
+          text-decoration: none;
+          padding: 0.5rem 1rem;
+          border-radius: 4px;
+          transition: all 0.2s;
+          display: flex;
+          align-items: center;
+          gap: 0.25rem;
+        }
+
+        .pdf-link {
+          background: #28a745;
+          border: 1px solid #28a745;
+          color: white;
+        }
+
+        .pdf-link:hover {
+          background: #218838;
+          border-color: #218838;
         }
 
         .raw-link {
           color: #667eea;
-          text-decoration: none;
-          padding: 0.5rem 1rem;
           border: 1px solid #667eea;
-          border-radius: 4px;
-          transition: all 0.2s;
         }
 
         .raw-link:hover {
@@ -284,28 +295,80 @@ export default function MarkdownViewer({ filePath, fileName, showRawLink = true 
           margin-bottom: 0.5rem;
         }
 
-        :global(.markdown-content pre) {
+        :global(.markdown-content pre),
+        :global(.markdown-content .code-block) {
           background: #f8f9fa;
           border: 1px solid #e9ecef;
           border-radius: 6px;
           padding: 1rem;
           overflow-x: auto;
           margin: 1rem 0;
+          font-family: 'Fira Code', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
         }
 
         :global(.markdown-content code) {
-          background: #f8f9fa;
+          background: #f1f3f4;
           padding: 0.2rem 0.4rem;
           border-radius: 3px;
-          font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+          font-family: 'Fira Code', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
           font-size: 0.9em;
-          color: #e83e8c;
+          color: #d73a49;
+          font-weight: 500;
         }
 
         :global(.markdown-content pre code) {
           background: none;
           padding: 0;
-          color: #333;
+          color: inherit;
+          font-weight: normal;
+        }
+
+        /* GitHub-style table styling */
+        :global(.markdown-content .table-wrapper) {
+          overflow-x: auto;
+          margin: 1rem 0;
+        }
+
+        :global(.markdown-content table) {
+          border-collapse: collapse;
+          border-spacing: 0;
+          width: 100%;
+          max-width: 100%;
+          border: 1px solid #d0d7de;
+          border-radius: 6px;
+          overflow: hidden;
+        }
+
+        :global(.markdown-content th),
+        :global(.markdown-content td) {
+          padding: 6px 13px;
+          border: 1px solid #d0d7de;
+          text-align: left;
+        }
+
+        :global(.markdown-content th) {
+          font-weight: 600;
+          background-color: #f6f8fa;
+        }
+
+        :global(.markdown-content tr:nth-child(even)) {
+          background-color: #f6f8fa;
+        }
+
+        /* Task list styling */
+        :global(.markdown-content .task-list-item) {
+          list-style-type: none;
+        }
+
+        :global(.markdown-content .task-list-item input) {
+          margin: 0 0.2em 0.25em -1.6em;
+          vertical-align: middle;
+        }
+
+        /* Strikethrough for completed tasks */
+        :global(.markdown-content .task-list-item input:checked + *) {
+          text-decoration: line-through;
+          color: #656d76;
         }
 
         :global(.markdown-content blockquote) {

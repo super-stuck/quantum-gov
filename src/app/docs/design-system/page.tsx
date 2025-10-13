@@ -6,6 +6,7 @@ export default function DesignSystemPage() {
       <ServerMarkdownViewer 
         filePath="public/ui/DESIGN_SYSTEM.md" 
         fileName="QuantumGov Design System"
+        pdfPath="/materials/Virtual_Utopia_Research.pdf"
       />
     </div>
   )

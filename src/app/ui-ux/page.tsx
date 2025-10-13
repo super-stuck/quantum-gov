@@ -44,8 +44,17 @@ export default function UIUX() {
             <h4>Architecture & Design Gallery</h4>
             <p>Browse all architecture diagrams, system designs, and UI mockups in full-screen with zoom capabilities.</p>
             <div className="file-links">
-              <a href="/images" className="file-link">🆼️ View Gallery</a>
+              <a href="/images" className="file-link">🅶️ View Gallery</a>
               <a href="/docs" className="file-link">📄 All Documentation</a>
+            </div>
+          </div>
+          
+          <div className="card">
+            <h4>Quantum UI Visualization Interface</h4>
+            <p>Advanced quantum-enhanced user interface with superposition states, consensus indicators, and quantum voting mechanics.</p>
+            <div className="file-links">
+              <a href="/diagrams/compiled_diagrams/uiux_quantum_mockups.pdf" className="file-link" target="_blank">⚛️ Quantum UI PDF</a>
+              <a href="/images/uiux-quantum-mockups" className="file-link">🔍 View in Gallery</a>
             </div>
           </div>
           

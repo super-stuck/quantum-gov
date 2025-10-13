@@ -1,0 +1,57 @@
+.compiled-diagrams-index {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.compiled-diagrams-index h1 {
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.compiled-diagrams-index p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+}
+
+.diagrams-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.diagram-card {
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.diagram-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.diagram-card h3 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.diagram-card a {
+  display: inline-block;
+  background: #667eea;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.diagram-card a:hover {
+  background: #5a6fd8;
+}

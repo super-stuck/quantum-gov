@@ -6,6 +6,7 @@ export default function ExecutiveSummaryPage() {
       <ServerMarkdownViewer 
         filePath="public/materials/QuantumGov_Executive_Summary.md" 
         fileName="QuantumGov Executive Summary"
+        pdfPath="/materials/QuantumGov_Framework_ENHANCED_ULTIMATE.pdf"
       />
     </div>
   )

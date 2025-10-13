@@ -18,6 +18,7 @@ export default function Business() {
             <div className="file-links">
               <a href="/docs/pitch-deck" className="file-link">💰 View Formatted</a>
               <a href="/materials/QUANTUMGOV_INVESTOR_PITCH_DECK.md" className="file-link">📜 Raw File</a>
+              <a href="/materials/QUANTUMGOV_INVESTOR_PITCH_DECK.pdf" className="file-link" target="_blank">📄 View PDF</a>
             </div>
           </div>
           
@@ -26,6 +27,17 @@ export default function Business() {
             <p>Strategic partnership packages for governments, institutions, and technology partners.</p>
             <div className="file-links">
               <a href="/materials/QuantumGov_Partnership_Materials.md" className="file-link">🤝 Partnership Pack</a>
+              <a href="/materials/QuantumGov_Partnership_Materials.pdf" className="file-link" target="_blank">📄 View PDF</a>
+            </div>
+          </div>
+          
+          <div className="card">
+            <h4>Grant Proposal</h4>
+            <p>Comprehensive funding application materials for research institutions and government agencies.</p>
+            <div className="file-links">
+              <a href="/docs/grant-proposal" className="file-link">📄 View Formatted</a>
+              <a href="/materials/QuantumGov_Grant_Proposal.md" className="file-link">💰 Raw File</a>
+              <a href="/materials/QuantumGov_Grant_Proposal.pdf" className="file-link" target="_blank">📄 View PDF</a>
             </div>
           </div>
           
@@ -34,6 +46,7 @@ export default function Business() {
             <p>High-level business overview for stakeholders, executives, and decision-makers.</p>
             <div className="file-links">
               <a href="/materials/QuantumGov_Executive_Summary.md" className="file-link">📋 Executive Summary</a>
+              <a href="/materials/QuantumGov_Executive_Summary.pdf" className="file-link" target="_blank">📄 View PDF</a>
             </div>
           </div>
         </div>
@@ -47,6 +60,7 @@ export default function Business() {
             <p>Comprehensive marketing and outreach strategy for global market penetration.</p>
             <div className="file-links">
               <a href="/materials/STRATEGIC_OUTREACH_CAMPAIGN.md" className="file-link">📢 Campaign Strategy</a>
+              <a href="/materials/STRATEGIC_OUTREACH_CAMPAIGN.pdf" className="file-link" target="_blank">📄 View PDF</a>
             </div>
           </div>
           
@@ -55,6 +69,7 @@ export default function Business() {
             <p>30-day tactical execution plan for platform launch and market entry.</p>
             <div className="file-links">
               <a href="/materials/LAUNCH_EXECUTION_PLAN_30_DAYS.md" className="file-link">🚀 Launch Plan</a>
+              <a href="/materials/LAUNCH_EXECUTION_PLAN_30_DAYS.pdf" className="file-link" target="_blank">📄 View PDF</a>
             </div>
           </div>
           
@@ -63,6 +78,7 @@ export default function Business() {
             <p>Milestone achievements and implementation progress for stakeholder reporting.</p>
             <div className="file-links">
               <a href="/materials/PROJECT_COMPLETION_SUMMARY.md" className="file-link">✅ Progress Report</a>
+              <a href="/materials/PROJECT_COMPLETION_SUMMARY.pdf" className="file-link" target="_blank">📄 View PDF</a>
             </div>
           </div>
         </div>

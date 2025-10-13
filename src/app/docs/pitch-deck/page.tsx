@@ -6,6 +6,7 @@ export default function PitchDeckPage() {
       <ServerMarkdownViewer 
         filePath="public/materials/QUANTUMGOV_INVESTOR_PITCH_DECK.md" 
         fileName="QuantumGov Investor Pitch Deck"
+        pdfPath="/materials/QuantumGov_Framework_ENHANCED_ULTIMATE.pdf"
       />
     </div>
   )

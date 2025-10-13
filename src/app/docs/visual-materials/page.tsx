@@ -13,6 +13,7 @@ export default function VisualMaterialsViewer() {
         filePath="public/materials/README_Visual_Materials.md"
         fileName="Visual Materials & Diagrams Guide"
         showRawLink={true}
+        pdfPath="/materials/Virtual_Utopia_Research.pdf"
       />
     </div>
   )

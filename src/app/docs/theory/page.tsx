@@ -6,6 +6,7 @@ export default function TheoryPage() {
       <ServerMarkdownViewer 
         filePath="public/materials/THEORY.md" 
         fileName="QuantumGov Theoretical Framework"
+        pdfPath="/materials/QuantumGov_Framework_ENHANCED_ULTIMATE.pdf"
       />
     </div>
   )

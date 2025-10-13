@@ -34,7 +34,7 @@ export default function DocsPage() {
             <a href="/images">Architecture & Design Gallery</a>
             <a href="/docs/visual-materials">Visual Materials & Diagrams</a>
             <a href="/docs/design-system">Design System</a>
-            <a href="/figma/Social%20R.fig">Figma File Download</a>
+            <a href="/ui/QuantumGov_UI_Designs.fig">Figma File Download</a>
           </div>
         </div>
       </div>
@@ -44,19 +44,19 @@ export default function DocsPage() {
         <div className="resources-grid">
           <div className="resource-item">
             <h4>LaTeX Papers</h4>
-            <a href="/papers/">Source Files</a>
+            <a href="/papers">Source Files</a>
           </div>
           <div className="resource-item">
             <h4>Compiled PDFs</h4>
-            <a href="/papers/" target="_blank">Paper PDFs</a>
+            <a href="/papers" target="_blank">Paper PDFs</a>
           </div>
           <div className="resource-item">
             <h4>Presentations</h4>
-            <a href="/diagrams/compiled_diagrams/" target="_blank">Presentation PDFs</a>
+            <a href="/diagrams" target="_blank">Presentation PDFs</a>
           </div>
           <div className="resource-item">
             <h4>Research</h4>
-            <a href="/materials/" target="_blank">Research Directory</a>
+            <a href="/materials" target="_blank">Research Directory</a>
           </div>
         </div>
       </div>

@@ -8,12 +8,25 @@
     "export": "next build && next export",
     "start": "next start",
     "serve": "npx serve out -l 3000",
-    "serve-alt": "npx serve out -l 8080"
+    "serve-alt": "npx serve out -l 8080",
+    "materials:pdf": "node scripts/build-materials-pdf.js",
+    "html-to-pdf": "node scripts/html-to-pdf.js"
   },
   "dependencies": {
+    "@types/react-syntax-highlighter": "^15.5.13",
     "next": "^14.0.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-markdown": "^10.1.0",
+    "react-syntax-highlighter": "^15.6.6",
+    "rehype-highlight": "^7.0.2",
+    "rehype-katex": "^7.0.1",
+    "rehype-stringify": "^10.0.1",
+    "remark-gfm": "^4.0.1",
+    "remark-math": "^6.0.0",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.1.2",
+    "unified": "^11.0.5"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",

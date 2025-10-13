@@ -13,6 +13,7 @@ export default function ResearchSynthesisViewer() {
         filePath="public/materials/Research_Synthesis_Theoretical_Foundations_for_Virtual_Utopia.md"
         fileName="Research Synthesis: Theoretical Foundations for Virtual Utopia"
         showRawLink={true}
+        pdfPath="/materials/Virtual_Utopia_Research_Final.pdf"
       />
     </div>
   )

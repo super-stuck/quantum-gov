@@ -13,6 +13,7 @@ export default function VirtualUtopiaOverviewViewer() {
         filePath="public/materials/README.md"
         fileName="Virtual Utopia: Decentralized Virtual Nation Platform"
         showRawLink={true}
+        pdfPath="/materials/Virtual_Utopia_Research.pdf"
       />
     </div>
   )

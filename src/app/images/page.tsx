@@ -31,15 +31,22 @@ export default function ImageGallery() {
     {
       id: 'microservices-architecture',
       title: 'Microservices Architecture',
-      description: 'Distributed microservices implementation',
-      src: '/images/png/microservices_architecture.png',
+      description: 'Distributed microservices implementation with detailed service interactions',
+      src: '/diagrams/tikz/microservices_architecture.pdf',
       category: 'Architecture'
     },
     {
       id: 'microservices-architecture-hq',
-      title: 'Microservices Architecture (HQ)',
-      description: 'High-resolution microservices diagram',
-      src: '/images/png/microservices_architecture_hq.png',
+      title: 'Quantum Microservices Architecture (HQ)',
+      description: 'Advanced quantum-enhanced microservices with quantum communication layers',
+      src: '/diagrams/tikz/quantum_microservices_architecture.pdf',
+      category: 'Architecture'
+    },
+    {
+      id: 'quantum-microservices-architecture',
+      title: 'Quantum Microservices Architecture',
+      description: 'Advanced quantum-enhanced microservices with quantum communication layers',
+      src: '/diagrams/tikz/quantum_microservices_architecture.pdf',
       category: 'Architecture'
     },
     {
@@ -133,6 +140,77 @@ export default function ImageGallery() {
       description: 'Minimalist home screen design iteration',
       src: '/images/ui-ux/10. Home.png',
       category: 'UI Design'
+    },
+    // Enhanced Framework Diagrams
+    {
+      id: 'quantum-ai-integration',
+      title: 'Quantum-AI Integration Flow',
+      description: 'Comprehensive integration of quantum computing, AI, and blockchain for democratic governance',
+      src: '/diagrams/compiled_diagrams/quantum_ai_integration_flow.pdf',
+      category: 'Enhanced Framework'
+    },
+    {
+      id: 'interactive-system-architecture',
+      title: 'Interactive System Architecture',
+      description: 'Layered architecture with component interactions and data flows',
+      src: '/diagrams/compiled_diagrams/interactive_system_architecture.pdf',
+      category: 'Enhanced Framework'
+    },
+    {
+      id: 'detailed-quantum-process',
+      title: 'Detailed Quantum Process Flow',
+      description: 'Step-by-step quantum governance decision-making process',
+      src: '/diagrams/compiled_diagrams/detailed_quantum_process_flow.pdf',
+      category: 'Enhanced Framework'
+    },
+    {
+      id: 'ai-human-collaboration',
+      title: 'AI-Human Collaboration',
+      description: 'Augmented decision-making while preserving democratic values',
+      src: '/diagrams/compiled_diagrams/ai_human_collaboration.pdf',
+      category: 'Enhanced Framework'
+    },
+    {
+      id: 'blockchain-security-transparency',
+      title: 'Blockchain Security & Transparency',
+      description: 'Tamper-proof governance with citizen trust and verifiable records',
+      src: '/diagrams/compiled_diagrams/blockchain_security_transparency.pdf',
+      category: 'Enhanced Framework'
+    },
+    {
+      id: 'cross-cultural-adaptation',
+      title: 'Cross-Cultural Adaptation',
+      description: 'System adaptability across different cultural contexts',
+      src: '/diagrams/compiled_diagrams/cross_cultural_adaptation.pdf',
+      category: 'Enhanced Framework'
+    },
+    {
+      id: 'business-impact-roi',
+      title: 'Business Impact & ROI Analysis',
+      description: 'Market opportunity, financial projections, and strategic value',
+      src: '/diagrams/compiled_diagrams/business_impact_roi.pdf',
+      category: 'Enhanced Framework'
+    },
+    {
+      id: 'implementation-timeline-roadmap',
+      title: 'Implementation Timeline & Roadmap',
+      description: '4-phase deployment strategy with milestones and scaling objectives',
+      src: '/diagrams/compiled_diagrams/implementation_timeline_roadmap.pdf',
+      category: 'Enhanced Framework'
+    },
+    {
+      id: 'research-validation-results',
+      title: 'Research Validation & Experimental Results',
+      description: 'Cross-cultural validation, performance metrics, and statistical significance',
+      src: '/diagrams/compiled_diagrams/research_validation_results.pdf',
+      category: 'Enhanced Framework'
+    },
+    {
+      id: 'uiux-quantum-mockups',
+      title: 'UI/UX Quantum Visualization Interface',
+      description: 'Quantum-enhanced user interface with superposition states and consensus indicators',
+      src: '/diagrams/compiled_diagrams/uiux_quantum_mockups.pdf',
+      category: 'Enhanced Framework'
     }
   ]
 
@@ -149,7 +227,7 @@ export default function ImageGallery() {
             <a href="/docs" style={{ color: '#fff', opacity: 0.8 }}>← Back to Documentation</a>
           </p>
           <p style={{ marginTop: '1rem', opacity: 0.8, fontSize: '1rem' }}>
-            Explore detailed architecture diagrams, UI mockups, and design assets for the QuantumGov platform. Click any image to view it in full-screen with zoom capabilities.
+            Explore comprehensive architecture diagrams, enhanced framework visualizations, UI mockups, and design assets for the QuantumGov platform. The collection now includes detailed diagrams showing quantum-AI integration, cross-cultural adaptation, business impact analysis, and more. Click any image to view it in full-screen with zoom capabilities.
           </p>
         </div>
 
