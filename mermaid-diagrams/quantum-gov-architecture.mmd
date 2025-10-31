@@ -7,23 +7,23 @@ graph TD
         end
 
         subgraph "Quantum Encoding"
-            QE1[Classical Data<br/>|ψ_classical⟩]
-            QE2[Superposition Init<br/>H⊗N ⊗ I⊗N]
-            QE3[Quantum Register<br/>|0⟩⊗n]
+            QE1[Classical Data<br/>psi_classical]
+            QE2[Superposition Init<br/>H x N tensor I x N]
+            QE3[Quantum Register<br/>0 tensor n]
         end
 
         subgraph "Quantum Processing Core"
-            QC1[Quantum Superposition<br/>∑αᵢ|policyᵢ⟩]
-            QC2[Quantum Entanglement<br/>|Ψ⟩ₑₙₜₐₙ₉ₗₑₙ]
-            QC3[Quantum Oracle<br/>U_f|x⟩|0⟩]
-            QC4[Amplitude Amplification<br/> Grover Iteration]
+            QC1[Quantum Superposition<br/>sum alpha_i policy_i]
+            QC2[Quantum Entanglement<br/>Psi_entangled]
+            QC3[Quantum Oracle<br/>Uf x 0]
+            QC4[Amplitude Amplification<br/>Grover Iteration]
         end
 
         subgraph "Governance Hamiltonian"
-            GH[Ĥ(t) = Ĥ₀ + Ĥᵢₙₜ + Ĥₑₓₜ]
-            GH1[Ĥ₀: Free Evolution]
-            GH2[Ĥᵢₙₜ: Interactions]
-            GH3[Ĥₑₓₜ: External Forces]
+            GH[Hamiltonian(t) = H0 + Hint + Hext]
+            GH1[H0: Free Evolution]
+            GH2[Hint: Interactions]
+            GH3[Hext: External Forces]
         end
 
         subgraph "Quantum Algorithms"
@@ -35,7 +35,7 @@ graph TD
         subgraph "Quantum Hardware"
             QH1[Quantum Registers<br/>16-1000 qubits]
             QH2[Quantum Gates<br/>H, CNOT, Oracle]
-            QH3[Measurement<br/>Quantum → Classical]
+            QH3[Measurement<br/>Quantum to Classical]
         end
 
         subgraph "Classical Post-Processing"

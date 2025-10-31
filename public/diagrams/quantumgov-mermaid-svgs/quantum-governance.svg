@@ -32,7 +32,7 @@
   <rect x="380" y="60" width="280" height="150" class="layer"/>
   <text x="520" y="85" text-anchor="middle" class="layer-label">Quantum Encoding</text>
   <rect x="400" y="110" width="240" height="35" class="quantum"/>
-  <text x="520" y="132" text-anchor="middle" class="quantum-text">|ψ_classical⟩</text>
+  <text x="520" y="132" text-anchor="middle" class="quantum-text">|p_classical></text>
   <rect x="400" y="155" width="240" height="35" class="quantum"/>
   <text x="520" y="177" text-anchor="middle" class="quantum-text">Superposition Init</text>
 
@@ -40,9 +40,9 @@
   <rect x="710" y="60" width="280" height="180" class="layer"/>
   <text x="850" y="85" text-anchor="middle" class="layer-label">Quantum Processing</text>
   <rect x="730" y="110" width="240" height="35" class="quantum"/>
-  <text x="850" y="132" text-anchor="middle" class="quantum-text">∑αᵢ|policyᵢ⟩</text>
+  <text x="850" y="132" text-anchor="middle" class="quantum-text">sum a_i|policy_i></text>
   <rect x="730" y="155" width="240" height="35" class="quantum"/>
-  <text x="850" y="177" text-anchor="middle" class="quantum-text">|Ψ⟩_entangled</text>
+  <text x="850" y="177" text-anchor="middle" class="quantum-text">|Psi>_entangled</text>
   <rect x="730" y="200" width="240" height="35" class="quantum"/>
   <text x="850" y="222" text-anchor="middle" class="quantum-text">Quantum Oracle U_f</text>
 
@@ -50,7 +50,7 @@
   <rect x="1040" y="60" width="310" height="150" class="layer"/>
   <text x="1195" y="85" text-anchor="middle" class="layer-label">Hamiltonian</text>
   <rect x="1060" y="110" width="290" height="40" class="hamiltonian"/>
-  <text x="1195" y="135" text-anchor="middle" class="ham-text">Ĥ(t) = Ĥ₀ + Ĥᵢₙₜ + Ĥₑₓₜ</text>
+  <text x="1195" y="135" text-anchor="middle" class="ham-text">H(t) = H_0 + H_iₙₜ + Hₑₓₜ</text>
 
   <!-- Quantum Algorithms -->
   <rect x="710" y="280" width="280" height="150" class="layer"/>
@@ -98,10 +98,10 @@
   <!-- Mathematical Formulations Box -->
   <rect x="50" y="650" width="1300" height="140" fill="#f9f9f9" stroke="#ddd" stroke-width="2"/>
   <text x="700" y="675" text-anchor="middle" font-size="16" font-weight="bold" fill="#667eea">Mathematical Framework</text>
-  <text x="120" y="705" font-size="13" fill="#333" font-family="monospace">|ψ_policy⟩ = Σαᵢe^(iφᵢ)|policyᵢ⟩</text>
-  <text x="120" y="730" font-size="13" fill="#333" font-family="monospace">|Ψ⟩ = 1/√2(|econ_+⟩|social_+⟩ + |econ_-⟩|social_-⟩)</text>
-  <text x="120" y="755" font-size="13" fill="#333" font-family="monospace">S = -Tr(ρ_A log ρ_A)</text>
-  <text x="120" y="780" font-size="13" fill="#333" font-family="monospace">DQI = (Σwᵢ·utilityᵢ)/max(Σwᵢ·utilityᵢ)</text>
+  <text x="120" y="705" font-size="13" fill="#333" font-family="monospace">|p_policy> = Sigmaa_ie^(iphi_i)|policy_i></text>
+  <text x="120" y="730" font-size="13" fill="#333" font-family="monospace">|Psi> = 1/√2(|econ_+>|social_+> + |econ_->|social_->)</text>
+  <text x="120" y="755" font-size="13" fill="#333" font-family="monospace">S = -Tr(rho_A log rho_A)</text>
+  <text x="120" y="780" font-size="13" fill="#333" font-family="monospace">DQI = (Sigmaw_i·utility_i)/max(Sigmaw_i·utility_i)</text>
 
   <!-- Performance Metrics -->
   <rect x="50" y="820" width="1300" height="250" fill="#f9f9f9" stroke="#ddd" stroke-width="2"/>
