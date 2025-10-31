@@ -1,0 +1,115 @@
+graph TB
+    subgraph "AI-Augmented Collective Intelligence System"
+        subgraph "Human Layer"
+            H1[Citizen 1]
+            H2[Citizen 2]
+            H3[Citizen 3]
+            Hn[... Citizens N]
+        end
+
+        subgraph "Interface Layer"
+            I1[Input Interface]
+            I2[Feedback Interface]
+            I3[Explanation Interface]
+        end
+
+        subgraph "Preprocessing Layer"
+            P1[Data Sanitization]
+            P2[Feature Extraction]
+            P3[Privacy Protection]
+        end
+
+        subgraph "AI Agent Layer"
+            AI1[AI Agent 1<br/>Bayesian Belief Network]
+            AI2[AI Agent 2<br/>Multi-Agent RL]
+            AIm[AI Agent M]
+        end
+
+        subgraph "Core AI Systems"
+            BN[Belief Networks<br/>Uncertainty Quantification]
+            RL[Reinforcement Learning<br/>Policy Optimization]
+            GT[Game Theory<br/>Value Alignment]
+            XAI[Explainable AI<br/>Transparency Layer]
+        end
+
+        subgraph "Aggregation Layer"
+            AGG1[Multi-Agent Consensus]
+            AGG2[Preference Aggregation]
+            AGG3[Cooperative Game Theory]
+        end
+
+        subgraph "Output Layer"
+            O1[Decision Output]
+            O2[Confidence Scores]
+            O3[Explanations]
+            O4[Counterfactuals]
+        end
+
+        subgraph "Support Systems"
+            CULT[Cultural Models<br/>Hofstede Dimensions]
+            PRIV[Differential Privacy<br/>Data Protection]
+            VAL[Value Alignment<br/>Human Preferences]
+        end
+    end
+
+    %% Main Flow
+    H1 --> I1
+    H2 --> I1
+    H3 --> I1
+    Hn --> I1
+
+    I1 --> P1
+    I2 --> P2
+    I3 --> P3
+
+    P1 --> AI1
+    P2 --> AI2
+    P3 --> AIm
+
+    AI1 --> BN
+    AI2 --> RL
+    AIm --> GT
+
+    BN --> AGG1
+    RL --> AGG2
+    GT --> AGG3
+    XAI --> AGG1
+
+    AGG1 --> O1
+    AGG2 --> O2
+    AGG3 --> O3
+    XAI --> O4
+
+    %% Support System Connections
+    P3 --> PRIV
+    PRIV --> AI1
+    PRIV --> AI2
+
+    BN --> CULT
+    CULT --> AGG1
+
+    GT --> VAL
+    VAL --> AGG3
+
+    %% Feedback Loops
+    O1 --> I2
+    O2 --> I2
+    O3 --> I2
+    O4 --> I3
+
+    I2 --> AI1
+    I2 --> AI2
+    I3 --> XAI
+
+    %% Styling
+    classDef humanLayer fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
+    classDef aiLayer fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    classDef coreLayer fill:#fff3e0,stroke:#e65100,stroke-width:2px
+    classDef outputLayer fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
+    classDef supportLayer fill:#fce4ec,stroke:#c2185b,stroke-width:2px
+
+    class H1,H2,H3,Hn humanLayer
+    class AI1,AI2,Aim aiLayer
+    class BN,RL,GT,XAI coreLayer
+    class O1,O2,O3,O4 outputLayer
+    class CULT,PRIV,VAL supportLayer

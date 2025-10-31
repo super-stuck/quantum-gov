@@ -13,7 +13,9 @@
     "html-to-pdf": "node scripts/html-to-pdf.js"
   },
   "dependencies": {
+    "@mermaid-js/mermaid-cli": "^11.12.0",
     "@types/react-syntax-highlighter": "^15.5.13",
+    "mermaid": "^11.12.1",
     "next": "^14.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

@@ -1,0 +1,96 @@
+graph TD
+    subgraph "Bayesian Belief Network for Collective Intelligence"
+        subgraph "Individual Belief Nodes"
+            B1[Citizen 1 Belief<br/>μ₁, σ₁²]
+            B2[Citizen 2 Belief<br/>μ₂, σ₂²]
+            B3[Citizen 3 Belief<br/>μ₃, σ₃²]
+            Bn[... Citizen N Belief<br/>μₙ, σₙ²]
+        end
+
+        subgraph "AI Agent Beliefs"
+            AI1[AI Agent 1 Belief<br/>B₁(t) = P(θ₁|O₁:t, A₁:t)]
+            AI2[AI Agent 2 Belief<br/>B₂(t) = P(θ₂|O₁:t, A₁:t)]
+            AIm[AI Agent M Belief<br/>Bₘ(t) = P(θₘ|O₁:t, A₁:t)]
+        end
+
+        subgraph "Collective Belief State"
+            CB[Collective Belief<br/>P(θ|D_new) ∝ P(D_new|θ) × P(θ|D_old)]
+        end
+
+        subgraph "Trust Network"
+            T12[Trust w₁₂]
+            T13[Trust w₁₃]
+            T1n[Trust w₁ₙ]
+            T21[Trust w₂₁]
+            T23[Trust w₂₃]
+            T2n[Trust w₂ₙ]
+        end
+
+        subgraph "Belief Update Equations"
+            UPDATE1[μᵢ₊₁ = αμᵢ + (1-α) × Σⱼ wᵢⱼ μⱼ/Σⱼ wᵢⱼ]
+            UPDATE2[Σᵢ |αᵢ|² = 1]
+            UPDATE3[BELIEF PROPAGATION]
+        end
+
+        subgraph "Observation Model"
+            O1[Observations O₁:t]
+            O2[Actions A₁:t]
+            O3[Environmental Signals]
+        end
+    end
+
+    %% Belief Updates
+    B1 --> T12
+    B1 --> T13
+    B1 --> T1n
+    B2 --> T21
+    B2 --> T23
+    B2 --> T2n
+
+    %% Trust connections
+    T12 --> B2
+    T13 --> B3
+    T1n --> Bn
+    T21 --> B1
+    T23 --> B3
+    T2n --> Bn
+
+    %% AI Agent connections
+    B1 --> AI1
+    B2 --> AI1
+    B3 --> AI2
+    Bn --> AIm
+
+    AI1 --> CB
+    AI2 --> CB
+    AIm --> CB
+
+    %% Observation connections
+    O1 --> AI1
+    O2 --> AI1
+    O3 --> AI2
+
+    %% Belief Update to CB
+    UPDATE1 --> CB
+    UPDATE2 --> CB
+    UPDATE3 --> CB
+
+    %% Feedback loop
+    CB --> AI1
+    CB --> AI2
+    CB --> AIm
+
+    %% Styling
+    classDef citizen fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
+    classDef ai fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    classDef collective fill:#fff3e0,stroke:#e65100,stroke-width:2px
+    classDef trust fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
+    classDef update fill:#fce4ec,stroke:#c2185b,stroke-width:2px
+    classDef observation fill:#f0f0f0,stroke:#666,stroke-width:2px
+
+    class B1,B2,B3,Bn citizen
+    class AI1,AI2,AIm ai
+    class CB collective
+    class T12,T13,T1n,T21,T23,T2n trust
+    class UPDATE1,UPDATE2,UPDATE3 update
+    class O1,O2,O3 observation

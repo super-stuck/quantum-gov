@@ -1,0 +1,69 @@
+graph TB
+    subgraph "QuantumGov System Architecture"
+        subgraph "User Layer"
+            U1[Citizens]
+            U2[Government Officials]
+            U3[Researchers]
+        end
+
+        subgraph "Quantum Computing Layer"
+            QC[Quantum Processing Unit]
+            QA[Quantum Algorithms]
+            QS[Quantum States]
+        end
+
+        subgraph "AI Integration Layer"
+            AI[Machine Learning Engine]
+            ANLP[Natural Language Processing]
+            AP[Predictive Analytics]
+        end
+
+        subgraph "Governance Layer"
+            GV[Voting Mechanisms]
+            GD[Decision Making]
+            GP[Policy Formation]
+        end
+
+        subgraph "Blockchain Layer"
+            BC[Distributed Ledger]
+            BS[Smart Contracts]
+            BV[Vote Validation]
+        end
+
+        subgraph "Data Layer"
+            DB[(Database)]
+            DS[Data Storage]
+            DI[Data Integration]
+        end
+
+        subgraph "Security Layer"
+            AU[Authentication]
+            EN[Encryption]
+            AU2[Authorization]
+        end
+    end
+
+    U1 --> EN
+    U2 --> EN
+    U3 --> EN
+    EN --> AU
+    AU --> AU2
+    AU2 --> GV
+    GV --> GD
+    GD --> GP
+    GP --> AI
+    AI --> ANLP
+    ANLP --> AP
+    AP --> QA
+    QA --> QC
+    QC --> QS
+    QS --> BC
+    BC --> BS
+    BS --> BV
+    BV --> DI
+    DI --> DS
+    DS --> DB
+
+    style QC fill:#667eea,stroke:#764ba2,stroke-width:2px,color:#fff
+    style AI fill:#764ba2,stroke:#667eea,stroke-width:2px,color:#fff
+    style BC fill:#667eea,stroke:#764ba2,stroke-width:2px,color:#fff

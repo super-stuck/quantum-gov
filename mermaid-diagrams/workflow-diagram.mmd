@@ -1,0 +1,26 @@
+flowchart TD
+    Start([Citizen Initiates Proposal]) --> Auth{Authenticated?}
+    Auth -->|No| Login[Login/Register]
+    Auth -->|Yes| Validate[Validate Identity]
+    Validate --> Quantum{Quantum Analysis}
+    Quantum --> AI[AI Processing]
+    AI --> ValidateProp{Validate Proposal}
+    ValidateProp -->|Invalid| Reject[Reject with Explanation]
+    ValidateProp -->|Valid| Community[Community Review]
+    Community --> Vote[Voting Period]
+    Vote --> QuantumV{Quantum Vote Analysis}
+    QuantumV --> Threshold{Reached Threshold?}
+    Threshold -->|No| Continue[Continue Voting]
+    Continue --> Vote
+    Threshold -->|Yes| Blockchain[Record on Blockchain]
+    Blockchain --> Implement[Implementation]
+    Implement --> Monitor[Monitor Progress]
+    Monitor --> Complete[Complete]
+    Reject --> End([End])
+    Complete --> End
+
+    style Start fill:#667eea,stroke:#764ba2,color:#fff
+    style End fill:#764ba2,stroke:#667eea,color:#fff
+    style Quantum fill:#667eea,stroke:#764ba2,color:#fff
+    style AI fill:#764ba2,stroke:#667eea,color:#fff
+    style Blockchain fill:#667eea,stroke:#764ba2,color:#fff

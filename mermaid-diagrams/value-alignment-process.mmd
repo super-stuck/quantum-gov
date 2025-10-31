@@ -1,0 +1,67 @@
+flowchart TD
+    Start([Initialize System]) --> HumanInput[Human Values Input]
+    HumanInput --> ExtractValues[Extract Core Values]
+    ExtractValues --> ValueModel[Value Model H(ψ)]
+
+    ValueModel --> AISystem[AI System π(θ)]
+    AISystem --> Interaction[Human-AI Interaction]
+
+    Interaction --> CollectData[Collect Interaction Data]
+    CollectData --> ComputeReward[Compute Reward Signals]
+
+    ComputeReward --> ValueAlignment{Value Alignment Check}
+
+    ValueAlignment -->|Misaligned| UpdateValueModel[Update Value Model]
+    UpdateValueModel --> ComputeLoss[Compute Alignment Loss]
+    ComputeLoss --> UpdateAI[Update AI Parameters]
+    UpdateAI --> Interaction
+
+    ValueAlignment -->|Aligned| ShapleyCompute[Compute Shapley Values]
+    ShapleyCompute --> Output[Aligned Output]
+    Output --> Feedback[Collect Feedback]
+    Feedback --> CollectData
+
+    subgraph "Value Alignment Mechanism"
+        ValueAlignmentLoss[L = E[R] + λE[V_human] - μKL(π||π_human)]
+        Constraint[argmax E[V_human] ⊆ argmax E[R_AI]]
+    end
+
+    ComputeLoss --> ValueAlignmentLoss
+    UpdateAI --> Constraint
+
+    subgraph "Cooperative Game Theory"
+        Shapley[φᵢ(v) = ∑|S|!(|N|-|S|-1)!/|N|! × [v(S∪{i}) - v(S)]]
+        Fairness[Ensure Fair Contribution Attribution]
+    end
+
+    ShapleyCompute --> Shapley
+    Shapley --> Fairness
+
+    subgraph "Cultural Adaptation"
+        Culture[Hofstede Dimensions: PDI, IDV, MAS, UAI, LTO, IVR]
+        Adaptation[πᵢ^cultural(s) = Σwᵢ^d × π_d(s|culture_d)]
+    end
+
+    ExtractValues --> Culture
+    Culture --> Adaptation
+    Adaptation --> ValueModel
+
+    subgraph "Privacy Preservation"
+        DifferentialPrivacy[P[𝒜(D) ∈ S] ≤ e^ε × P[𝒜(D') ∈ S]]
+        Noise[Add Gaussian Noise]
+    end
+
+    CollectData --> DifferentialPrivacy
+    DifferentialPrivacy --> Noise
+    Noise --> ComputeReward
+
+    %% Styling
+    classDef startEnd fill:#764ba2,stroke:#667eea,color:#fff,stroke-width:2px
+    classDef process fill:#667eea,stroke:#764ba2,color:#fff,stroke-width:2px
+    classDef decision fill:#ffa500,stroke:#ff6b6b,color:#fff,stroke-width:2px
+    classDef subgraph fill:#f0f0f0,stroke:#ccc,stroke-width:2px
+
+    class Start,Output startEnd
+    class HumanInput,ExtractValues,ValueModel,AISystem,Interaction,CollectData,ComputeReward,UpdateValueModel,ComputeLoss,UpdateAI,ShapleyCompute,Feedback process
+    class ValueAlignment decision
+    class ValueAlignmentMechanism,CooperativeGameTheory,CulturalAdaptation,PrivacyPreservation subgraph

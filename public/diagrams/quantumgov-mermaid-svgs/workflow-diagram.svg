@@ -1,0 +1,111 @@
+<svg viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .process { fill: #667eea; stroke: #764ba2; stroke-width: 2px; rx: 8; }
+      .process-text { font: 14px sans-serif; fill: white; text-anchor: middle; }
+      .decision { fill: #ffa500; stroke: #ff6b6b; stroke-width: 2px; }
+      .decision-text { font: 13px sans-serif; fill: white; text-anchor: middle; }
+      .arrow { stroke: #764ba2; stroke-width: 2.5; fill: none; marker-end: url(#arrowhead); }
+      .arrow-text { font: 12px sans-serif; fill: #764ba2; font-weight: bold; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#764ba2" />
+    </marker>
+  </defs>
+
+  <text x="600" y="30" text-anchor="middle" font-size="24" font-weight="bold" fill="#667eea">
+    QuantumGov Workflow Process
+  </text>
+
+  <!-- Start -->
+  <ellipse cx="600" cy="80" rx="120" ry="35" fill="#764ba2" stroke="#667eea" stroke-width="3"/>
+  <text x="600" y="87" text-anchor="middle" font-size="16" fill="white" font-weight="bold">Citizen Initiates</text>
+  <text x="600" y="105" text-anchor="middle" font-size="14" fill="white">Proposal</text>
+
+  <!-- Authentication -->
+  <rect x="500" y="150" width="200" height="60" class="process"/>
+  <text x="600" y="175" text-anchor="middle" class="process-text">Authenticated?</text>
+  <text x="600" y="195" text-anchor="middle" class="process-text">(Login/Register if needed)</text>
+
+  <!-- Quantum Analysis -->
+  <rect x="500" y="250" width="200" height="60" class="process"/>
+  <text x="600" y="275" text-anchor="middle" class="process-text">Quantum Analysis</text>
+  <text x="600" y="295" text-anchor="middle" class="process-text">(Classification)</text>
+
+  <!-- AI Processing -->
+  <rect x="500" y="350" width="200" height="60" class="process"/>
+  <text x="600" y="375" text-anchor="middle" class="process-text">AI Processing</text>
+  <text x="600" y="395" text-anchor="middle" class="process-text">(ML Validation)</text>
+
+  <!-- Validate Proposal -->
+  <path d="M 600,410 L 600,440" class="arrow"/>
+  <polygon points="600,440 585,425 615,425" fill="#764ba2"/>
+  <rect x="500" y="440" width="200" height="70" class="decision"/>
+  <text x="600" y="465" text-anchor="middle" class="decision-text">Validate</text>
+  <text x="600" y="485" text-anchor="middle" class="decision-text">Proposal</text>
+
+  <!-- Valid Path -->
+  <path d="M 600,510 L 600,540" class="arrow"/>
+  <rect x="500" y="540" width="200" height="60" class="process"/>
+  <text x="600" y="565" text-anchor="middle" class="process-text">Community Review</text>
+  <text x="600" y="585" text-anchor="middle" class="process-text">(Public Feedback)</text>
+
+  <!-- Voting -->
+  <path d="M 600,600 L 600,630" class="arrow"/>
+  <rect x="500" y="630" width="200" height="60" class="process"/>
+  <text x="600" y="655" text-anchor="middle" class="process-text">Voting Period</text>
+  <text x="600" y="675" text-anchor="middle" class="process-text">(Stakeholder Input)</text>
+
+  <!-- Quantum Vote Validation -->
+  <path d="M 600,690 L 600,720" class="arrow"/>
+  <rect x="500" y="720" width="200" height="70" class="decision"/>
+  <text x="600" y="745" text-anchor="middle" class="decision-text">Quantum Vote</text>
+  <text x="600" y="765" text-anchor="middle" class="decision-text">Analysis</text>
+
+  <!-- Threshold Check -->
+  <path d="M 700,755 L 850,755 L 850,770 L 870,770" class="arrow"/>
+  <text x="820" y="750" text-anchor="middle" class="arrow-text">Pass</text>
+  <path d="M 870,770 L 870,810" class="arrow"/>
+  <path d="M 870,810 L 900,810 L 900,770 L 950,770" class="arrow"/>
+  <text x="950" y="760" text-anchor="middle" class="arrow-text" fill="#667eea">Reached Threshold?</text>
+
+  <!-- Blockchain Recording -->
+  <rect x="920" y="740" width="220" height="60" class="process"/>
+  <text x="1030" y="765" text-anchor="middle" class="process-text">Record on</text>
+  <text x="1030" y="785" text-anchor="middle" class="process-text">Blockchain</text>
+
+  <!-- Implementation -->
+  <path d="M 1030,800 L 1030,830" class="arrow"/>
+  <rect x="920" y="830" width="220" height="60" class="process"/>
+  <text x="1030" y="855" text-anchor="middle" class="process-text">Implementation</text>
+  <text x="1030" y="875" text-anchor="middle" class="process-text">(Execute Decision)</text>
+
+  <!-- Invalid Path (right side) -->
+  <path d="M 700,475 L 850,475" class="arrow"/>
+  <text x="775" y="470" text-anchor="middle" class="arrow-text">Fail</text>
+  <rect x="850" y="440" width="220" height="70" class="decision"/>
+  <text x="960" y="465" text-anchor="middle" class="decision-text">Reject with</text>
+  <text x="960" y="485" text-anchor="middle" class="decision-text">Explanation</text>
+
+  <!-- Continue Voting Loop -->
+  <path d="M 500,755 L 350,755 L 350,650 L 500,650" class="arrow"/>
+  <path d="M 500,650 L 490,645 L 500,650 L 490,655" fill="#764ba2"/>
+  <text x="350" y="750" text-anchor="middle" class="arrow-text">No</text>
+  <text x="420" y="635" text-anchor="middle" font-size="11" fill="#764ba2">(Continue Voting)</text>
+
+  <!-- End -->
+  <ellipse cx="1030" cy="920" rx="120" ry="35" fill="#764ba2" stroke="#667eea" stroke-width="3"/>
+  <text x="1030" y="925" text-anchor="middle" font-size="16" fill="white" font-weight="bold">Complete</text>
+  <text x="1030" y="943" text-anchor="middle" font-size="14" fill="white">Monitor Progress</text>
+
+  <!-- Continue arrow to complete -->
+  <path d="M 1030,890 L 1030,885" class="arrow"/>
+
+  <!-- Legend -->
+  <rect x="50" y="780" width="300" height="100" fill="#f9f9f9" stroke="#ddd" stroke-width="2"/>
+  <text x="200" y="805" text-anchor="middle" font-size="16" font-weight="bold" fill="#667eea">Legend</text>
+  <rect x="70" y="820" width="30" height="20" class="process"/>
+  <text x="110" y="835" font-size="13" fill="#333">Process Step</text>
+  <rect x="70" y="845" width="30" height="20" class="decision"/>
+  <text x="110" y="860" font-size="13" fill="#333">Decision Point</text>
+</svg>

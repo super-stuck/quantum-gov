@@ -1,0 +1,43 @@
+graph TB
+    subgraph "QuantumGov Governance Model"
+        subgraph "Tier 1: Direct Democracy"
+            C[Citizens]
+            V[Voting Portal]
+            R[Referendums]
+        end
+
+        subgraph "Tier 2: Representative Democracy"
+            REP[Representatives]
+            COM[Committees]
+            PAR[Parliament]
+        end
+
+        subgraph "Tier 3: Quantum-Enhanced Decision Making"
+            QA[Quantum Algorithms]
+            AI[Artificial Intelligence]
+            AG[Algorithmic Governance]
+        end
+
+        subgraph "Tier 4: Implementation"
+            EXE[Executive Branch]
+            AD[Administrative Division]
+            MO[Monitoring Office]
+        end
+    end
+
+    C --> V
+    V --> R
+    R --> REP
+    REP --> COM
+    COM --> PAR
+    PAR --> QA
+    QA --> AI
+    AI --> AG
+    AG --> EXE
+    EXE --> AD
+    AD --> MO
+    MO --> C
+
+    style QA fill:#667eea,stroke:#764ba2,color:#fff
+    style AI fill:#764ba2,stroke:#667eea,color:#fff
+    style AG fill:#667eea,stroke:#764ba2,color:#fff

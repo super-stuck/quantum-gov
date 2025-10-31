@@ -1,0 +1,115 @@
+graph TD
+    subgraph "Quantum Governance Operators (QGO) Framework"
+        subgraph "Classical Input"
+            CI1[Policy Proposals]
+            CI2[Stakeholder Preferences]
+            CI3[Constraint Parameters]
+        end
+
+        subgraph "Quantum Encoding"
+            QE1[Classical Data<br/>|ψ_classical⟩]
+            QE2[Superposition Init<br/>H⊗N ⊗ I⊗N]
+            QE3[Quantum Register<br/>|0⟩⊗n]
+        end
+
+        subgraph "Quantum Processing Core"
+            QC1[Quantum Superposition<br/>∑αᵢ|policyᵢ⟩]
+            QC2[Quantum Entanglement<br/>|Ψ⟩ₑₙₜₐₙ₉ₗₑₙ]
+            QC3[Quantum Oracle<br/>U_f|x⟩|0⟩]
+            QC4[Amplitude Amplification<br/> Grover Iteration]
+        end
+
+        subgraph "Governance Hamiltonian"
+            GH[Ĥ(t) = Ĥ₀ + Ĥᵢₙₜ + Ĥₑₓₜ]
+            GH1[Ĥ₀: Free Evolution]
+            GH2[Ĥᵢₙₜ: Interactions]
+            GH3[Ĥₑₓₜ: External Forces]
+        end
+
+        subgraph "Quantum Algorithms"
+            QA1[Policy Optimization<br/>Grover's Algorithm]
+            QA2[Consensus Protocol<br/>Quantum Voting]
+            QA3[Multi-Domain Coordination<br/>Entanglement]
+        end
+
+        subgraph "Quantum Hardware"
+            QH1[Quantum Registers<br/>16-1000 qubits]
+            QH2[Quantum Gates<br/>H, CNOT, Oracle]
+            QH3[Measurement<br/>Quantum → Classical]
+        end
+
+        subgraph "Classical Post-Processing"
+            CP1[Result Interpretation]
+            CP2[Policy Ranking]
+            CP3[Stakeholder Feedback]
+            CP4[Performance Metrics]
+        end
+
+        subgraph "Output"
+            OUT1[Optimal Policy]
+            OUT2[Decision Quality Score]
+            OUT3[Coherence Metrics]
+            OUT4[Entanglement Measures]
+        end
+    end
+
+    %% Main Flow
+    CI1 --> QE1
+    CI2 --> QE1
+    CI3 --> QE1
+
+    QE1 --> QE2
+    QE2 --> QE3
+    QE3 --> QC1
+
+    QC1 --> QC2
+    QC2 --> QC3
+    QC3 --> QC4
+
+    GH --> QC1
+    GH --> QC2
+    GH --> QC3
+
+    QA1 --> QC4
+    QA2 --> QC3
+    QA3 --> QC2
+
+    QC4 --> QH3
+    QH3 --> CP1
+
+    CP1 --> CP2
+    CP2 --> CP3
+    CP3 --> CP4
+
+    CP4 --> OUT1
+    CP1 --> OUT2
+    CP2 --> OUT3
+    CP3 --> OUT4
+
+    %% Hamiltonian connections
+    GH1 --> GH
+    GH2 --> GH
+    GH3 --> GH
+
+    %% Hardware connections
+    QH1 --> QH2
+    QH2 --> QH3
+
+    %% Quantum Processing to Hardware
+    QC4 --> QH1
+    QC4 --> QH2
+
+    %% Styling
+    classDef classical fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
+    classDef quantum fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    classDef hamiltonian fill:#fff3e0,stroke:#e65100,stroke-width:2px
+    classDef algorithm fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
+    classDef hardware fill:#fff9c4,stroke:#f57f17,stroke-width:2px
+    classDef output fill:#fce4ec,stroke:#c2185b,stroke-width:2px
+
+    class CI1,CI2,CI3,QE1,QE2,QE3,CP1,CP2,CP3,CP4 classical
+    class QC1,QC2,QC3,QC4 quantum
+    class GH,GH1,GH2,GH3 hamiltonian
+    class QA1,QA2,QA3 algorithm
+    class QH1,QH2,QH3 hardware
+    class OUT1,OUT2,OUT3,OUT4 output

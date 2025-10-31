@@ -1,0 +1,116 @@
+<svg viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .actor { fill: #667eea; stroke: #764ba2; stroke-width: 2px; rx: 8; }
+      .actor-text { font: 14px sans-serif; fill: white; text-anchor: middle; font-weight: bold; }
+      .message { fill: white; stroke: #764ba2; stroke-width: 1.5px; }
+      .message-text { font: 12px sans-serif; fill: #333; text-anchor: middle; }
+      .arrow { stroke: #764ba2; stroke-width: 2; marker-end: url(#arrowhead); }
+      .activation { fill: #ffd700; stroke: #ffa500; stroke-width: 2px; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#764ba2" />
+    </marker>
+  </defs>
+
+  <text x="700" y="30" text-anchor="middle" font-size="26" font-weight="bold" fill="#667eea">
+    QuantumGov System Integration Flow
+  </text>
+
+  <!-- Actor boxes -->
+  <rect x="50" y="80" width="150" height="50" class="actor"/>
+  <text x="125" y="110" text-anchor="middle" class="actor-text">Citizen</text>
+
+  <rect x="250" y="80" width="150" height="50" class="actor"/>
+  <text x="325" y="110" text-anchor="middle" class="actor-text">Quantum Layer</text>
+
+  <rect x="450" y="80" width="150" height="50" class="actor"/>
+  <text x="525" y="110" text-anchor="middle" class="actor-text">AI Engine</text>
+
+  <rect x="650" y="80" width="150" height="50" class="actor"/>
+  <text x="725" y="110" text-anchor="middle" class="actor-text">Blockchain</text>
+
+  <rect x="850" y="80" width="150" height="50" class="actor"/>
+  <text x="925" y="110" text-anchor="middle" class="actor-text">Governance</text>
+
+  <rect x="1050" y="80" width="150" height="50" class="actor"/>
+  <text x="1125" y="110" text-anchor="middle" class="actor-text">Storage</text>
+
+  <!-- Life line starting points -->
+  <path d="M 125,130 L 125,820" stroke="#ccc" stroke-width="1" stroke-dasharray="3,3"/>
+  <path d="M 325,130 L 325,820" stroke="#ccc" stroke-width="1" stroke-dasharray="3,3"/>
+  <path d="M 525,130 L 525,820" stroke="#ccc" stroke-width="1" stroke-dasharray="3,3"/>
+  <path d="M 725,130 L 725,820" stroke="#ccc" stroke-width="1" stroke-dasharray="3,3"/>
+  <path d="M 925,130 L 925,820" stroke="#ccc" stroke-width="1" stroke-dasharray="3,3"/>
+  <path d="M 1125,130 L 1125,820" stroke="#ccc" stroke-width="1" stroke-dasharray="3,3"/>
+
+  <!-- Message 1: Submit Proposal -->
+  <rect x="125" y="160" width="200" height="40" class="message"/>
+  <text x="225" y="185" text-anchor="middle" class="message-text">Submit Proposal</text>
+  <path d="M 225,160 L 225,200" class="arrow"/>
+
+  <!-- Message 2: Quantum Classification -->
+  <rect x="225" y="230" width="200" height="40" class="message"/>
+  <text x="325" y="255" text-anchor="middle" class="message-text">Quantum Classification</text>
+  <rect x="225" y="270" width="100" height="30" class="activation"/>
+  <path d="M 325,230 L 325,300" class="arrow"/>
+
+  <!-- Message 3: Analysis Request -->
+  <rect x="325" y="330" width="200" height="40" class="message"/>
+  <text x="425" y="355" text-anchor="middle" class="message-text">Analysis Request</text>
+  <path d="M 425,330 L 425,370" class="arrow"/>
+
+  <!-- Message 4: Process Data -->
+  <rect x="425" y="400" width="100" height="40" class="message"/>
+  <text x="475" y="425" text-anchor="middle" class="message-text">Process Data</text>
+  <rect x="425" y="440" width="100" height="30" class="activation"/>
+  <path d="M 475,400 L 475,470" class="arrow"/>
+
+  <!-- Message 5: Results -->
+  <rect x="325" y="500" width="200" height="40" class="message"/>
+  <text x="425" y="525" text-anchor="middle" class="message-text">Results</text>
+  <path d="M 425,470 L 425,540" class="arrow"/>
+
+  <!-- Message 6: Initial Response -->
+  <rect x="125" y="570" width="200" height="40" class="message"/>
+  <text x="225" y="595" text-anchor="middle" class="message-text">Initial Response</text>
+  <path d="M 225,540 L 225,610" class="arrow"/>
+
+  <!-- Message 7: Create Smart Contract -->
+  <rect x="525" y="640" width="200" height="40" class="message"/>
+  <text x="625" y="665" text-anchor="middle" class="message-text">Create Smart Contract</text>
+  <path d="M 625,640 L 625,680" class="arrow"/>
+
+  <!-- Message 8: Validate & Record -->
+  <rect x="625" y="710" width="100" height="40" class="message"/>
+  <text x="675" y="735" text-anchor="middle" class="message-text">Validate & Record</text>
+  <rect x="625" y="750" width="100" height="30" class="activation"/>
+  <path d="M 675,710 L 675,780" class="arrow"/>
+
+  <!-- Message 9: Notify Stakeholders -->
+  <rect x="725" y="810" width="200" height="40" class="message"/>
+  <text x="825" y="835" text-anchor="middle" class="message-text">Notify Stakeholders</text>
+  <path d="M 825,810 L 825,850" class="arrow"/>
+
+  <!-- Loopback messages -->
+  <rect x="725" y="180" width="300" height="40" class="message"/>
+  <text x="875" y="205" text-anchor="middle" class="message-text">Loop: Progress Check</text>
+  <rect x="725" y="220" width="300" height="40" class="message"/>
+  <text x="875" y="245" text-anchor="middle" class="message-text">Analyze Metrics</text>
+  <rect x="725" y="260" width="300" height="40" class="message"/>
+  <text x="875" y="285" text-anchor="middle" class="message-text">Status Update</text>
+  <rect x="725" y="300" width="300" height="40" class="message"/>
+  <text x="875" y="325" text-anchor="middle" class="message-text">Update Record</text>
+  <rect x="725" y="340" width="300" height="40" class="message"/>
+  <text x="875" y="365" text-anchor="middle" class="message-text">Store Data</text>
+
+  <!-- Final message -->
+  <rect x="725" y="460" width="300" height="40" class="message"/>
+  <text x="875" y="485" text-anchor="middle" class="message-text">Implementation Complete</text>
+
+  <!-- Legend -->
+  <rect x="50" y="850" width="1300" height="30" fill="#f9f9f9" stroke="#ddd" stroke-width="2"/>
+  <text x="700" y="872" text-anchor="middle" font-size="14" fill="#667eea" font-weight="bold">
+    Integration enables real-time quantum-enhanced decision making with transparent blockchain recording
+  </text>
+</svg>

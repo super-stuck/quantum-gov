@@ -1,0 +1,121 @@
+graph LR
+    subgraph "Multi-Agent Reinforcement Learning System"
+        subgraph "Environment"
+            ENV[State S_t<br/>Policy Space]
+        end
+
+        subgraph "Human Agents"
+            H1[Human Agent 1<br/>π_H₁(a|s)]
+            H2[Human Agent 2<br/>π_H₂(a|s)]
+            H3[Human Agent 3<br/>π_H₃(a|s)]
+        end
+
+        subgraph "AI Agents"
+            AI1[AI Agent 1<br/>π_AI₁(a|s, θ₁)]
+            AI2[AI Agent 2<br/>π_AI₂(a|s, θ₂)]
+            AIm[AI Agent M<br/>π_AIₘ(a|s, θₘ)]
+        end
+
+        subgraph "Value Models"
+            V1[Value Network V₁(φ₁)]
+            V2[Value Network V₂(φ₂)]
+            Vm[Value Network Vₘ(φₘ)]
+        end
+
+        subgraph "Human Value Models"
+            HV1[H₁(s, a, ψ₁)]
+            HV2[H₂(s, a, ψ₂)]
+            HV3[H₃(s, a, ψ₃)]
+        end
+
+        subgraph "Action Selection"
+            AS1[Combined Action<br/>A_t = {a₁, a₂, ..., aₙ, a₁_AI, ..., aₘ_AI}]
+        end
+
+        subgraph "Reward Computation"
+            R1[Task Reward Rᵢ]
+            R2[Alignment Reward λE[V_human]]
+            R3[KL Divergence μKL(π||π_human)]
+        end
+
+        subgraph "Policy Update"
+            PU[θᵢ ← θᵢ + α∇Jᵢ(θᵢ) + β∇Aᵢ(ψᵢ)]
+        end
+
+        subgraph "Coordination Mechanism"
+            COOP[Cooperative Game<br/>Shapley Value]
+            FAIR[Fair Contribution<br/>φᵢ(v)]
+        end
+    end
+
+    %% Environment connections
+    ENV --> H1
+    ENV --> H2
+    ENV --> H3
+    ENV --> AI1
+    ENV --> AI2
+    ENV --> AIm
+
+    %% Action selection
+    H1 --> AS1
+    H2 --> AS1
+    H3 --> AS1
+    AI1 --> AS1
+    AI2 --> AS1
+    AIm --> AS1
+
+    %% Value models
+    AS1 --> V1
+    AS1 --> V2
+    AS1 --> Vm
+
+    %% Human value models
+    AS1 --> HV1
+    AS1 --> HV2
+    AS1 --> HV3
+
+    %% Reward computation
+    V1 --> R1
+    V2 --> R1
+    Vm --> R1
+    HV1 --> R2
+    HV2 --> R2
+    HV3 --> R2
+    AI1 --> R3
+    AI2 --> R3
+    AIm --> R3
+
+    %% Policy update
+    R1 --> PU
+    R2 --> PU
+    R3 --> PU
+
+    PU --> AI1
+    PU --> AI2
+    PU --> AIm
+
+    %% Coordination
+    R1 --> COOP
+    R2 --> COOP
+    COOP --> FAIR
+    FAIR --> PU
+
+    %% Learning rates
+    ENV -.-> H1
+    ENV -.-> H2
+    ENV -.-> H3
+
+    %% Styling
+    classDef environment fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
+    classDef human fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
+    classDef ai fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    classDef value fill:#fff3e0,stroke:#e65100,stroke-width:2px
+    classDef reward fill:#fce4ec,stroke:#c2185b,stroke-width:2px
+    classDef update fill:#fff9c4,stroke:#f57f17,stroke-width:2px
+
+    class ENV environment
+    class H1,H2,H3 human
+    class AI1,AI2,AIm ai
+    class V1,V2,Vm,HV1,HV2,HV3 value
+    class R1,R2,R3 reward
+    class PU,AS1,COOP,FAIR update

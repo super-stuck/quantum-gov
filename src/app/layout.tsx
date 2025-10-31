@@ -37,10 +37,12 @@ export default function RootLayout({
                 </button>
                 <div className={`nav-links ${isMenuOpen ? 'mobile-open' : ''}`}>
                   <a href="/" onClick={() => setIsMenuOpen(false)}>Home</a>
+                  <a href="/materials" onClick={() => setIsMenuOpen(false)}>Materials</a>
                   <a href="/research" onClick={() => setIsMenuOpen(false)}>Research</a>
                   <a href="/technical" onClick={() => setIsMenuOpen(false)}>Technical</a>
                   <a href="/ui-ux" onClick={() => setIsMenuOpen(false)}>UI/UX</a>
                   <a href="/business" onClick={() => setIsMenuOpen(false)}>Business</a>
+                  <a href="/mermaid-diagrams" onClick={() => setIsMenuOpen(false)}>Diagrams</a>
                   <a href="/presentations" onClick={() => setIsMenuOpen(false)}>Presentations</a>
                 </div>
               </div>
