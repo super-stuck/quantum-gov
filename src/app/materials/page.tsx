@@ -356,6 +356,105 @@ export default function MaterialsPage() {
       size: '181 KB',
       link: '/materials/Virtual_Utopia_Research_Final.pdf',
       download: '/materials/Virtual_Utopia_Research_Final.pdf'
+    },
+    {
+      id: 32,
+      title: 'AI/ML Governance Enhanced Paper',
+      description: 'Enhanced AI-augmented collective intelligence paper with comprehensive literature review.',
+      type: 'PDF',
+      category: 'research',
+      icon: '🤖',
+      size: '192 KB',
+      link: '/papers/ai_ml_governance_enhanced.pdf',
+      download: '/papers/ai_ml_governance_enhanced.pdf'
+    },
+    {
+      id: 33,
+      title: 'Quantum Computing Enhanced Paper',
+      description: 'Enhanced quantum computing paper with detailed algorithms and applications.',
+      type: 'PDF',
+      category: 'research',
+      icon: '⚛️',
+      size: '204 KB',
+      link: '/papers/quantum_computing_enhanced.pdf',
+      download: '/papers/quantum_computing_enhanced.pdf'
+    },
+    {
+      id: 34,
+      title: 'AI/ML Governance Paper',
+      description: 'Original AI and machine learning governance research paper.',
+      type: 'PDF',
+      category: 'research',
+      icon: '🧠',
+      size: '184 KB',
+      link: '/papers/QuantumGov_AI_ML_Paper.pdf',
+      download: '/papers/QuantumGov_AI_ML_Paper.pdf'
+    },
+    {
+      id: 35,
+      title: 'Blockchain Governance Paper',
+      description: 'Blockchain-based governance and transparency mechanisms research.',
+      type: 'PDF',
+      category: 'research',
+      icon: '🔗',
+      size: '200 KB',
+      link: '/papers/QuantumGov_Blockchain_Paper.pdf',
+      download: '/papers/QuantumGov_Blockchain_Paper.pdf'
+    },
+    {
+      id: 36,
+      title: 'Economics Paper',
+      description: 'Economic modeling and impact analysis for quantum governance.',
+      type: 'PDF',
+      category: 'research',
+      icon: '💰',
+      size: '213 KB',
+      link: '/papers/QuantumGov_Economics_Paper.pdf',
+      download: '/papers/QuantumGov_Economics_Paper.pdf'
+    },
+    {
+      id: 37,
+      title: 'Game Theory Paper',
+      description: 'Game theory applications in quantum-enhanced democratic governance.',
+      type: 'PDF',
+      category: 'research',
+      icon: '🎯',
+      size: '198 KB',
+      link: '/papers/QuantumGov_GameTheory_Paper.pdf',
+      download: '/papers/QuantumGov_GameTheory_Paper.pdf'
+    },
+    {
+      id: 38,
+      title: 'Political Science Paper',
+      description: 'Political science foundations for quantum democratic governance.',
+      type: 'PDF',
+      category: 'research',
+      icon: '🏛️',
+      size: '165 KB',
+      link: '/papers/QuantumGov_Political_Science_Paper.pdf',
+      download: '/papers/QuantumGov_Political_Science_Paper.pdf'
+    },
+    {
+      id: 39,
+      title: 'Psychology Paper',
+      description: 'Psychological factors in collective decision-making and governance.',
+      type: 'PDF',
+      category: 'research',
+      icon: '🧠',
+      size: '203 KB',
+      link: '/papers/QuantumGov_Psychology_Paper.pdf',
+      download: '/papers/QuantumGov_Psychology_Paper.pdf'
+    },
+    {
+      id: 40,
+      title: 'Quantum Computing Paper',
+      description: 'Quantum computing principles and applications in governance.',
+      type: 'PDF',
+      category: 'research',
+      icon: '⚛️',
+      size: '188 KB',
+      link: '/papers/QuantumGov_Quantum_Computing_Paper.pdf',
+      download: '/papers/QuantumGov_Quantum_Computing_Paper.pdf'
     }
   ]
 

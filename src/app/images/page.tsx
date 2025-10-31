@@ -1,4 +1,10 @@
+'use client'
+
+import { useState } from 'react'
+
 export default function ImageGallery() {
+  const [selectedImage, setSelectedImage] = useState<any>(null)
+
   const images = [
     {
       id: 'data-models',
@@ -32,21 +38,21 @@ export default function ImageGallery() {
       id: 'microservices-architecture',
       title: 'Microservices Architecture',
       description: 'Distributed microservices implementation with detailed service interactions',
-      src: '/diagrams/tikz/microservices_architecture.pdf',
+      src: '/images/png/microservices_architecture.png',
       category: 'Architecture'
     },
     {
       id: 'microservices-architecture-hq',
       title: 'Quantum Microservices Architecture (HQ)',
       description: 'Advanced quantum-enhanced microservices with quantum communication layers',
-      src: '/diagrams/tikz/quantum_microservices_architecture.pdf',
+      src: '/images/png/microservices_architecture_hq.png',
       category: 'Architecture'
     },
     {
       id: 'quantum-microservices-architecture',
       title: 'Quantum Microservices Architecture',
       description: 'Advanced quantum-enhanced microservices with quantum communication layers',
-      src: '/diagrams/tikz/quantum_microservices_architecture.pdf',
+      src: '/images/png/microservices_architecture.png',
       category: 'Architecture'
     },
     {
@@ -214,8 +220,16 @@ export default function ImageGallery() {
     }
   ]
 
+  const openModal = (image: any) => {
+    setSelectedImage(image)
+  }
+
+  const closeModal = () => {
+    setSelectedImage(null)
+  }
+
   return (
-    <div style={{ 
+    <div style={{
       minHeight: '100vh',
       background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
       color: 'white'
@@ -223,91 +237,182 @@ export default function ImageGallery() {
       <div style={{ padding: '2rem', maxWidth: '1200px', margin: '0 auto' }}>
         <div style={{ marginBottom: '2rem', borderBottom: '2px solid rgba(255,255,255,0.2)', paddingBottom: '1rem' }}>
           <h1 style={{ margin: 0, fontSize: '2.5rem', fontWeight: 'bold' }}>Architecture & Design Gallery</h1>
-          <p style={{ marginTop: '0.5rem', opacity: 0.9, fontSize: '1.1rem' }}>
-            <a href="/docs" style={{ color: '#fff', opacity: 0.8 }}>← Back to Documentation</a>
-          </p>
           <p style={{ marginTop: '1rem', opacity: 0.8, fontSize: '1rem' }}>
             Explore comprehensive architecture diagrams, enhanced framework visualizations, UI mockups, and design assets for the QuantumGov platform. The collection now includes detailed diagrams showing quantum-AI integration, cross-cultural adaptation, business impact analysis, and more. Click any image to view it in full-screen with zoom capabilities.
           </p>
         </div>
 
-        <div style={{ 
-          display: 'grid', 
-          gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', 
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
           gap: '2rem',
           marginTop: '2rem'
         }}>
           {images.map((image) => (
-            <div 
+            <div
               key={image.id}
-              style={{ 
+              style={{
                 background: 'rgba(255,255,255,0.1)',
                 borderRadius: '12px',
                 overflow: 'hidden',
-                border: '1px solid rgba(255,255,255,0.2)'
+                border: '1px solid rgba(255,255,255,0.2)',
+                cursor: 'pointer'
               }}
+              onClick={() => openModal(image)}
             >
-              <a href={`/images/${image.id}`} style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}>
-                <div style={{ position: 'relative', height: '200px', overflow: 'hidden' }}>
-                  <img 
-                    src={image.src}
-                    alt={image.title}
-                    style={{ 
-                      width: '100%',
-                      height: '100%',
-                      objectFit: 'cover'
-                    }}
-                  />
-                  <div style={{
-                    position: 'absolute',
-                    top: '0.5rem',
-                    right: '0.5rem',
-                    background: 'rgba(0,0,0,0.7)',
-                    color: 'white',
-                    padding: '0.25rem 0.75rem',
-                    borderRadius: '12px',
-                    fontSize: '0.75rem',
-                    fontWeight: '500'
-                  }}>
-                    {image.category}
-                  </div>
+              <div style={{ position: 'relative', height: '200px', overflow: 'hidden' }}>
+                <img
+                  src={image.src}
+                  alt={image.title}
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover'
+                  }}
+                  onError={(e) => {
+                    e.currentTarget.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzk5OSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkltYWdlIG5vdCBmb3VuZDwvdGV4dD48L3N2Zz4='
+                  }}
+                />
+                <div style={{
+                  position: 'absolute',
+                  top: '0.5rem',
+                  right: '0.5rem',
+                  background: 'rgba(0,0,0,0.7)',
+                  color: 'white',
+                  padding: '0.25rem 0.75rem',
+                  borderRadius: '12px',
+                  fontSize: '0.75rem',
+                  fontWeight: '500'
+                }}>
+                  {image.category}
                 </div>
-                
-                <div style={{ padding: '1.5rem' }}>
-                  <h3 style={{ 
-                    margin: '0 0 0.5rem 0',
-                    fontSize: '1.25rem',
-                    fontWeight: '600'
-                  }}>
-                    {image.title}
-                  </h3>
-                  <p style={{ 
-                    margin: 0,
-                    opacity: 0.8,
-                    fontSize: '0.95rem',
-                    lineHeight: '1.4'
-                  }}>
-                    {image.description}
-                  </p>
-                  
-                  <div style={{ 
-                    marginTop: '1rem',
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '0.5rem',
-                    fontSize: '0.9rem',
-                    opacity: 0.7
-                  }}>
-                    <span>🔍</span>
-                    <span>Click to view full-size</span>
-                  </div>
+              </div>
+
+              <div style={{ padding: '1.5rem' }}>
+                <h3 style={{
+                  margin: '0 0 0.5rem 0',
+                  fontSize: '1.25rem',
+                  fontWeight: '600'
+                }}>
+                  {image.title}
+                </h3>
+                <p style={{
+                  margin: 0,
+                  opacity: 0.8,
+                  fontSize: '0.95rem',
+                  lineHeight: '1.4'
+                }}>
+                  {image.description}
+                </p>
+
+                <div style={{
+                  marginTop: '1rem',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.5rem',
+                  fontSize: '0.9rem',
+                  opacity: 0.7
+                }}>
+                  <span>🔍</span>
+                  <span>Click to view full-size</span>
                 </div>
-              </a>
+              </div>
             </div>
           ))}
         </div>
 
-        <div style={{ 
+        {selectedImage && (
+          <div
+            style={{
+              position: 'fixed',
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              background: 'rgba(0,0,0,0.95)',
+              zIndex: 9999,
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '2rem'
+            }}
+            onClick={closeModal}
+          >
+            <button
+              onClick={closeModal}
+              style={{
+                position: 'absolute',
+                top: '1rem',
+                right: '1rem',
+                background: 'rgba(255,255,255,0.2)',
+                border: 'none',
+                color: 'white',
+                fontSize: '2rem',
+                width: '50px',
+                height: '50px',
+                borderRadius: '50%',
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                zIndex: 10000
+              }}
+            >
+              ×
+            </button>
+
+            <div
+              style={{
+                maxWidth: '90vw',
+                maxHeight: '90vh',
+                display: 'flex',
+                flexDirection: 'column'
+              }}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <img
+                src={selectedImage.src}
+                alt={selectedImage.title}
+                style={{
+                  maxWidth: '100%',
+                  maxHeight: '80vh',
+                  objectFit: 'contain',
+                  border: '1px solid rgba(255,255,255,0.2)',
+                  borderRadius: '8px'
+                }}
+              />
+              <div style={{
+                marginTop: '1rem',
+                textAlign: 'center',
+                color: 'white'
+              }}>
+                <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.5rem' }}>
+                  {selectedImage.title}
+                </h3>
+                <p style={{ margin: 0, opacity: 0.9 }}>
+                  {selectedImage.description}
+                </p>
+                <a
+                  href={selectedImage.src}
+                  download
+                  style={{
+                    display: 'inline-block',
+                    marginTop: '1rem',
+                    background: 'rgba(255,255,255,0.2)',
+                    color: 'white',
+                    padding: '0.75rem 1.5rem',
+                    borderRadius: '8px',
+                    textDecoration: 'none'
+                  }}
+                >
+                  📥 Download
+                </a>
+              </div>
+            </div>
+          </div>
+        )}
+
+        <div style={{
           marginTop: '3rem',
           padding: '2rem',
           background: 'rgba(255,255,255,0.1)',
@@ -319,9 +424,9 @@ export default function ImageGallery() {
           <p style={{ margin: '0 0 1.5rem 0', opacity: 0.9 }}>
             Access the complete Figma design file containing UI/UX designs, prototypes, and design system components.
           </p>
-          <a 
+          <a
             href="/figma/Social%20R.fig"
-            style={{ 
+            style={{
               display: 'inline-block',
               background: 'rgba(255,255,255,0.2)',
               color: 'white',
