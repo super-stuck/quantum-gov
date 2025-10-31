@@ -1,4 +1,5 @@
 'use client'
+import { useState } from 'react'
 import { AuthProvider } from './context/AuthContext'
 import AuthWrapper from './components/AuthWrapper'
 import './globals.css'
@@ -8,6 +9,12 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen)
+  }
+
   return (
     <html lang="en">
       <body>
@@ -19,19 +26,34 @@ export default function RootLayout({
                   <h1>QuantumGov Revolution</h1>
                   <span>Documentation Hub</span>
                 </div>
-                <div className="nav-links">
-                  <a href="/">Home</a>
-                  <a href="/materials">Materials</a>
-                  <a href="/images">Gallery</a>
-                  <a href="/research">Research</a>
-                  <a href="/technical">Technical</a>
-                  <a href="/ui-ux">UI/UX</a>
-                  <a href="/business">Business</a>
-                  <a href="/mermaid-diagrams">Diagrams</a>
-                  <a href="/presentations">Presentations</a>
+                <button
+                  className="mobile-menu-toggle"
+                  onClick={toggleMenu}
+                  aria-label="Toggle mobile menu"
+                >
+                  <span className={`hamburger ${isMenuOpen ? 'open' : ''}`}></span>
+                  <span className={`hamburger ${isMenuOpen ? 'open' : ''}`}></span>
+                  <span className={`hamburger ${isMenuOpen ? 'open' : ''}`}></span>
+                </button>
+                <div className={`nav-links ${isMenuOpen ? 'mobile-open' : ''}`}>
+                  <a href="/" onClick={() => setIsMenuOpen(false)}>Home</a>
+                  <a href="/materials" onClick={() => setIsMenuOpen(false)}>Materials</a>
+                  <a href="/images" onClick={() => setIsMenuOpen(false)}>Gallery</a>
+                  <a href="/research" onClick={() => setIsMenuOpen(false)}>Research</a>
+                  <a href="/technical" onClick={() => setIsMenuOpen(false)}>Technical</a>
+                  <a href="/ui-ux" onClick={() => setIsMenuOpen(false)}>UI/UX</a>
+                  <a href="/business" onClick={() => setIsMenuOpen(false)}>Business</a>
+                  <a href="/mermaid-diagrams" onClick={() => setIsMenuOpen(false)}>Diagrams</a>
+                  <a href="/presentations" onClick={() => setIsMenuOpen(false)}>Presentations</a>
                 </div>
               </div>
             </nav>
+            {isMenuOpen && (
+              <div
+                className="mobile-backdrop"
+                onClick={() => setIsMenuOpen(false)}
+              ></div>
+            )}
             <main className="main-content">
               {children}
             </main>
