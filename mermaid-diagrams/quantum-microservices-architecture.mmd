@@ -1,0 +1,47 @@
+graph TB
+    subgraph "Quantum Communication Layer"
+        Q1[Quantum Entanglement Network]
+        Q2[Quantum Key Distribution]
+        Q3[Quantum Repeaters]
+    end
+
+    subgraph "Microservices Layer"
+        M1[Governance Service]
+        M2[Voting Service]
+        M3[Proposal Service]
+        M4[Analytics Service]
+        M5[Auth Service]
+    end
+
+    subgraph "Quantum Processing Unit"
+        QP1[Quantum Annealer]
+        QP2[Gate-based QC]
+        QP3[Quantum Simulator]
+    end
+
+    subgraph "Data Layer"
+        D1[Distributed Ledger]
+        D2[Quantum Database]
+        D3[Classical Cache]
+    end
+
+    M1 <--> Q1
+    M2 <--> Q1
+    M3 <--> Q2
+    M4 <--> Q3
+    M5 <--> Q3
+
+    M1 <--> QP1
+    M2 <--> QP1
+    M3 <--> QP2
+    M4 <--> QP2
+    M5 <--> QP3
+
+    QP1 <--> D1
+    QP2 <--> D2
+    QP3 <--> D3
+
+    style Q1 fill:#667eea,color:#fff
+    style QP1 fill:#764ba2,color:#fff
+    style M1 fill:#f093fb,color:#fff
+    style D1 fill:#2ecc71,color:#fff

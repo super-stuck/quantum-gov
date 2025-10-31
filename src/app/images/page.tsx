@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 export default function ImageGallery() {
   const [selectedImage, setSelectedImage] = useState<any>(null)
@@ -45,7 +45,7 @@ export default function ImageGallery() {
       id: 'microservices-architecture-hq',
       title: 'Quantum Microservices Architecture (HQ)',
       description: 'Advanced quantum-enhanced microservices with quantum communication layers',
-      src: '/images/png/microservices_architecture_hq.png',
+      src: '/diagrams/compiled_diagrams/quantum_ai_integration_flow.pdf',
       category: 'Architecture'
     },
     {
@@ -220,13 +220,39 @@ export default function ImageGallery() {
     }
   ]
 
-  const openModal = (image: any) => {
-    setSelectedImage(image)
+  const openModal = (item: any) => {
+    setSelectedImage(item)
   }
 
   const closeModal = () => {
     setSelectedImage(null)
   }
+
+  const isPDF = (src: string) => src.toLowerCase().endsWith('.pdf')
+
+  const navigateNext = () => {
+    const currentIndex = images.findIndex(img => img.id === selectedImage?.id)
+    const nextIndex = (currentIndex + 1) % images.length
+    setSelectedImage(images[nextIndex])
+  }
+
+  const navigatePrev = () => {
+    const currentIndex = images.findIndex(img => img.id === selectedImage?.id)
+    const prevIndex = (currentIndex - 1 + images.length) % images.length
+    setSelectedImage(images[prevIndex])
+  }
+
+  const handleKeyDown = (e: KeyboardEvent) => {
+    if (!selectedImage) return
+    if (e.key === 'ArrowLeft') navigatePrev()
+    if (e.key === 'ArrowRight') navigateNext()
+    if (e.key === 'Escape') closeModal()
+  }
+
+  useEffect(() => {
+    window.addEventListener('keydown', handleKeyDown)
+    return () => window.removeEventListener('keydown', handleKeyDown)
+  }, [selectedImage])
 
   return (
     <div style={{
@@ -238,7 +264,7 @@ export default function ImageGallery() {
         <div style={{ marginBottom: '2rem', borderBottom: '2px solid rgba(255,255,255,0.2)', paddingBottom: '1rem' }}>
           <h1 style={{ margin: 0, fontSize: '2.5rem', fontWeight: 'bold' }}>Architecture & Design Gallery</h1>
           <p style={{ marginTop: '1rem', opacity: 0.8, fontSize: '1rem' }}>
-            Explore comprehensive architecture diagrams, enhanced framework visualizations, UI mockups, and design assets for the QuantumGov platform. The collection now includes detailed diagrams showing quantum-AI integration, cross-cultural adaptation, business impact analysis, and more. Click any image to view it in full-screen with zoom capabilities.
+            Explore comprehensive architecture diagrams, enhanced framework visualizations, UI mockups, and design assets for the QuantumGov platform. The collection now includes detailed diagrams showing quantum-AI integration, cross-cultural adaptation, business impact analysis, and more. Click any item to view it in full-screen with zoom capabilities.
           </p>
         </div>
 
@@ -248,9 +274,9 @@ export default function ImageGallery() {
           gap: '2rem',
           marginTop: '2rem'
         }}>
-          {images.map((image) => (
+          {images.map((item) => (
             <div
-              key={image.id}
+              key={item.id}
               style={{
                 background: 'rgba(255,255,255,0.1)',
                 borderRadius: '12px',
@@ -258,21 +284,39 @@ export default function ImageGallery() {
                 border: '1px solid rgba(255,255,255,0.2)',
                 cursor: 'pointer'
               }}
-              onClick={() => openModal(image)}
+              onClick={() => openModal(item)}
             >
-              <div style={{ position: 'relative', height: '200px', overflow: 'hidden' }}>
-                <img
-                  src={image.src}
-                  alt={image.title}
-                  style={{
+              <div style={{ position: 'relative', height: '200px', overflow: 'hidden', background: '#fff' }}>
+                {isPDF(item.src) ? (
+                  <div style={{
                     width: '100%',
                     height: '100%',
-                    objectFit: 'cover'
-                  }}
-                  onError={(e) => {
-                    e.currentTarget.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzk5OSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkltYWdlIG5vdCBmb3VuZDwvdGV4dD48L3N2Zz4='
-                  }}
-                />
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    background: 'linear-gradient(135deg, #667eea20, #764ba220)'
+                  }}>
+                    <div style={{ fontSize: '4rem', marginBottom: '1rem' }}>📄</div>
+                    <div style={{ color: '#667eea', fontWeight: '600', fontSize: '1.1rem' }}>PDF Document</div>
+                    <div style={{ color: '#666', fontSize: '0.85rem', marginTop: '0.5rem' }}>
+                      {item.category}
+                    </div>
+                  </div>
+                ) : (
+                  <img
+                    src={item.src}
+                    alt={item.title}
+                    style={{
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover'
+                    }}
+                    onError={(e) => {
+                      e.currentTarget.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzk5OSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkltYWdlIG5vdCBmb3VuZDwvdGV4dD48L3N2Zz4='
+                    }}
+                  />
+                )}
                 <div style={{
                   position: 'absolute',
                   top: '0.5rem',
@@ -284,7 +328,7 @@ export default function ImageGallery() {
                   fontSize: '0.75rem',
                   fontWeight: '500'
                 }}>
-                  {image.category}
+                  {item.category}
                 </div>
               </div>
 
@@ -294,7 +338,7 @@ export default function ImageGallery() {
                   fontSize: '1.25rem',
                   fontWeight: '600'
                 }}>
-                  {image.title}
+                  {item.title}
                 </h3>
                 <p style={{
                   margin: 0,
@@ -302,7 +346,7 @@ export default function ImageGallery() {
                   fontSize: '0.95rem',
                   lineHeight: '1.4'
                 }}>
-                  {image.description}
+                  {item.description}
                 </p>
 
                 <div style={{
@@ -313,8 +357,8 @@ export default function ImageGallery() {
                   fontSize: '0.9rem',
                   opacity: 0.7
                 }}>
-                  <span>🔍</span>
-                  <span>Click to view full-size</span>
+                  <span>{isPDF(item.src) ? '📄' : '🔍'}</span>
+                  <span>Click to view {isPDF(item.src) ? 'PDF' : 'full-size'}</span>
                 </div>
               </div>
             </div>
@@ -361,6 +405,54 @@ export default function ImageGallery() {
               ×
             </button>
 
+            <button
+              onClick={navigatePrev}
+              style={{
+                position: 'absolute',
+                left: '1rem',
+                top: '50%',
+                transform: 'translateY(-50%)',
+                background: 'rgba(255,255,255,0.2)',
+                border: 'none',
+                color: 'white',
+                fontSize: '2rem',
+                width: '50px',
+                height: '50px',
+                borderRadius: '50%',
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                zIndex: 10000
+              }}
+            >
+              ←
+            </button>
+
+            <button
+              onClick={navigateNext}
+              style={{
+                position: 'absolute',
+                right: '1rem',
+                top: '50%',
+                transform: 'translateY(-50%)',
+                background: 'rgba(255,255,255,0.2)',
+                border: 'none',
+                color: 'white',
+                fontSize: '2rem',
+                width: '50px',
+                height: '50px',
+                borderRadius: '50%',
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                zIndex: 10000
+              }}
+            >
+              →
+            </button>
+
             <div
               style={{
                 maxWidth: '90vw',
@@ -370,44 +462,81 @@ export default function ImageGallery() {
               }}
               onClick={(e) => e.stopPropagation()}
             >
-              <img
-                src={selectedImage.src}
-                alt={selectedImage.title}
-                style={{
-                  maxWidth: '100%',
-                  maxHeight: '80vh',
-                  objectFit: 'contain',
-                  border: '1px solid rgba(255,255,255,0.2)',
-                  borderRadius: '8px'
-                }}
-              />
-              <div style={{
-                marginTop: '1rem',
-                textAlign: 'center',
-                color: 'white'
-              }}>
-                <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.5rem' }}>
-                  {selectedImage.title}
-                </h3>
-                <p style={{ margin: 0, opacity: 0.9 }}>
-                  {selectedImage.description}
-                </p>
-                <a
-                  href={selectedImage.src}
-                  download
-                  style={{
-                    display: 'inline-block',
+              {isPDF(selectedImage.src) ? (
+                <div style={{
+                  background: 'white',
+                  borderRadius: '8px',
+                  padding: '3rem',
+                  textAlign: 'center',
+                  maxWidth: '600px'
+                }}>
+                  <div style={{ fontSize: '5rem', marginBottom: '1.5rem' }}>📄</div>
+                  <h3 style={{ margin: '0 0 1rem 0', fontSize: '1.8rem', color: '#333' }}>
+                    {selectedImage.title}
+                  </h3>
+                  <p style={{ margin: '0 0 2rem 0', color: '#666', fontSize: '1rem' }}>
+                    {selectedImage.description}
+                  </p>
+                  <a
+                    href={selectedImage.src}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      display: 'inline-block',
+                      background: 'linear-gradient(135deg, #667eea, #764ba2)',
+                      color: 'white',
+                      padding: '1rem 2rem',
+                      borderRadius: '8px',
+                      textDecoration: 'none',
+                      fontSize: '1.1rem',
+                      fontWeight: '600'
+                    }}
+                  >
+                    📥 Open PDF
+                  </a>
+                </div>
+              ) : (
+                <>
+                  <img
+                    src={selectedImage.src}
+                    alt={selectedImage.title}
+                    style={{
+                      maxWidth: '100%',
+                      maxHeight: '80vh',
+                      objectFit: 'contain',
+                      border: '1px solid rgba(255,255,255,0.2)',
+                      borderRadius: '8px'
+                    }}
+                  />
+                  <div style={{
                     marginTop: '1rem',
-                    background: 'rgba(255,255,255,0.2)',
-                    color: 'white',
-                    padding: '0.75rem 1.5rem',
-                    borderRadius: '8px',
-                    textDecoration: 'none'
-                  }}
-                >
-                  📥 Download
-                </a>
-              </div>
+                    textAlign: 'center',
+                    color: 'white'
+                  }}>
+                    <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.5rem' }}>
+                      {selectedImage.title}
+                    </h3>
+                    <p style={{ margin: 0, opacity: 0.9 }}>
+                      {selectedImage.description}
+                    </p>
+                    <a
+                      href={selectedImage.src}
+                      download
+                      style={{
+                        display: 'inline-block',
+                        marginTop: '1rem',
+                        background: 'rgba(255,255,255,0.2)',
+                        color: 'white',
+                        padding: '0.75rem 1.5rem',
+                        borderRadius: '8px',
+                        textDecoration: 'none'
+                      }}
+                    >
+                      📥 Download
+                    </a>
+                  </div>
+                </>
+              )}
             </div>
           </div>
         )}

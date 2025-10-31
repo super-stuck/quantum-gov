@@ -1,0 +1,36 @@
+graph LR
+    A[Human Intelligence] <--> B[AI Assistant]
+    B <--> C[Quantum Enhancement]
+
+    A --> A1[Creative Thinking]
+    A --> A2[Ethical Judgment]
+    A --> A3[Social Context]
+
+    B --> B1[Data Analysis]
+    B --> B2[Pattern Recognition]
+    B --> B3[Prediction Models]
+
+    C --> C1[Quantum Speedup]
+    C --> C2[Superposition Search]
+    C --> C3[Entanglement Effects]
+
+    D[Decision Making] --> E[Collaborative Output]
+    A1 --> D
+    B1 --> D
+    C1 --> D
+
+    A2 --> E
+    B2 --> E
+    C2 --> E
+
+    A3 --> F[Human-in-the-Loop]
+    B3 --> F
+    C3 --> F
+
+    F --> E
+
+    style A fill:#667eea,color:#fff
+    style B fill:#764ba2,color:#fff
+    style C fill:#f093fb,color:#fff
+    style F fill:#2ecc71,color:#fff
+    style E fill:#2ecc71,color:#fff

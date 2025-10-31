@@ -1,0 +1,46 @@
+graph TB
+    subgraph "Presentation Layer"
+        A1[Web Interface]
+        A2[Mobile App]
+        A3[API Gateway]
+    end
+
+    subgraph "Application Layer"
+        B1[Governance Service]
+        B2[Voting Service]
+        B3[Analytics Service]
+    end
+
+    subgraph "Quantum Layer"
+        C1[Quantum Processor]
+        C2[Quantum Memory]
+        C3[Quantum Network]
+    end
+
+    subgraph "Data Layer"
+        D1[Blockchain DB]
+        D2[Classical DB]
+        D3[Cache Layer]
+    end
+
+    A1 --> A3
+    A2 --> A3
+    A3 --> B1
+    A3 --> B2
+    A3 --> B3
+
+    B1 --> C1
+    B2 --> C1
+    B3 --> C2
+
+    B1 --> D1
+    B2 --> D1
+    B3 --> D2
+
+    D1 <--> D3
+    D2 <--> D3
+
+    style A1 fill:#667eea,color:#fff
+    style A2 fill:#667eea,color:#fff
+    style C1 fill:#764ba2,color:#fff
+    style D1 fill:#2ecc71,color:#fff
