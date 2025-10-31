@@ -374,7 +374,7 @@ export default function ImageGallery() {
               right: 0,
               bottom: 0,
               background: 'rgba(0,0,0,0.95)',
-              zIndex: 9999,
+              zIndex: 10002,
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',

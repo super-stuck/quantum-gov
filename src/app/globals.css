@@ -66,6 +66,8 @@ body {
   border: none;
   padding: 0.5rem;
   cursor: pointer;
+  z-index: 10001;
+  position: relative;
 }
 
 .hamburger {
@@ -116,7 +118,7 @@ body {
     gap: 0;
     box-shadow: -5px 0 15px rgba(0,0,0,0.3);
     transition: right 0.3s ease;
-    z-index: 1000;
+    z-index: 10000;
   }
 
   .nav-links.mobile-open {
