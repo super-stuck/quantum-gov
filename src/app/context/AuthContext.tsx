@@ -31,8 +31,8 @@ const VALID_CREDENTIALS: Record<string, { password: string; role: UserRole }> = 
   }
 }
 
-// Session timeout in milliseconds (30 minutes)
-const SESSION_TIMEOUT = 30 * 60 * 1000
+// Session timeout in milliseconds (30 days)
+const SESSION_TIMEOUT = 30 * 24 * 60 * 60 * 1000
 
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [isAuthenticated, setIsAuthenticated] = useState(false)

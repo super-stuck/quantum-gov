@@ -257,6 +257,105 @@ export default function MaterialsPage() {
       size: '~',
       link: '/presentations/QuantumGov_Short_Presentation.tex',
       download: '/presentations/QuantumGov_Short_Presentation.tex'
+    },
+    {
+      id: 23,
+      title: 'Figure Captions Documentation',
+      description: 'Comprehensive documentation of all figures and captions used in research papers.',
+      type: 'PDF',
+      category: 'research',
+      icon: '🖼️',
+      size: '260 KB',
+      link: '/materials/FIGURE_CAPTIONS_DOCUMENTATION.pdf',
+      download: '/materials/FIGURE_CAPTIONS_DOCUMENTATION.pdf'
+    },
+    {
+      id: 24,
+      title: 'Project Plan',
+      description: 'Detailed project plan with milestones and deliverables.',
+      type: 'PDF',
+      category: 'technical',
+      icon: '📋',
+      size: '171 KB',
+      link: '/materials/PLAN.pdf',
+      download: '/materials/PLAN.pdf'
+    },
+    {
+      id: 25,
+      title: 'Project README',
+      description: 'Main README file for the QuantumGov project.',
+      type: 'PDF',
+      category: 'technical',
+      icon: '📄',
+      size: '161 KB',
+      link: '/materials/README.pdf',
+      download: '/materials/README.pdf'
+    },
+    {
+      id: 26,
+      title: 'QuantumGov README',
+      description: 'QuantumGov-specific README with setup instructions.',
+      type: 'PDF',
+      category: 'technical',
+      icon: '📖',
+      size: '264 KB',
+      link: '/materials/README_QuantumGov.pdf',
+      download: '/materials/README_QuantumGov.pdf'
+    },
+    {
+      id: 27,
+      title: 'Visual Materials README',
+      description: 'Documentation for visual materials and assets.',
+      type: 'PDF',
+      category: 'visual',
+      icon: '🎨',
+      size: '241 KB',
+      link: '/materials/README_Visual_Materials.pdf',
+      download: '/materials/README_Visual_Materials.pdf'
+    },
+    {
+      id: 28,
+      title: 'TODO List',
+      description: 'Current TODO items and future development tasks.',
+      type: 'PDF',
+      category: 'technical',
+      icon: '✅',
+      size: '139 KB',
+      link: '/materials/TODO.pdf',
+      download: '/materials/TODO.pdf'
+    },
+    {
+      id: 29,
+      title: 'Project Tracker',
+      description: 'Project progress tracker and status updates.',
+      type: 'PDF',
+      category: 'technical',
+      icon: '📊',
+      size: '190 KB',
+      link: '/materials/TRACKER.pdf',
+      download: '/materials/TRACKER.pdf'
+    },
+    {
+      id: 30,
+      title: 'Virtual Utopia Research',
+      description: 'Core research document on virtual utopia foundations.',
+      type: 'PDF',
+      category: 'research',
+      icon: '🌌',
+      size: '607 KB',
+      link: '/materials/Virtual_Utopia_Research.pdf',
+      download: '/materials/Virtual_Utopia_Research.pdf'
+    },
+    {
+      id: 31,
+      title: 'Virtual Utopia Research Final',
+      description: 'Final version of virtual utopia research with comprehensive analysis.',
+      type: 'PDF',
+      category: 'research',
+      icon: '✨',
+      size: '181 KB',
+      link: '/materials/Virtual_Utopia_Research_Final.pdf',
+      download: '/materials/Virtual_Utopia_Research_Final.pdf'
     }
   ]
 
