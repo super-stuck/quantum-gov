@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/nixos.org) (preloaded format=pdflatex 1980.1.1)  31 OCT 2025 21:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/nixos.org) (preloaded format=pdflatex 1980.1.1)  31 OCT 2025 21:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -986,7 +986,7 @@ File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count342
 \l__pdf_internal_box=\box70
 )
-No file ai_ml_governance_enhanced_simple.aux.
+(./ai_ml_governance_enhanced_simple.aux)
 \openout1 = `ai_ml_governance_enhanced_simple.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
@@ -1007,6 +1007,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
+
 -- Lines per column: 56 (exact).
 
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
@@ -1036,6 +1037,9 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Package hyperref Info: Link coloring OFF on input line 32.
+
+(./ai_ml_governance_enhanced_simple.out)
+(./ai_ml_governance_enhanced_simple.out)
 \@outlinefile=\write4
 \openout4 = `ai_ml_governance_enhanced_simple.out'.
 
@@ -1220,22 +1224,116 @@ Type  H <return>  for immediate help.
                                                   
 l.284 ....48\textwidth]{cultural_preservation.pdf}
                                                   
-? 
-! Emergency stop.
- ...                                              
-                                                  
-l.284 ....48\textwidth]{cultural_preservation.pdf}
-                                                  
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
- 
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 2
+84.
+
+(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+
+
+
+[3]
+Overfull \hbox (137.21945pt too wide) in paragraph at lines 348--349
+ [][] 
+ []
+
+
+Underfull \vbox (badness 4981) has occurred while \output is active []
+
+
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 433--434
+\OT1/ptm/m/n/10 while en-hanc-ing demo-cratic decision-making ca-pa-bil-i-ties.
+
+ []
+
+
+
+[4]
+Underfull \hbox (badness 4366) in paragraph at lines 439--440
+[]\OT1/ptm/m/n/10 The scal-a-bil-ity anal-y-sis and multi-country val-i-da-tion
+
+ []
+
+
+** Conference Paper **
+Before submitting the final camera ready copy, remember to:
+
+ 1. Manually equalize the lengths of two columns on the last page
+ of your paper;
+
+ 2. Ensure that any PostScript and/or PDF output post-processing
+ uses only Type 1 fonts and that every step in the generation
+ process uses the appropriate paper size.
+
+
+
+
+
+[5
+
+] (./ai_ml_governance_enhanced_simple.aux)
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+Package rerunfilecheck Warning: File `ai_ml_governance_enhanced_simple.out' has
+ changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `ai_ml_governance_enhanced_simple.ou
+t':
+(rerunfilecheck)             Before: 878CC646BAC9CAB854DE49D8E733413D;3528
+(rerunfilecheck)             After:  AF05B140FFD17250201351DD485C422E;6198.
+ ) 
 Here is how much of TeX's memory you used:
- 33068 strings out of 473201
- 790267 string characters out of 5689025
+ 33279 strings out of 473201
+ 793698 string characters out of 5689025
  1284728 words of memory out of 5000000
- 55781 multiletter control sequences out of 15000+600000
- 594424 words of font info for 106 fonts, out of 8000000 for 9000
+ 55950 multiletter control sequences out of 15000+600000
+ 596331 words of font info for 110 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,8n,101p,1090b,823s stack positions out of 10000i,1000n,20000p,200000b,200000s
-!  ==> Fatal error occurred, no output PDF file produced!
+</nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final
+-texmfdist/fonts/type1/public/amsfonts/cm/cmex10.pfb></nix/store/q4gbqp2pph3mw2
+jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/fonts/type1/publi
+c/amsfonts/cm/cmmi10.pfb></nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-c
+ombined-full-2024-final-texmfdist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></ni
+x/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmf
+dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></nix/store/q4gbqp2pph3mw2jp5kwg0
+zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/fonts/type1/public/amsfo
+nts/cm/cmr7.pfb></nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-f
+ull-2024-final-texmfdist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></nix/store/
+q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/fon
+ts/type1/public/amsfonts/cm/cmsy5.pfb></nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3
+hx8-texlive-combined-full-2024-final-texmfdist/fonts/type1/public/amsfonts/cm/c
+msy7.pfb></nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-202
+4-final-texmfdist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></nix/store/q4
+gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/fonts
+/type1/urw/courier/ucrr8a.pfb></nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texl
+ive-combined-full-2024-final-texmfdist/fonts/type1/urw/times/utmb8a.pfb></nix/s
+tore/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdis
+t/fonts/type1/urw/times/utmbi8a.pfb></nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx
+8-texlive-combined-full-2024-final-texmfdist/fonts/type1/urw/times/utmr8a.pfb><
+/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-te
+xmfdist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on ai_ml_governance_enhanced_simple.pdf (5 pages, 193406 bytes).
+
+PDF statistics:
+ 229 PDF objects out of 1000 (max. 8388607)
+ 192 compressed objects within 2 object streams
+ 71 named destinations out of 1000 (max. 500000)
+ 133 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -37,6 +37,18 @@ export default function MermaidDiagrams() {
       title: 'Data Flow Architecture',
       description: 'Data processing pipeline from input collection through quantum processing, AI analysis, and immutable blockchain storage.',
       path: '/diagrams/quantumgov-mermaid-svgs/data-flow.svg'
+    },
+    {
+      id: 'ai-ml-architecture',
+      title: 'AI-ML Architecture',
+      description: 'Comprehensive AI-ML system architecture showing human layer, interface layer, AI agents, belief networks, reinforcement learning, and game theory components.',
+      path: '/diagrams/quantumgov-mermaid-svgs/ai-ml-architecture.svg'
+    },
+    {
+      id: 'quantum-governance',
+      title: 'Quantum Governance Framework',
+      description: 'Complete QGO (Quantum Governance Operators) framework with classical input, quantum encoding, processing core, Hamiltonian, algorithms, and hardware.',
+      path: '/diagrams/quantumgov-mermaid-svgs/quantum-governance.svg'
     }
   ]
 
@@ -111,7 +123,7 @@ export default function MermaidDiagrams() {
           </div>
           <div className="spec-card">
             <h4>📊 Coverage</h4>
-            <p>6 comprehensive diagrams</p>
+            <p>8 comprehensive diagrams</p>
             <p>System architecture</p>
             <p>Complete workflows</p>
           </div>

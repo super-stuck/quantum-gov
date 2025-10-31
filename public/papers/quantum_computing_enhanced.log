@@ -2,8 +2,8 @@ This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/nixos.org) (prelo
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**ai_ml_governance_enhanced.tex
-(./ai_ml_governance_enhanced.tex
+**quantum_computing_enhanced.tex
+(./quantum_computing_enhanced.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 
@@ -199,10 +199,6 @@ LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 )
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/amsfonts/amssymb.sty
-Package: amssymb 2013/01/14 v3.01 AMS font symbols
-
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
@@ -210,31 +206,25 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-))
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/algorithms/algorithmic.sty
-Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/base/ifthen.sty
-Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 )
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/graphics/keyval.sty
-Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks25
+exmfdist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
-\c@ALC@unique=\count289
-\c@ALC@line=\count290
-\c@ALC@rem=\count291
-\c@ALC@depth=\count292
-\ALC@tlm=\skip55
-\algorithmicindent=\skip56
+(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/jknapltx/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup6
 )
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
+(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks25
+)
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/latex/graphics/graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
@@ -257,41 +247,10 @@ File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
 \Gin@req@width=\dimen175
 )
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/base/textcomp.sty
-Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
-)
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
-
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package xcolor Info: Driver file: pdftex.def on input line 274.
-
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/graphics/mathcolor.ltx)
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
-Package xcolor Info: Model `RGB' extended on input line 1365.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
-)
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/latex/cite/cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
-)
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/url/url.sty
-\Urlmuskip=\muskip18
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/latex/hyperref/hyperref.sty
@@ -350,12 +309,12 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 exmfdist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count293
+\c@section@level=\count289
 )
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count294
+\etb@tempcnta=\count290
 )
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/generic/stringenc/stringenc.sty
@@ -363,8 +322,8 @@ Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
 \@linkdim=\dimen176
-\Hy@linkcounter=\count295
-\Hy@pagecounter=\count296
+\Hy@linkcounter=\count291
+\Hy@pagecounter=\count292
 
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/latex/hyperref/pd1enc.def
@@ -376,7 +335,7 @@ Now handling font encoding PD1 ...
 exmfdist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count297
+\Hy@SavedSpaceFactor=\count293
 
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/latex/hyperref/puenc.def
@@ -391,7 +350,13 @@ Package hyperref Info: Plain pages OFF on input line 4172.
 Package hyperref Info: Backreferencing OFF on input line 4177.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4424.
-\c@Hy@tempcnt=\count298
+\c@Hy@tempcnt=\count294
+
+(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/url/url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
 LaTeX Info: Redefining \url on input line 4763.
 \XeTeXLinkMargin=\dimen177
 
@@ -404,7 +369,7 @@ exmfdist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count299
+\Fld@menulength=\count295
 \Field@Width=\dimen178
 \Fld@charsize=\dimen179
 Package hyperref Info: Hyper figures OFF on input line 6042.
@@ -420,9 +385,9 @@ exmfdist/tex/latex/base/atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count300
-\c@Item=\count301
-\c@Hfootnote=\count302
+\Hy@abspage=\count296
+\c@Item=\count297
+\c@Hfootnote=\count298
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
@@ -436,8 +401,8 @@ Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-\Fld@listcount=\count303
-\c@bookmark@seq@number=\count304
+\Fld@listcount=\count299
+\c@bookmark@seq@number=\count300
 
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/latex/rerunfilecheck/rerunfilecheck.sty
@@ -450,7 +415,7 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 85.
 )
-\Hy@SectionHShift=\skip57
+\Hy@SectionHShift=\skip55
 )
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/latex/algorithms/algorithm.sty
@@ -460,43 +425,28 @@ nment
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count305
+\c@float@type=\count301
 \float@exts=\toks26
 \float@box=\box56
 \@float@everytoks=\toks27
 \@floatcapt=\box57
 )
+(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
 \@float@every@algorithm=\toks28
-\c@algorithm=\count306
+\c@algorithm=\count302
 )
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/multirow/multirow.sty
-Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
-\multirow@colwidth=\skip58
-\multirow@cntb=\count307
-\multirow@dima=\skip59
-\bigstrutjot=\dimen180
-)
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/booktabs/booktabs.sty
-Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen181
-\lightrulewidth=\dimen182
-\cmidrulewidth=\dimen183
-\belowrulesep=\dimen184
-\belowbottomsep=\dimen185
-\aboverulesep=\dimen186
-\abovetopsep=\dimen187
-\cmidrulesep=\dimen188
-\cmidrulekern=\dimen189
-\defaultaddspace=\dimen190
-\@cmidla=\count308
-\@cmidlb=\count309
-\@aboverulesep=\dimen191
-\@belowrulesep=\dimen192
-\@thisruleclass=\count310
-\@lastruleclass=\count311
-\@thisrulewidth=\dimen193
+exmfdist/tex/latex/algorithms/algorithmic.sty
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+\c@ALC@unique=\count303
+\c@ALC@line=\count304
+\c@ALC@rem=\count305
+\c@ALC@depth=\count306
+\ALC@tlm=\skip56
+\algorithmicindent=\skip57
 )
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/latex/pgfplots/pgfplots.sty
@@ -513,8 +463,8 @@ exmfdist/tex/latex/pgf/utilities/pgfrcs.sty
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks29
-\pgfutil@tempdima=\dimen194
-\pgfutil@tempdimb=\dimen195
+\pgfutil@tempdima=\dimen180
+\pgfutil@tempdimb=\dimen181
 )
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/generic/pgf/utilities/pgfutil-latex.def
@@ -545,26 +495,26 @@ exmfdist/tex/generic/pgf/utilities/pgfkeys.code.tex
 exmfdist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
 \pgfkeys@tmptoks=\toks32
 ))
-\pgf@x=\dimen196
-\pgf@y=\dimen197
-\pgf@xa=\dimen198
-\pgf@ya=\dimen199
-\pgf@xb=\dimen256
-\pgf@yb=\dimen257
-\pgf@xc=\dimen258
-\pgf@yc=\dimen259
-\pgf@xd=\dimen260
-\pgf@yd=\dimen261
+\pgf@x=\dimen182
+\pgf@y=\dimen183
+\pgf@xa=\dimen184
+\pgf@ya=\dimen185
+\pgf@xb=\dimen186
+\pgf@yb=\dimen187
+\pgf@xc=\dimen188
+\pgf@yc=\dimen189
+\pgf@xd=\dimen190
+\pgf@yd=\dimen191
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count312
-\c@pgf@countb=\count313
-\c@pgf@countc=\count314
-\c@pgf@countd=\count315
+\c@pgf@counta=\count307
+\c@pgf@countb=\count308
+\c@pgf@countc=\count309
+\c@pgf@countd=\count310
 \t@pgf@toka=\toks33
 \t@pgf@tokb=\toks34
 \t@pgf@tokc=\toks35
-\pgf@sys@id@count=\count316
+\pgf@sys@id@count=\count311
 
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/generic/pgf/systemlayer/pgf.cfg
@@ -583,13 +533,35 @@ File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count317
-\pgfsyssoftpath@bigbuffer@items=\count318
+\pgfsyssoftpath@smallbuffer@items=\count312
+\pgfsyssoftpath@bigbuffer@items=\count313
 )
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))
+(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+
+(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
@@ -600,8 +572,8 @@ exmfdist/tex/generic/pgf/math/pgfmath.code.tex
 exmfdist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen262
-\pgfmath@count=\count319
+\pgfmath@dimen=\dimen192
+\pgfmath@count=\count314
 \pgfmath@box=\box59
 \pgfmath@toks=\toks36
 \pgfmath@stack@operand=\toks37
@@ -629,39 +601,39 @@ exmfdist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex)
 exmfdist/tex/generic/pgf/math/pgfmathcalc.code.tex)
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count320
+\c@pgfmathroundto@lastzeros=\count315
 ))
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/generic/pgf/math/pgfint.code.tex)
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@picminx=\dimen263
-\pgf@picmaxx=\dimen264
-\pgf@picminy=\dimen265
-\pgf@picmaxy=\dimen266
-\pgf@pathminx=\dimen267
-\pgf@pathmaxx=\dimen268
-\pgf@pathminy=\dimen269
-\pgf@pathmaxy=\dimen270
-\pgf@xx=\dimen271
-\pgf@xy=\dimen272
-\pgf@yx=\dimen273
-\pgf@yy=\dimen274
-\pgf@zx=\dimen275
-\pgf@zy=\dimen276
+\pgf@picminx=\dimen193
+\pgf@picmaxx=\dimen194
+\pgf@picminy=\dimen195
+\pgf@picmaxy=\dimen196
+\pgf@pathminx=\dimen197
+\pgf@pathmaxx=\dimen198
+\pgf@pathminy=\dimen199
+\pgf@pathmaxy=\dimen256
+\pgf@xx=\dimen257
+\pgf@xy=\dimen258
+\pgf@yx=\dimen259
+\pgf@yy=\dimen260
+\pgf@zx=\dimen261
+\pgf@zy=\dimen262
 )
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@path@lastx=\dimen277
-\pgf@path@lasty=\dimen278
+\pgf@path@lastx=\dimen263
+\pgf@path@lasty=\dimen264
 )
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@shorten@end@additional=\dimen279
-\pgf@shorten@start@additional=\dimen280
+\pgf@shorten@end@additional=\dimen265
+\pgf@shorten@start@additional=\dimen266
 )
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
@@ -669,19 +641,19 @@ File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfpic=\box60
 \pgf@hbox=\box61
 \pgf@layerbox@main=\box62
-\pgf@picture@serial@count=\count321
+\pgf@picture@serial@count=\count316
 )
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgflinewidth=\dimen281
+\pgflinewidth=\dimen267
 )
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@pt@x=\dimen282
-\pgf@pt@y=\dimen283
-\pgf@pt@temp=\dimen284
+\pgf@pt@x=\dimen268
+\pgf@pt@y=\dimen269
+\pgf@pt@temp=\dimen270
 )
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
@@ -698,14 +670,14 @@ File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowsep=\dimen285
+\pgfarrowsep=\dimen271
 )
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@max=\dimen286
-\pgf@sys@shading@range@num=\count322
-\pgf@shadingcount=\count323
+\pgf@max=\dimen272
+\pgf@sys@shading@range@num=\count317
+\pgf@shadingcount=\count318
 )
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
@@ -744,8 +716,8 @@ File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen287
-\pgf@nodesepend=\dimen288
+\pgf@nodesepstart=\dimen273
+\pgf@nodesepend=\dimen274
 )
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
@@ -764,8 +736,8 @@ exmfdist/tex/generic/pgf/math/pgfmath.code.tex))
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
-\pgffor@iter=\dimen289
-\pgffor@skip=\dimen290
+\pgffor@iter=\dimen275
+\pgffor@skip=\dimen276
 \pgffor@stack=\toks39
 \pgffor@toks=\toks40
 ))
@@ -776,34 +748,34 @@ Package: tikz 2023-01-15 v3.1.10 (3.1.10)
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count324
-\pgfplotmarksize=\dimen291
+\pgf@plot@mark@count=\count319
+\pgfplotmarksize=\dimen277
 )
-\tikz@lastx=\dimen292
-\tikz@lasty=\dimen293
-\tikz@lastxsaved=\dimen294
-\tikz@lastysaved=\dimen295
-\tikz@lastmovetox=\dimen296
-\tikz@lastmovetoy=\dimen297
-\tikzleveldistance=\dimen298
-\tikzsiblingdistance=\dimen299
+\tikz@lastx=\dimen278
+\tikz@lasty=\dimen279
+\tikz@lastxsaved=\dimen280
+\tikz@lastysaved=\dimen281
+\tikz@lastmovetox=\dimen282
+\tikz@lastmovetoy=\dimen283
+\tikzleveldistance=\dimen284
+\tikzsiblingdistance=\dimen285
 \tikz@figbox=\box65
 \tikz@figbox@bg=\box66
 \tikz@tempbox=\box67
 \tikz@tempbox@bg=\box68
-\tikztreelevel=\count325
-\tikznumberofchildren=\count326
-\tikznumberofcurrentchild=\count327
-\tikz@fig@count=\count328
+\tikztreelevel=\count320
+\tikznumberofchildren=\count321
+\tikznumberofcurrentchild=\count322
+\tikz@fig@count=\count323
 
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count329
-\pgfmatrixcurrentcolumn=\count330
-\pgf@matrix@numberofcolumns=\count331
+\pgfmatrixcurrentrow=\count324
+\pgfmatrixcurrentcolumn=\count325
+\pgf@matrix@numberofcolumns=\count326
 )
-\tikz@expandcount=\count332
+\tikz@expandcount=\count327
 
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.t
@@ -817,9 +789,9 @@ exmfdist/tex/generic/pgfplots/pgfplotscore.code.tex
 \t@pgfplots@toka=\toks41
 \t@pgfplots@tokb=\toks42
 \t@pgfplots@tokc=\toks43
-\pgfplots@tmpa=\dimen300
-\c@pgfplots@coordindex=\count333
-\c@pgfplots@scanlineindex=\count334
+\pgfplots@tmpa=\dimen286
+\c@pgfplots@coordindex=\count328
+\c@pgfplots@scanlineindex=\count329
 
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex))
@@ -846,13 +818,13 @@ exmfdist/tex/generic/pgfplots/liststructure/pgfplotsliststructure.code.tex)
 exmfdist/tex/generic/pgfplots/liststructure/pgfplotsliststructureext.code.tex)
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/generic/pgfplots/liststructure/pgfplotsarray.code.tex
-\c@pgfplotsarray@tmp=\count335
+\c@pgfplotsarray@tmp=\count330
 )
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.tex)
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/generic/pgfplots/numtable/pgfplotstableshared.code.tex
-\c@pgfplotstable@counta=\count336
+\c@pgfplotstable@counta=\count331
 \t@pgfplotstable@a=\toks47
 )
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
@@ -865,7 +837,7 @@ exmfdist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex))
 exmfdist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex)
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count337
+\c@pgfplotslibrarysurf@no=\count332
 
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-pdftex.
@@ -899,14 +871,14 @@ exmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.co
 de.tex
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen301
-\pgfdecoratedremainingdistance=\dimen302
-\pgfdecoratedinputsegmentcompleteddistance=\dimen303
-\pgfdecoratedinputsegmentremainingdistance=\dimen304
-\pgf@decorate@distancetomove=\dimen305
-\pgf@decorate@repeatstate=\count338
-\pgfdecorationsegmentamplitude=\dimen306
-\pgfdecorationsegmentlength=\dimen307
+\pgfdecoratedcompleteddistance=\dimen287
+\pgfdecoratedremainingdistance=\dimen288
+\pgfdecoratedinputsegmentcompleteddistance=\dimen289
+\pgfdecoratedinputsegmentremainingdistance=\dimen290
+\pgf@decorate@distancetomove=\dimen291
+\pgf@decorate@repeatstate=\count333
+\pgfdecorationsegmentamplitude=\dimen292
+\pgfdecorationsegmentlength=\dimen293
 )
 \tikz@lib@dec@box=\box69
 )
@@ -924,13 +896,13 @@ exmfdist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplac
 ing.code.tex))
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.contourlua.code.tex)
-\pgfplots@numplots=\count339
-\pgfplots@xmin@reg=\dimen308
-\pgfplots@xmax@reg=\dimen309
-\pgfplots@ymin@reg=\dimen310
-\pgfplots@ymax@reg=\dimen311
-\pgfplots@zmin@reg=\dimen312
-\pgfplots@zmax@reg=\dimen313
+\pgfplots@numplots=\count334
+\pgfplots@xmin@reg=\dimen294
+\pgfplots@xmax@reg=\dimen295
+\pgfplots@ymin@reg=\dimen296
+\pgfplots@ymax@reg=\dimen297
+\pgfplots@zmin@reg=\dimen298
+\pgfplots@zmax@reg=\dimen299
 )
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotmarks.code
@@ -948,14 +920,14 @@ Package: caption 2023/08/05 v3.6o Customizing captions (AR)
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/latex/caption/caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen314
-\captionmargin=\dimen315
-\caption@leftmargin=\dimen316
-\caption@rightmargin=\dimen317
-\caption@width=\dimen318
-\caption@indent=\dimen319
-\caption@parindent=\dimen320
-\caption@hangindent=\dimen321
+\caption@tempdima=\dimen300
+\captionmargin=\dimen301
+\caption@leftmargin=\dimen302
+\caption@rightmargin=\dimen303
+\caption@width=\dimen304
+\caption@indent=\dimen305
+\caption@parindent=\dimen306
+\caption@hangindent=\dimen307
 Package caption Info: Unknown document class (or package),
 (caption)             standard defaults will be used.
 Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEta
@@ -975,53 +947,53 @@ Package caption Warning: Unknown document class (or package),
 (caption)                standard defaults will be used.
 See the caption package documentation for explanation.
 
-\c@caption@flags=\count340
-\c@continuedfloat=\count341
+\c@caption@flags=\count335
+\c@continuedfloat=\count336
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 )
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count342
+\l__color_backend_stack_int=\count337
 \l__pdf_internal_box=\box70
 )
-No file ai_ml_governance_enhanced.aux.
-\openout1 = `ai_ml_governance_enhanced.aux'.
+No file quantum_computing_enhanced.aux.
+\openout1 = `quantum_computing_enhanced.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
 -- Lines per column: 56 (exact).
 
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count343
-\scratchdimen=\dimen322
+\scratchcounter=\count338
+\scratchdimen=\dimen308
 \scratchbox=\box71
-\nofMPsegments=\count344
-\nofMParguments=\count345
+\nofMPsegments=\count339
+\nofMParguments=\count340
 \everyMPshowfont=\toks48
-\MPscratchCnt=\count346
-\MPscratchDim=\dimen323
-\MPnumerator=\count347
-\makeMPintoPDFobject=\count348
+\MPscratchCnt=\count341
+\MPscratchDim=\dimen309
+\MPnumerator=\count342
+\makeMPintoPDFobject=\count343
 \everyMPtoPDFconversion=\toks49
 )
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
@@ -1035,145 +1007,121 @@ exmfdist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 32.
+Package hyperref Info: Link coloring OFF on input line 24.
 \@outlinefile=\write4
-\openout4 = `ai_ml_governance_enhanced.out'.
+\openout4 = `quantum_computing_enhanced.out'.
 
 
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 32.
+ on input line 24.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-
-LaTeX Warning: Citation `russell2019human' on page 1 undefined on input line 46
-.
-
-
-LaTeX Warning: Citation `dafoe2020ai' on page 1 undefined on input line 46.
-
-
-LaTeX Warning: Citation `christiano2017deep' on page 1 undefined on input line 
-46.
-
-
-LaTeX Warning: Citation `binns2018fairness' on page 1 undefined on input line 4
-6.
-
-
-LaTeX Warning: Citation `barocas2016big' on page 1 undefined on input line 48.
-
-
-LaTeX Warning: Citation `algorithmic_decision_making_2018' on page 1 undefined 
-on input line 48.
-
-
-LaTeX Warning: Citation `collaborative_intelligence_2018' on page 1 undefined o
-n input line 48.
-
-
-LaTeX Warning: Citation `human_ai_collaboration_2019' on page 1 undefined on in
-put line 48.
-
-LaTeX Font Info:    Trying to load font information for U+msa on input line 52.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 29.
 
 
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 52.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 29.
 
 
 (/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
 exmfdist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 29
+.
 
-LaTeX Warning: Citation `hadfield2019cooperative' on page 1 undefined on input 
-line 52.
-
-
-LaTeX Warning: Citation `value_alignment_2020' on page 1 undefined on input lin
-e 53.
-
-
-LaTeX Warning: Citation `explainable_ai_2019' on page 1 undefined on input line
- 54.
-
-
-Underfull \hbox (badness 2671) in paragraph at lines 54--55
-[]\OT1/ptm/m/n/10 Explainable AI mech-a-nisms main-tain-ing demo-cratic
+(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
+exmfdist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+Underfull \hbox (badness 1803) in paragraph at lines 28--30
+[]\OT1/ptm/b/it/9 Abstract\OT1/ptm/b/n/9 ---We in-tro-duce Quan-tum Gov-er-nanc
+e Op-er-a-tors
  []
 
 
-LaTeX Warning: Citation `democratic_ai_2021' on page 1 undefined on input line 
-55.
+LaTeX Warning: Citation `nielsen2010quantum' on page 1 undefined on input line 
+38.
 
 
+LaTeX Warning: Citation `preskill2018quantum' on page 1 undefined on input line
+ 38.
 
 
-LaTeX Warning: Citation `trustworthy_ai_2019' on page 1 undefined on input line
- 56.
+Underfull \hbox (badness 1424) in paragraph at lines 42--43
+[]\OT1/ptm/m/n/10 This pa-per in-tro-duces Quan-tum Gov-er-nance Op-er-a-tors
+ []
 
 
-LaTeX Warning: Citation `brandt2016handbook' on page 1 undefined on input line 
-63.
+LaTeX Warning: Citation `grover1996fast' on page 1 undefined on input line 45.
 
 
-LaTeX Warning: Citation `nisan2007algorithmic' on page 1 undefined on input lin
-e 63.
+LaTeX Warning: Citation `eisert1999quantum' on page 1 undefined on input line 4
+6.
 
 
-LaTeX Warning: Citation `algorithmic_governance_2020' on page 1 undefined on in
-put line 65.
-
-
-LaTeX Warning: Citation `ai_governance_framework_2022' on page 1 undefined on i
-nput line 65.
-
-
-LaTeX Warning: Citation `trustworthy_ai_2019' on page 1 undefined on input line
- 65.
-
-
-LaTeX Warning: Citation `stone2000multiagent' on page 1 undefined on input line
- 69.
-
-
-LaTeX Warning: Citation `shoham2008multiagent' on page 1 undefined on input lin
-e 69.
-
-
-LaTeX Warning: Citation `collaborative_intelligence_2018' on page 1 undefined o
-n input line 69.
-
-
-LaTeX Warning: Citation `russell2019human' on page 1 undefined on input line 71
+LaTeX Warning: Citation `meyer1999quantum' on page 1 undefined on input line 46
 .
 
 
-LaTeX Warning: Citation `value_alignment_2020' on page 1 undefined on input lin
-e 71.
 
 
-LaTeX Warning: Citation `christiano2017deep' on page 1 undefined on input line 
-71.
+LaTeX Warning: Citation `quantum_supremacy_2019' on page 1 undefined on input l
+ine 50.
 
 
-LaTeX Warning: Citation `explainable_ai_2019' on page 1 undefined on input line
- 75.
+LaTeX Warning: Citation `quantum_advantage_2021' on page 1 undefined on input l
+ine 50.
 
 
-LaTeX Warning: Citation `hofstede2010cultures' on page 1 undefined on input lin
-e 79.
+LaTeX Warning: Citation `biamonte2017quantum' on page 1 undefined on input line
+ 50.
 
 
-LaTeX Warning: Citation `kumar2020cultural' on page 1 undefined on input line 7
-9.
+LaTeX Warning: Citation `harrow2009quantum' on page 1 undefined on input line 5
+0.
+
+
+LaTeX Warning: Citation `nielsen2010quantum' on page 1 undefined on input line 
+56.
+
+
+LaTeX Warning: Citation `shor1994algorithms' on page 1 undefined on input line 
+66.
+
+
+LaTeX Warning: Citation `grover1996fast' on page 1 undefined on input line 66.
+
+
+LaTeX Warning: Citation `quantum_supremacy_2019' on page 1 undefined on input l
+ine 66.
+
+
+LaTeX Warning: Citation `quantum_advantage_2021' on page 1 undefined on input l
+ine 68.
+
+
+LaTeX Warning: Citation `eisert1999quantum' on page 1 undefined on input line 7
+2.
+
+
+LaTeX Warning: Citation `meyer1999quantum' on page 1 undefined on input line 72
+.
+
+
+LaTeX Warning: Citation `biamonte2017quantum' on page 1 undefined on input line
+ 76.
+
+
+LaTeX Warning: Citation `harrow2009quantum' on page 1 undefined on input line 7
+6.
 
 
 
@@ -1184,80 +1132,269 @@ se/8r.enc}
 
 
 ]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 122.
-
-
-
-Overfull \hbox (146.34818pt too wide) in paragraph at lines 219--220
- [][] 
+Underfull \hbox (badness 1881) in paragraph at lines 124--125
+[]\OT1/ptm/m/n/10 Cross-domain pol-icy en-tan-gle-ment en-ables co-or-di-nated
  []
 
+
+
+
+! Package pgfkeys Error: I do not know the key '/tikz/qbit' and I am going to i
+gnore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.175     \draw (0,0) node[qbit]
+                                 (q0) {$|0\rangle$} -- (10,0);
+This error message was generated by an \errmessage
+command, so I can't give any explicit help.
+Pretend that you're Hercule Poirot: Examine all clues,
+and deduce the truth by order and method.
+
+
+! Package pgfkeys Error: I do not know the key '/tikz/qbit' and I am going to i
+gnore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.176     \draw (0,-1) node[qbit]
+                                  (q1) {$|0\rangle$} -- (10,-1);
+(That was another \errmessage.)
+
+
+! Package pgfkeys Error: I do not know the key '/tikz/qbit' and I am going to i
+gnore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.177     \draw (0,-2) node[qbit]
+                                  (q2) {$|0\rangle$} -- (10,-2);
+(That was another \errmessage.)
+
+
+! Package pgfkeys Error: I do not know the key '/tikz/gate' and I am going to i
+gnore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.180     \node[gate, fill=blue!30]
+                                    at (2,0) (h0) {H};
+(That was another \errmessage.)
+
+
+! Package pgfkeys Error: I do not know the key '/tikz/gate' and I am going to i
+gnore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.181     \node[gate, fill=blue!30]
+                                    at (2,-1) (h1) {H};
+(That was another \errmessage.)
+
+
+! Package pgfkeys Error: I do not know the key '/tikz/gate' and I am going to i
+gnore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.182     \node[gate, fill=blue!30]
+                                    at (2,-2) (h2) {H};
+(That was another \errmessage.)
+
+
+! Package pgfkeys Error: I do not know the key '/tikz/gate' and I am going to i
+gnore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.185     \node[gate, fill=purple!30]
+                                      at (4,-1) (cnot01) {CNOT};
+(That was another \errmessage.)
+
+
+! Package pgfkeys Error: I do not know the key '/tikz/gate' and I am going to i
+gnore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.189     \node[gate, fill=purple!30]
+                                      at (6,-2) (cnot12) {CNOT};
+(That was another \errmessage.)
+
+
+! Package pgfkeys Error: I do not know the key '/tikz/gate' and I am going to i
+gnore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.194     \node[gate, fill=orange!30]
+                                      at (8,0) (oracle) {$U_f$};
+(That was another \errmessage.)
+
+
+! Package pgfkeys Error: I do not know the key '/tikz/measure' and I am going t
+o ignore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.197     \node[measure]
+                         at (10,0) (m0) {};
+(That was another \errmessage.)
+
+
+! Package pgfkeys Error: I do not know the key '/tikz/measure' and I am going t
+o ignore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198     \node[measure]
+                         at (10,-1) (m1) {};
+(That was another \errmessage.)
+
+
+! Package pgfkeys Error: I do not know the key '/tikz/measure' and I am going t
+o ignore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.199     \node[measure]
+                         at (10,-2) (m2) {};
+(That was another \errmessage.)
+
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 223.
 
 
 [2]
 
-LaTeX Warning: Citation `hofstede2010cultures' on page 3 undefined on input lin
-e 237.
+! Undefined control sequence.
+l.319 \toprule
+              
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
-72.
+! Undefined control sequence.
+<recently read> \midrule 
+                         
+l.321 \midrule
+              
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/psnfss/ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-
-LaTeX Warning: File `cultural_preservation.pdf' not found on input line 284.
-
-
-! Package pdftex.def Error: File `cultural_preservation.pdf' not found: using d
-raft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.284 ....48\textwidth]{cultural_preservation.pdf}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 2
-84.
-
-(/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-t
-exmfdist/tex/latex/psnfss/ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
+! Undefined control sequence.
+<recently read> \bottomrule 
+                            
+l.326 \bottomrule
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 
 
 [3]
-Overfull \hbox (137.21945pt too wide) in paragraph at lines 348--349
+Overfull \hbox (132.13358pt too wide) in paragraph at lines 414--415
  [][] 
  []
 
 
-Underfull \vbox (badness 4981) has occurred while \output is active []
+
+! Undefined control sequence.
+l.488 \toprule
+              
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \midrule 
+                         
+l.490 \midrule
+              
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \bottomrule 
+                            
+l.495 \bottomrule
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 
-
-
-Underfull \hbox (badness 1735) in paragraph at lines 433--434
-\OT1/ptm/m/n/10 while en-hanc-ing demo-cratic decision-making ca-pa-bil-i-ties.
-
+Overfull \hbox (1.75008pt too wide) in paragraph at lines 487--497
+ [][] 
  []
 
 
 
 [4]
-Underfull \hbox (badness 4366) in paragraph at lines 439--440
-[]\OT1/ptm/m/n/10 The scal-a-bil-ity anal-y-sis and multi-country val-i-da-tion
+! Missing $ inserted.
+<inserted text> 
+                $
+l.556 \ bibliography{quantum_
+                             computing}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
- []
+! Extra }, or forgotten $.
+l.556 \ bibliography{quantum_computing}
+                                       
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
 
-No file ai_ml_governance_enhanced.bbl.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.557 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -1275,7 +1412,7 @@ Before submitting the final camera ready copy, remember to:
 
 [5
 
-] (./ai_ml_governance_enhanced.aux)
+] (./quantum_computing_enhanced.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -1285,50 +1422,58 @@ L3 programming layer <2025-01-18>
 LaTeX Warning: There were undefined references.
 
 
-Package rerunfilecheck Warning: File `ai_ml_governance_enhanced.out' has change
-d.
+Package rerunfilecheck Warning: File `quantum_computing_enhanced.out' has chang
+ed.
 (rerunfilecheck)                Rerun to get outlines right
 (rerunfilecheck)                or use package `bookmark'.
 
-Package rerunfilecheck Info: Checksums for `ai_ml_governance_enhanced.out':
+Package rerunfilecheck Info: Checksums for `quantum_computing_enhanced.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  AF05B140FFD17250201351DD485C422E;6198.
- ) 
+(rerunfilecheck)             After:  5C261FB04C96A68DC791D5B40CE60E27;6501.
+ )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 556 ({)
+### bottom level 
 Here is how much of TeX's memory you used:
- 33257 strings out of 473201
- 793149 string characters out of 5689025
- 1284721 words of memory out of 5000000
- 55934 multiletter control sequences out of 15000+600000
- 596331 words of font info for 110 fonts, out of 8000000 for 9000
+ 33481 strings out of 473201
+ 800655 string characters out of 5689025
+ 1287354 words of memory out of 5000000
+ 56169 multiletter control sequences out of 15000+600000
+ 597751 words of font info for 118 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,8n,101p,1083b,823s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final
--texmfdist/fonts/type1/public/amsfonts/cm/cmex10.pfb></nix/store/q4gbqp2pph3mw2
-jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/fonts/type1/publi
-c/amsfonts/cm/cmmi10.pfb></nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-c
-ombined-full-2024-final-texmfdist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></ni
-x/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmf
-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></nix/store/q4gbqp2pph3mw2jp5kwg0
-zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/fonts/type1/public/amsfo
-nts/cm/cmr7.pfb></nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-f
-ull-2024-final-texmfdist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></nix/store/
+ 99i,19n,105p,1207b,2278s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-f
+ull-2024-final-texmfdist/fonts/type1/public/amsfonts/cm/cmex10.pfb></nix/store/
 q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/fon
-ts/type1/public/amsfonts/cm/cmsy5.pfb></nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3
-hx8-texlive-combined-full-2024-final-texmfdist/fonts/type1/public/amsfonts/cm/c
-msy7.pfb></nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-202
-4-final-texmfdist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></nix/store/q4
-gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/fonts
-/type1/urw/courier/ucrr8a.pfb></nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texl
-ive-combined-full-2024-final-texmfdist/fonts/type1/urw/times/utmb8a.pfb></nix/s
+ts/type1/public/amsfonts/cm/cmmi10.pfb></nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh
+3hx8-texlive-combined-full-2024-final-texmfdist/fonts/type1/public/amsfonts/cm/
+cmmi5.pfb></nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-20
+24-final-texmfdist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></nix/store/q4gbqp2
+pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/fonts/type
+1/public/amsfonts/cm/cmmi9.pfb></nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-tex
+live-combined-full-2024-final-texmfdist/fonts/type1/public/amsfonts/cm/cmr10.pf
+b></nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final
+-texmfdist/fonts/type1/public/amsfonts/cm/cmr7.pfb></nix/store/q4gbqp2pph3mw2jp
+5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/fonts/type1/public/
+amsfonts/cm/cmr9.pfb></nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combi
+ned-full-2024-final-texmfdist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></nix/s
 tore/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdis
-t/fonts/type1/urw/times/utmbi8a.pfb></nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx
-8-texlive-combined-full-2024-final-texmfdist/fonts/type1/urw/times/utmr8a.pfb><
-/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-te
-xmfdist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ai_ml_governance_enhanced.pdf (5 pages, 192189 bytes).
+t/fonts/type1/public/amsfonts/cm/cmsy7.pfb></nix/store/q4gbqp2pph3mw2jp5kwg0zlh
+wwwh3hx8-texlive-combined-full-2024-final-texmfdist/fonts/type1/public/amsfonts
+/cm/cmsy9.pfb></nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-ful
+l-2024-final-texmfdist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></nix/sto
+re/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/
+fonts/type1/urw/times/utmb8a.pfb></nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-t
+exlive-combined-full-2024-final-texmfdist/fonts/type1/urw/times/utmbi8a.pfb></n
+ix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texm
+fdist/fonts/type1/urw/times/utmr8a.pfb></nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh
+3hx8-texlive-combined-full-2024-final-texmfdist/fonts/type1/urw/times/utmri8a.p
+fb>
+Output written on quantum_computing_enhanced.pdf (5 pages, 203611 bytes).
 PDF statistics:
- 183 PDF objects out of 1000 (max. 8388607)
- 146 compressed objects within 2 object streams
- 71 named destinations out of 1000 (max. 500000)
+ 189 PDF objects out of 1000 (max. 8388607)
+ 148 compressed objects within 2 object streams
+ 67 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
